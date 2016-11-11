@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "314dcf364c136069a718401d5c823d5c",
-    "content-hash": "e3823ebe273f039efd949443c656f50b",
+    "hash": "e99c0fd3770b81d6570278e2a3449fb1",
+    "content-hash": "d3051ad1b6558db7618dec8376711196",
     "packages": [
         {
             "name": "composer/installers",
@@ -175,6 +175,52 @@
                 "wordpress"
             ],
             "time": "2015-06-11 15:15:30"
+        },
+        {
+            "name": "mikelking/singleton_base",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mikelking/singleton_base.git",
+                "reference": "c8bd22f6d8cce387c38900afde941074d0dcfff1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mikelking/singleton_base/zipball/c8bd22f6d8cce387c38900afde941074d0dcfff1",
+                "reference": "c8bd22f6d8cce387c38900afde941074d0dcfff1",
+                "shasum": ""
+            },
+            "require": {
+                "johnpbloch/wordpress-core-installer": "~0.2",
+                "php": ">=5.5"
+            },
+            "type": "wordpress-mu-framework",
+            "license": [
+                "BSD-3"
+            ],
+            "authors": [
+                {
+                    "name": "Olivent, llc.",
+                    "email": "info@olivent.com",
+                    "homepage": "https://github.com/mikelking/dummy"
+                },
+                {
+                    "name": "Mikel King",
+                    "email": "mikel.king@olivent.com",
+                    "homepage": "https://github.com/mikelking"
+                }
+            ],
+            "description": "WordPress mu plugin framework.",
+            "homepage": "http://jafdip.com/",
+            "keywords": [
+                "framework",
+                "mu-plugin"
+            ],
+            "support": {
+                "source": "https://github.com/mikelking/singleton_base/tree/1.0.2",
+                "issues": "https://github.com/mikelking/singleton_base/issues"
+            },
+            "time": "2016-11-11 21:19:05"
         }
     ],
     "packages-dev": [],
