@@ -1,0 +1,48 @@
+{
+  "name": "ReadersDigest/rdnap",
+  "type": "project",
+  "license": "BSD3",
+  "description": "A WordPress site for testing Composer based deployments",
+  "homepage": "http://UNKN",
+  "authors": [
+    {
+      "name": "Olivent, llc.",
+      "email": "info@olivent.com",
+      "homepage": "https://github.com/mikelking/dummy"
+    },
+    {
+      "name": "Mikel King",
+      "email": "mikel.king@olivent.com",
+      "homepage": "https://github.com/mikelking"
+    }
+  ],
+  "keywords": [
+    "wordpress", "stack", "composer", "vagrant", "wp"
+  ],
+  "config": {
+    "preferred-install": "dist",
+    "generate-salts": true
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/mikelking/singleton_base"
+    },
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    }
+  ],
+  "require": {
+    "php": ">=5.5",
+    "composer/installers": "v1.0.12",
+    "johnpbloch/wordpress": "4.6.1",
+    "mikelking/singleton_base": "1.0"
+  },
+  "extra": {
+    "wordpress-install-dir": "wordpress",
+    "installer-paths": {
+      "wordpress/wp-content/plugins/{$name}/": ["type:wordpress-plugin"]
+    }
+  }
+}
