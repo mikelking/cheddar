@@ -29,6 +29,10 @@
       "url": "https://github.com/mikelking/bacon"
     },
     {
+      "type": "vcs",
+      "url": "https://github.com/mikelking/wpcfg"
+    },
+    {
       "type": "composer",
       "url": "https://wpackagist.org"
     }

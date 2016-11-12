@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "85f20768a84a798fd9f1e6a7c8283828",
-    "content-hash": "ac0e2eac20a09c8dcdd0b630b18159ee",
+    "hash": "33dac5a9d8c99497013d51d5c256a23e",
+    "content-hash": "83d27551ae93e003af183116c587a044",
     "packages": [
         {
             "name": "composer/installers",
@@ -244,6 +244,52 @@
                 "issues": "https://github.com/mikelking/bacon/issues"
             },
             "time": "2016-11-12 20:03:06"
+        },
+        {
+            "name": "mikelking/wpcfg",
+            "version": "0.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mikelking/wpcfg.git",
+                "reference": "3d62a73f7a7acbbe7333d8b2134b750bd338a150"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mikelking/wpcfg/zipball/3d62a73f7a7acbbe7333d8b2134b750bd338a150",
+                "reference": "3d62a73f7a7acbbe7333d8b2134b750bd338a150",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "v1.2.0",
+                "php": ">=5.5"
+            },
+            "type": "project",
+            "license": [
+                "BSD-3"
+            ],
+            "authors": [
+                {
+                    "name": "Olivent, llc.",
+                    "email": "info@olivent.com",
+                    "homepage": "https://github.com/mikelking/dummy"
+                },
+                {
+                    "name": "Mikel King",
+                    "email": "mikel.king@olivent.com",
+                    "homepage": "https://github.com/mikelking"
+                }
+            ],
+            "description": "WordPress configuration framework.",
+            "homepage": "http://jafdip.com/",
+            "keywords": [
+                "framework",
+                "wp-config"
+            ],
+            "support": {
+                "source": "https://github.com/mikelking/wpcfg/tree/0.0.1",
+                "issues": "https://github.com/mikelking/wpcfg/issues"
+            },
+            "time": "2016-11-12 21:15:50"
         }
     ],
     "packages-dev": [],
