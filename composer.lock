@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "4f97cb63d00c49e168c4fbf8519b5196",
-    "content-hash": "38eb2905e1a4d725c3a6de5d869b71b6",
+    "hash": "85f20768a84a798fd9f1e6a7c8283828",
+    "content-hash": "ac0e2eac20a09c8dcdd0b630b18159ee",
     "packages": [
         {
             "name": "composer/installers",
@@ -200,17 +200,17 @@
             "time": "2015-06-11 15:15:30"
         },
         {
-            "name": "mikelking/singleton_base",
-            "version": "1.0.8",
+            "name": "mikelking/bacon",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/mikelking/singleton_base.git",
-                "reference": "626f47ad27d0dc63e4a6a541c0163261d76cca9b"
+                "url": "https://github.com/mikelking/bacon.git",
+                "reference": "5bdef0cd5c5af612b7df1048cc26c9e8926ad598"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mikelking/singleton_base/zipball/626f47ad27d0dc63e4a6a541c0163261d76cca9b",
-                "reference": "626f47ad27d0dc63e4a6a541c0163261d76cca9b",
+                "url": "https://api.github.com/repos/mikelking/bacon/zipball/5bdef0cd5c5af612b7df1048cc26c9e8926ad598",
+                "reference": "5bdef0cd5c5af612b7df1048cc26c9e8926ad598",
                 "shasum": ""
             },
             "require": {
@@ -240,10 +240,10 @@
                 "mu-plugin"
             ],
             "support": {
-                "source": "https://github.com/mikelking/singleton_base/tree/1.0.8",
-                "issues": "https://github.com/mikelking/singleton_base/issues"
+                "source": "https://github.com/mikelking/bacon/tree/1.0.0",
+                "issues": "https://github.com/mikelking/bacon/issues"
             },
-            "time": "2016-11-12 13:30:15"
+            "time": "2016-11-12 20:03:06"
         }
     ],
     "packages-dev": [],

@@ -26,7 +26,7 @@
   "repositories": [
     {
       "type": "vcs",
-      "url": "https://github.com/mikelking/singleton_base"
+      "url": "https://github.com/mikelking/bacon"
     },
     {
       "type": "composer",
@@ -36,7 +36,7 @@
   "extra" : {
     "installer-paths" : {
       "wordpress/wp-content/plugins/{$name}/" : ["type:wordpress-plugin"],
-      "wordpress/wp-content/mu-plugins/" : ["type:wordpress-muplugin", "mikelking/singleton_base"],
+      "wordpress/wp-content/mu-plugins/" : ["type:wordpress-muplugin", "mikelking/bacon"],
       "wordpress/wp-content/themes/{$name}/" : ["type:wordpress-theme"]
     }
   },
@@ -44,6 +44,6 @@
     "php": ">=5.5",
     "composer/installers": "v1.2.0",
     "johnpbloch/wordpress": "4.6.1",
-    "mikelking/singleton_base": "1.0.8"
+    "mikelking/bacon": "1.0.0"
   }
 }
