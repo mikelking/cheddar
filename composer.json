@@ -1,5 +1,5 @@
 {
-  "name": "ReadersDigest/rdnap",
+  "name": "mikelking/dummy",
   "type": "project",
   "license": "BSD3",
   "description": "A WordPress site for testing Composer based deployments",
@@ -20,7 +20,7 @@
     "wordpress", "stack", "composer", "vagrant", "wp"
   ],
   "config": {
-    "preferred-install": "dist",
+    "preferred-install": "source",
     "generate-salts": true
   },
   "repositories": [
@@ -33,16 +33,17 @@
       "url": "https://wpackagist.org"
     }
   ],
+  "extra" : {
+    "installer-paths" : {
+      "wordpress/wp-content/plugins/{$name}/" : ["type:wordpress-plugin"],
+      "wordpress/wp-content/mu-plugins/" : ["type:wordpress-muplugin", "mikelking/singleton_base"],
+      "wordpress/wp-content/themes/{$name}/" : ["type:wordpress-theme"]
+    }
+  },
   "require": {
     "php": ">=5.5",
-    "composer/installers": "v1.0.12",
+    "composer/installers": "v1.2.0",
     "johnpbloch/wordpress": "4.6.1",
-    "mikelking/singleton_base": "1.0.2"
-  },
-  "extra": {
-    "wordpress-install-dir": "wordpress",
-    "installer-paths": {
-      "wordpress/wp-content/mu-plugins/{$name}/": ["mikelking/singleton_base"]
-    }
+    "mikelking/singleton_base": "1.0.8"
   }
 }

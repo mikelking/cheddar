@@ -4,40 +4,44 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e99c0fd3770b81d6570278e2a3449fb1",
-    "content-hash": "d3051ad1b6558db7618dec8376711196",
+    "hash": "4f97cb63d00c49e168c4fbf8519b5196",
+    "content-hash": "38eb2905e1a4d725c3a6de5d869b71b6",
     "packages": [
         {
             "name": "composer/installers",
-            "version": "v1.0.12",
+            "version": "v1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "4127333b03e8b4c08d081958548aae5419d1a2fa"
+                "reference": "d78064c68299743e0161004f2de3a0204e33b804"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/4127333b03e8b4c08d081958548aae5419d1a2fa",
-                "reference": "4127333b03e8b4c08d081958548aae5419d1a2fa",
+                "url": "https://api.github.com/repos/composer/installers/zipball/d78064c68299743e0161004f2de3a0204e33b804",
+                "reference": "d78064c68299743e0161004f2de3a0204e33b804",
                 "shasum": ""
             },
+            "require": {
+                "composer-plugin-api": "^1.0"
+            },
             "replace": {
+                "roundcube/plugin-installer": "*",
                 "shama/baton": "*"
             },
             "require-dev": {
                 "composer/composer": "1.0.*@dev",
-                "phpunit/phpunit": "3.7.*"
+                "phpunit/phpunit": "4.1.*"
             },
-            "type": "composer-installer",
+            "type": "composer-plugin",
             "extra": {
-                "class": "Composer\\Installers\\Installer",
+                "class": "Composer\\Installers\\Plugin",
                 "branch-alias": {
                     "dev-master": "1.0-dev"
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "Composer\\Installers\\": "src/"
+                "psr-4": {
+                    "Composer\\Installers\\": "src/Composer/Installers"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -48,27 +52,41 @@
                 {
                     "name": "Kyle Robinson Young",
                     "email": "kyle@dontkry.com",
-                    "homepage": "https://github.com/shama",
-                    "role": "Developer"
+                    "homepage": "https://github.com/shama"
                 }
             ],
             "description": "A multi-framework Composer library installer",
-            "homepage": "http://composer.github.com/installers/",
+            "homepage": "https://composer.github.io/installers/",
             "keywords": [
                 "Craft",
+                "Dolibarr",
                 "Hurad",
+                "ImageCMS",
                 "MODX Evo",
+                "Mautic",
                 "OXID",
+                "Plentymarkets",
+                "RadPHP",
+                "SMF",
+                "Thelia",
                 "WolfCMS",
                 "agl",
+                "aimeos",
                 "annotatecms",
+                "attogram",
+                "bitrix",
                 "cakephp",
+                "chef",
+                "cockpit",
                 "codeigniter",
                 "concrete5",
                 "croogo",
+                "dokuwiki",
                 "drupal",
                 "elgg",
+                "expressionengine",
                 "fuelphp",
+                "grav",
                 "installer",
                 "joomla",
                 "kohana",
@@ -78,18 +96,23 @@
                 "mako",
                 "mediawiki",
                 "modulework",
+                "moodle",
                 "phpbb",
                 "piwik",
                 "ppi",
+                "puppet",
+                "reindex",
+                "roundcube",
                 "shopware",
                 "silverstripe",
                 "symfony",
                 "typo3",
                 "wordpress",
+                "yawik",
                 "zend",
                 "zikula"
             ],
-            "time": "2014-02-24 04:21:34"
+            "time": "2016-08-13 20:53:52"
         },
         {
             "name": "johnpbloch/wordpress",
@@ -178,23 +201,23 @@
         },
         {
             "name": "mikelking/singleton_base",
-            "version": "1.0.2",
+            "version": "1.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mikelking/singleton_base.git",
-                "reference": "c8bd22f6d8cce387c38900afde941074d0dcfff1"
+                "reference": "626f47ad27d0dc63e4a6a541c0163261d76cca9b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mikelking/singleton_base/zipball/c8bd22f6d8cce387c38900afde941074d0dcfff1",
-                "reference": "c8bd22f6d8cce387c38900afde941074d0dcfff1",
+                "url": "https://api.github.com/repos/mikelking/singleton_base/zipball/626f47ad27d0dc63e4a6a541c0163261d76cca9b",
+                "reference": "626f47ad27d0dc63e4a6a541c0163261d76cca9b",
                 "shasum": ""
             },
             "require": {
-                "johnpbloch/wordpress-core-installer": "~0.2",
+                "composer/installers": "v1.2.0",
                 "php": ">=5.5"
             },
-            "type": "wordpress-mu-framework",
+            "type": "wordpress-muplugin",
             "license": [
                 "BSD-3"
             ],
@@ -217,10 +240,10 @@
                 "mu-plugin"
             ],
             "support": {
-                "source": "https://github.com/mikelking/singleton_base/tree/1.0.2",
+                "source": "https://github.com/mikelking/singleton_base/tree/1.0.8",
                 "issues": "https://github.com/mikelking/singleton_base/issues"
             },
-            "time": "2016-11-11 21:19:05"
+            "time": "2016-11-12 13:30:15"
         }
     ],
     "packages-dev": [],
