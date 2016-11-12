@@ -37,13 +37,15 @@
     "installer-paths" : {
       "wordpress/wp-content/plugins/{$name}/" : ["type:wordpress-plugin"],
       "wordpress/wp-content/mu-plugins/" : ["type:wordpress-muplugin", "mikelking/bacon"],
-      "wordpress/wp-content/themes/{$name}/" : ["type:wordpress-theme"]
+      "wordpress/wp-content/themes/{$name}/" : ["type:wordpress-theme"],
+      "wordpress/" : ["mikelking/wpcfg"]
     }
   },
   "require": {
     "php": ">=5.5",
     "composer/installers": "v1.2.0",
     "johnpbloch/wordpress": "4.6.1",
-    "mikelking/bacon": "1.0.0"
+    "mikelking/bacon": "1.0.0",
+    "mikelking/wpcfg": "0.0.1"
   }
 }
