@@ -6,3 +6,5 @@ A dummy repo for experimenting with composer
 - At this point I have it building the wordpress tree and have setup the iggie file to ignore ALL of WordPress core.
 
 - Updated to install the mu-plugins
+
+- Need to add a Vagrant conf so that one can eventually run vagrant up to build a working local dev based upon the WordPress tree installed by composer. The Vagrant system would need to setup the db and conf files.
