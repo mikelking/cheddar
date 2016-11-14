@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "1be7aa92205d2771c082bdd86e7827ac",
-    "content-hash": "23ac5f1f4b14d3b8d978308e6c8b6140",
+    "hash": "7cf59d69d74925429cdf541dbe361f5d",
+    "content-hash": "fc123d908bd375137da833029ad4fd94",
     "packages": [
         {
             "name": "composer/installers",
@@ -297,23 +297,23 @@
         },
         {
             "name": "mikelking/wpcfg",
-            "version": "0.0.5",
+            "version": "0.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mikelking/wpcfg.git",
-                "reference": "58a8029ceb567c770ae1316118de0a7c768d3147"
+                "reference": "83ef05912a063637d8bff7ad5de59671486c702d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mikelking/wpcfg/zipball/58a8029ceb567c770ae1316118de0a7c768d3147",
-                "reference": "58a8029ceb567c770ae1316118de0a7c768d3147",
+                "url": "https://api.github.com/repos/mikelking/wpcfg/zipball/83ef05912a063637d8bff7ad5de59671486c702d",
+                "reference": "83ef05912a063637d8bff7ad5de59671486c702d",
                 "shasum": ""
             },
             "require": {
                 "mikelking/wordpress-config-installer": "0.2.3",
                 "php": ">=5.5"
             },
-            "type": "project",
+            "type": "wordpress-config",
             "license": [
                 "BSD-3"
             ],
@@ -336,10 +336,10 @@
                 "wp-config"
             ],
             "support": {
-                "source": "https://github.com/mikelking/wpcfg/tree/0.0.5",
+                "source": "https://github.com/mikelking/wpcfg/tree/0.0.6",
                 "issues": "https://github.com/mikelking/wpcfg/issues"
             },
-            "time": "2016-11-14 17:04:48"
+            "time": "2016-11-14 17:30:36"
         }
     ],
     "packages-dev": [],
