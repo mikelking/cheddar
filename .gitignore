@@ -3,29 +3,34 @@
 
 vendor
 
-# ls wordpress|awk '{print "wordpress/"$1}' >>.gitignore
-wordpress/composer.json
-wordpress/index.php
-wordpress/license.txt
-wordpress/readme.html
-wordpress/wp-activate.php
-wordpress/wp-admin
-wordpress/wp-blog-header.php
-wordpress/wp-comments-post.php
-wordpress/wp-config-sample.php
-wordpress/wp-content
-wordpress/wp-cron.php
-wordpress/wp-includes
-wordpress/wp-links-opml.php
-wordpress/wp-load.php
-wordpress/wp-login.php
-wordpress/wp-mail.php
-wordpress/wp-settings.php
-wordpress/wp-signup.php
-wordpress/wp-trackback.php
-wordpress/xmlrpc.php
+wproot
+~wproot/dev-conf.php
+~wproot/staging-conf.php
+~wproot/production-conf.php
 
-# ls wordpress/wp-content|awk '{print "~wordpress/wp-content/"$1}' >>.gitignore
-~wordpress/wp-content/plugins
-~wordpress/wp-content/mu-plugins
-~wordpress/wp-content/themes
+# ls wproot/wordpress|awk '{print "wproot/wordpress/"$1}' >>.gitignore
+wproot/wordpress/composer.json
+wproot/wordpress/index.php
+wproot/wordpress/license.txt
+wproot/wordpress/readme.html
+wproot/wordpress/wp-activate.php
+wproot/wordpress/wp-admin
+wproot/wordpress/wp-blog-header.php
+wproot/wordpress/wp-comments-post.php
+wproot/wordpress/wp-config-sample.php
+wproot/wordpress/wp-content
+wproot/wordpress/wp-cron.php
+wproot/wordpress/wp-includes
+wproot/wordpress/wp-links-opml.php
+wproot/wordpress/wp-load.php
+wproot/wordpress/wp-login.php
+wproot/wordpress/wp-mail.php
+wproot/wordpress/wp-settings.php
+wproot/wordpress/wp-signup.php
+wproot/wordpress/wp-trackback.php
+wproot/wordpress/xmlrpc.php
+
+# ls wproot/wordpress/wp-content|awk '{print "~wproot/wordpress/wp-content/"$1}' >>.gitignore
+~wproot/wordpress/wp-content/plugins
+~wproot/wordpress/wp-content/mu-plugins
+~wproot/wordpress/wp-content/themes

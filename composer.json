@@ -33,6 +33,10 @@
       "url": "https://github.com/mikelking/wpcfg"
     },
     {
+      "type": "vcs",
+      "url": "https://github.com/mikelking/wordpress-config-installer"
+    },
+    {
       "type": "composer",
       "url": "https://wpackagist.org"
     }
@@ -43,7 +47,7 @@
       "wproot/wordpress/wp-content/plugins/{$name}/" : ["type:wordpress-plugin"],
       "wproot/wordpress/wp-content/mu-plugins/" : ["type:wordpress-muplugin", "mikelking/bacon"],
       "wproot/wordpress/wp-content/themes/{$name}/" : ["type:wordpress-theme"],
-      "wproot/" : ["type:wordpress-theme"], ["mikelking/wpcfg"]
+      "wproot/" : ["type:wordpress-config", "mikelking/wpcfg"]
     }
   },
   "require": {
@@ -51,6 +55,6 @@
     "composer/installers": "v1.2.0",
     "johnpbloch/wordpress": "4.6.1",
     "mikelking/bacon": "1.0.0",
-    "mikelking/wpcfg": "0.0.1"
+    "mikelking/wpcfg": "0.0.5"
   }
 }

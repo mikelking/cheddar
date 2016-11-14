@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "33dac5a9d8c99497013d51d5c256a23e",
-    "content-hash": "83d27551ae93e003af183116c587a044",
+    "hash": "1be7aa92205d2771c082bdd86e7827ac",
+    "content-hash": "23ac5f1f4b14d3b8d978308e6c8b6140",
     "packages": [
         {
             "name": "composer/installers",
@@ -246,21 +246,71 @@
             "time": "2016-11-12 20:03:06"
         },
         {
-            "name": "mikelking/wpcfg",
-            "version": "0.0.1",
+            "name": "mikelking/wordpress-config-installer",
+            "version": "0.2.3",
             "source": {
                 "type": "git",
-                "url": "https://github.com/mikelking/wpcfg.git",
-                "reference": "3d62a73f7a7acbbe7333d8b2134b750bd338a150"
+                "url": "https://github.com/mikelking/wordpress-config-installer.git",
+                "reference": "11124ddcdcea1d084b5c322da4c26b5d212f0146"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mikelking/wpcfg/zipball/3d62a73f7a7acbbe7333d8b2134b750bd338a150",
-                "reference": "3d62a73f7a7acbbe7333d8b2134b750bd338a150",
+                "url": "https://api.github.com/repos/mikelking/wordpress-config-installer/zipball/11124ddcdcea1d084b5c322da4c26b5d212f0146",
+                "reference": "11124ddcdcea1d084b5c322da4c26b5d212f0146",
                 "shasum": ""
             },
             "require": {
-                "composer/installers": "v1.2.0",
+                "composer-plugin-api": "^1.0"
+            },
+            "conflict": {
+                "composer/installers": "<1.0.6"
+            },
+            "require-dev": {
+                "composer/composer": "1.0.*@dev"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "mikelking\\Composer\\WordPressConfigPlugin"
+            },
+            "autoload": {
+                "psr-0": {
+                    "mikelking\\Composer\\": "src/"
+                }
+            },
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Mikel King",
+                    "email": "mikel.king@olivent.com"
+                }
+            ],
+            "description": "A custom installer to handle deploying WordPress config with composer",
+            "keywords": [
+                "wordpress"
+            ],
+            "support": {
+                "source": "https://github.com/mikelking/wordpress-config-installer/tree/0.2.3"
+            },
+            "time": "2016-11-14 17:03:27"
+        },
+        {
+            "name": "mikelking/wpcfg",
+            "version": "0.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mikelking/wpcfg.git",
+                "reference": "58a8029ceb567c770ae1316118de0a7c768d3147"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mikelking/wpcfg/zipball/58a8029ceb567c770ae1316118de0a7c768d3147",
+                "reference": "58a8029ceb567c770ae1316118de0a7c768d3147",
+                "shasum": ""
+            },
+            "require": {
+                "mikelking/wordpress-config-installer": "0.2.3",
                 "php": ">=5.5"
             },
             "type": "project",
@@ -286,10 +336,10 @@
                 "wp-config"
             ],
             "support": {
-                "source": "https://github.com/mikelking/wpcfg/tree/0.0.1",
+                "source": "https://github.com/mikelking/wpcfg/tree/0.0.5",
                 "issues": "https://github.com/mikelking/wpcfg/issues"
             },
-            "time": "2016-11-12 21:15:50"
+            "time": "2016-11-14 17:04:48"
         }
     ],
     "packages-dev": [],
