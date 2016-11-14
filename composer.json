@@ -54,6 +54,7 @@
     "composer/installers": "v1.2.0",
     "mikelking/wpcfg": "0.0.6",
     "johnpbloch/wordpress": "4.6.1",
-    "mikelking/bacon": "1.0.0"
+    "mikelking/bacon": "1.0.0",
+    "wpackagist-plugin/akismet":"dev-trunk"
   }
 }
