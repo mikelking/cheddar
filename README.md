@@ -16,6 +16,8 @@ A dummy repo for experimenting with composer
 
 - Still need to hook all of this into a deployment solution like deploybot. TODO
 
+- Implement wpcli https://wp-cli.org in order for this to be truly useful wpcli will need to be added.
+
 - Need to add a Vagrant conf so that one can eventually run vagrant up to build a working local dev based upon the WordPress tree installed by composer. The Vagrant system would need to setup the db and conf files. PARTIAL
 
 - Add demo to explain how to add plugins and themes from https://wpackagist.org. By adding the following line to the build chain in the required section of the composer.json it will add the appropriate plugin to the installation. You want to ensure that you add this line after the line that directs composer to install wordpress.

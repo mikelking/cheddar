@@ -55,6 +55,8 @@
     "mikelking/wpcfg": "0.0.6",
     "johnpbloch/wordpress": "4.6.1",
     "mikelking/bacon": "1.0.0",
+    "wp-cli/wp-cli": "0.24.*",
     "wpackagist-plugin/akismet":"dev-trunk"
+
   }
 }
