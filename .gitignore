@@ -1,6 +1,8 @@
 # Untapped iggies...
 #.idea
 
+.vagrant
+
 vendor
 
 wproot
