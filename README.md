@@ -9,6 +9,8 @@ A dummy repo for experimenting with composer
 
 - Updated to installed the WordPress common config system. DONE
 
-- Assuming that you already have a DB setup and enter the appropriate details in the respective config file this should yield a working shell site.   
+- Assuming that you already have a DB setup and enter the appropriate details in the respective config file this should yield a working shell site. 
+
+- Still need to hook all of this into a deployment solution like dpeloybot.
 
 - Need to add a Vagrant conf so that one can eventually run vagrant up to build a working local dev based upon the WordPress tree installed by composer. The Vagrant system would need to setup the db and conf files.
