@@ -38,11 +38,12 @@
     }
   ],
   "extra" : {
+    "wordpress-install-dir": "wproot/wordpress",
     "installer-paths" : {
-      "wordpress/wp-content/plugins/{$name}/" : ["type:wordpress-plugin"],
-      "wordpress/wp-content/mu-plugins/" : ["type:wordpress-muplugin", "mikelking/bacon"],
-      "wordpress/wp-content/themes/{$name}/" : ["type:wordpress-theme"],
-      "wordpress/" : ["mikelking/wpcfg"]
+      "wproot/wordpress/wp-content/plugins/{$name}/" : ["type:wordpress-plugin"],
+      "wproot/wordpress/wp-content/mu-plugins/" : ["type:wordpress-muplugin", "mikelking/bacon"],
+      "wproot/wordpress/wp-content/themes/{$name}/" : ["type:wordpress-theme"],
+      "wproot/" : ["type:wordpress-theme"], ["mikelking/wpcfg"]
     }
   },
   "require": {
