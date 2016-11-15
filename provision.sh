@@ -24,3 +24,7 @@ apt-get -y install \
     apache2 libapache2-mod-php5 \
     xvfb firefox \
     nodejs
+
+# Since brunch does not have an apt-get package we'll use npm
+sudo npm install -g brunch
+
