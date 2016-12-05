@@ -1,0 +1,126 @@
+#!/bin/bash -ex
+
+## Basic Vagrant Provisioning:
+
+# This script will take a raw instance of Ubuntu Trusty og a version outlined in
+# the Vagrant file and setup a suitable LAMP stack environment for developing this
+# a website with WordPress.
+
+# Default MySQL passwords to 'password'
+echo "mysql-server mysql-server/root_password password password" | debconf-set-selections
+echo "mysql-server mysql-server/root_password_again password password" | debconf-set-selections
+
+
+# Find a newer version of nodejs in this repository
+add-apt-repository -y ppa:chris-lea/node.js
+apt-get update
+
+# Need to upgrade to PHP 7 at some point.
+
+# Install the standard packages. PHP 5 in Ubuntu Trusty is 5.5.9 as of 5/2015.
+apt-get -y install \
+    build-essential \
+    vim curl git-core subversion htop \
+    php5 php5-cli php5-cgi php5-intl php5-mcrypt php5-xdebug php5-dev php5-xsl php5-curl php-apc php-pear \
+    openjdk-7-jre openjdk-7-jre-headless \
+    mysql-server mysql-client php5-mysql \
+    apache2 libapache2-mod-php5 \
+    xvfb firefox \
+    nodejs
+
+
+# Install useful Pear packages
+pear config-set auto_discover 1
+
+# Since brunch, jslint & gulp do not have an apt-get package we'll use npm
+npm install -g brunch
+npm install -g jslint
+npm install -g gulp
+
+# Install sass, bourbon, neat
+gem install sass bourbon neat
+
+# Install a .bash_login in the vagrant user's home
+if [ -e /vagrant/bin ] && [ -e /vagrant/vendor/bin ]
+then
+	tee /home/vagrant/.bash_login <<LOGINSCRIPT
+	# Setup path
+	export PATH=/vagrant/bin:/vagrant/vendor/bin:${PATH}
+
+LOGINSCRIPT
+	# Set Home Directory Permissions
+	chown vagrant:vagrant /home/vagrant/.bash_login
+fi
+
+# Setup log directory
+if [ ! -e /vagrant/logs ]
+then
+mkdir /vagrant/logs
+fi
+
+# Setup tmp directory
+if [ ! -e /vagrant/tmp ]
+then
+mkdir /vagrant/tmp
+fi
+
+
+# Create a 'wordpress' user with password 'password'
+if [ ! -f /var/log/databasesetup ];
+then
+	echo "Initializing database"
+	tee /var/log/databasesetup <<XXX
+CREATE USER 'dum'@'localhost' IDENTIFIED BY 'password';
+CREATE DATABASE dum;
+GRANT ALL ON dum.* TO 'root'@'localhost';
+GRANT ALL ON dum.* TO 'dum'@'localhost';
+FLUSH PRIVILEGES;
+XXX
+
+	mysql -uroot -ppassword </var/log/databasesetup
+fi
+
+/vagrant/bin/setup-apache
+
+# Remove default web root, allow vagrant user to create more
+rm -rf /var/www
+ln -s /vagrant/wproot /var/www
+#chown vagrant.vagrant /var/www
+
+# Configure build environment
+echo "Configuring build environment in etc/build.env"
+tee /vagrant/etc/build.env <<XXX
+DB_USER=root
+DB_HOST=localhost
+DB_PASSWORD=password
+
+DB_NAME=dum
+TEST_DB_NAME=dum_test
+
+DEPLOY_SITE=dev.dum
+DEPLOY_PATH=/var/www/html
+
+WP_CACHE=1
+LINK_DEPLOY=1
+SCRIPT_DEBUG=1
+WP_DEBUG=1
+WP_DEBUG_LOG=1
+XXX
+
+#if [ -e /var/www/html ];
+# then
+#	mv -f /var/www/html /var/www/html.default
+#fi
+
+# Install a php info page w/ error logging for dev.SITE
+if [ -e /vagrant/etc/i.php ]
+then
+	cp /vagrant/etc/i.php /vagrant/wproot/wordpress/
+fi
+
+# Remove the wp sample config
+if [ -e /vagrant/wproot/wordpress/wp-config-sample.php ]
+then
+	rm /vagrant/wproot/wordpress/wp-config-sample.php
+fi
+

@@ -25,3 +25,7 @@ A dummy repo for experimenting with composer
 ```
 "wpackagist-plugin/akismet": "dev-trunk",
 ```
+
+###EXPRIMENTAL
+
+- Refactor shell scripts into PHP

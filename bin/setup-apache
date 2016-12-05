@@ -1,0 +1,70 @@
+#!/usr/bin/env bash
+
+TEMP=../tmp/
+
+if [ -e /etc/apache2/envvars ]
+then
+
+echo "Configuring Apache runtime environment"
+A="`echo | tr '\012' '\001' `"
+
+sed -e "s${A}www-data${A}vagrant${A}" /etc/apache2/envvars >${TEMP}apache-envars.tmp
+
+cp ${TEMP}apache-envars /etc/apache2/envvars
+rm ${TEMP}apache-envars
+fi
+
+# Install PHP / Apache configuration
+cp /vagrant/etc/php-cli.ini /etc/php5/cli/php.ini && echo "installed /etc/php5/cli/php.ini"
+cp /vagrant/etc/php-apache.ini /etc/php5/apache2/php.ini && echo "installed /etc/php5/cli/php.ini"
+
+# Create a configuration file to
+tee /etc/apache2/conf-available/allow-override.conf <<CONF
+<VirtualHost *:80>
+	ServerAdmin webmaster@localhost
+	DocumentRoot /vargrant/wproot/wordpress
+	ErrorLog /vargrant/logs/error.log
+	CustomLog /vargrant/logs/access.log combined
+</VirtualHost>
+CONF
+
+# Create a configuration file to set the environment
+tee /etc/apache2/conf-available/environment.conf <<CONF
+SetEnv ENVIRONMENT dev
+CONF
+
+# Enable the allow-override configuration we just made
+a2enconf environment
+
+# Create a configuration file to allow override on /var/www
+tee /etc/apache2/conf-available/allow-override.conf <<CONF
+<Directory /var/www>
+	AllowOverride All
+</Directory>
+CONF
+
+# Enable the allow-override configuration we just made
+a2enconf allow-override
+
+# Install a php error logging for dev.rdnap
+tee /etc/apache2/conf-available/php-errors.conf <<CONF
+php_value date.timezone "America/New_York"
+php_flag log_errors On
+php_value error_reporting 32767
+php_flag display_errors On
+php_value error_log /vagrant/logs/php_errors.log
+CONF
+
+# Enable the php-errors configuration we just made
+a2enconf php-errors
+
+# Enable mod_rewrite and mod_vhost alias
+a2enmod rewrite
+a2enmod vhost_alias
+
+# Enable proxy modules for reverse-proxying jenkins
+a2enmod proxy
+a2enmod proxy_http
+
+# Restart apache
+service apache2 restart

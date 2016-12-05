@@ -3,6 +3,9 @@
 
 .vagrant
 
+logs
+tmp
+
 vendor
 
 wproot
