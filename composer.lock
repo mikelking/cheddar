@@ -67,16 +67,16 @@
         },
         {
             "name": "composer/composer",
-            "version": "1.2.2",
+            "version": "1.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer.git",
-                "reference": "5465af955800fa884a36f66ff65280584988efd0"
+                "reference": "e7f19286a7e7f940950c9069a0f549d483c30ba7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/composer/zipball/5465af955800fa884a36f66ff65280584988efd0",
-                "reference": "5465af955800fa884a36f66ff65280584988efd0",
+                "url": "https://api.github.com/repos/composer/composer/zipball/e7f19286a7e7f940950c9069a0f549d483c30ba7",
+                "reference": "e7f19286a7e7f940950c9069a0f549d483c30ba7",
                 "shasum": ""
             },
             "require": {
@@ -140,7 +140,7 @@
                 "dependency",
                 "package"
             ],
-            "time": "2016-11-03 16:43:15"
+            "time": "2016-12-01 13:33:53"
         },
         {
             "name": "composer/installers",
@@ -525,16 +525,16 @@
         },
         {
             "name": "mikelking/bacon",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mikelking/bacon.git",
-                "reference": "af3cb9dfa7e93c04c795d91f6c6b0bd290918e24"
+                "reference": "8b1af6f65f05d035e631a87c7c1051427d4914c0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mikelking/bacon/zipball/af3cb9dfa7e93c04c795d91f6c6b0bd290918e24",
-                "reference": "af3cb9dfa7e93c04c795d91f6c6b0bd290918e24",
+                "url": "https://api.github.com/repos/mikelking/bacon/zipball/8b1af6f65f05d035e631a87c7c1051427d4914c0",
+                "reference": "8b1af6f65f05d035e631a87c7c1051427d4914c0",
                 "shasum": ""
             },
             "require": {
@@ -564,10 +564,10 @@
                 "mu-plugin"
             ],
             "support": {
-                "source": "https://github.com/mikelking/bacon/tree/1.0.1",
+                "source": "https://github.com/mikelking/bacon/tree/1.0.2",
                 "issues": "https://github.com/mikelking/bacon/issues"
             },
-            "time": "2016-11-21 17:55:07"
+            "time": "2016-11-21 18:33:43"
         },
         {
             "name": "mikelking/wordpress-config-installer",
