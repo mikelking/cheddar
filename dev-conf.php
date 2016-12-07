@@ -4,7 +4,6 @@
 	This file contains the configuration specific to the staging site
 	@version 1.3
 */
-require(__DIR__ . '/server-conf-base.php');
 
 class ServerConfig extends ServerConfigBase {
 
