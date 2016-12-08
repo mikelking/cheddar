@@ -4,9 +4,42 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "98c7d892da052652f341e7c19108f8b3",
-    "content-hash": "6b0cca0bca9c846ae937e77a91aa27a3",
+    "hash": "641448bf629b36b5e1c4c358365ba447",
+    "content-hash": "a3bbeaf4e58bec93f05df4258b910b2a",
     "packages": [
+        {
+            "name": "ReadersDigest/wp-ultimate-recipe-premium",
+            "version": "3.2.1",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:ReadersDigest/wp-ultimate-recipe-premium.git",
+                "reference": "60a0c73ebfd3afcf1d5ea6061538037f5bea6603"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ReadersDigest/wp-ultimate-recipe-premium/zipball/60a0c73ebfd3afcf1d5ea6061538037f5bea6603",
+                "reference": "60a0c73ebfd3afcf1d5ea6061538037f5bea6603",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "v1.2.0",
+                "php": ">=5.5"
+            },
+            "type": "wordpress-plugin",
+            "license": [
+                "GPL-2"
+            ],
+            "description": "WP Ultimate Recipe Premium",
+            "homepage": "http://www.wpultimaterecipe.com/",
+            "keywords": [
+                "plugin"
+            ],
+            "support": {
+                "source": "https://github.com/ReadersDigest/wp-ultimate-recipe-premium/tree/3.2.1",
+                "issues": "https://github.com/ReadersDigest/wp-ultimate-recipe-premium/issues"
+            },
+            "time": "2016-12-08 21:29:30"
+        },
         {
             "name": "composer/ca-bundle",
             "version": "1.0.6",
@@ -67,16 +100,16 @@
         },
         {
             "name": "composer/composer",
-            "version": "1.2.3",
+            "version": "1.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer.git",
-                "reference": "e7f19286a7e7f940950c9069a0f549d483c30ba7"
+                "reference": "7895e4a7e0e05b06e0ebfae96fc154c6a2ba75f0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/composer/zipball/e7f19286a7e7f940950c9069a0f549d483c30ba7",
-                "reference": "e7f19286a7e7f940950c9069a0f549d483c30ba7",
+                "url": "https://api.github.com/repos/composer/composer/zipball/7895e4a7e0e05b06e0ebfae96fc154c6a2ba75f0",
+                "reference": "7895e4a7e0e05b06e0ebfae96fc154c6a2ba75f0",
                 "shasum": ""
             },
             "require": {
@@ -140,7 +173,7 @@
                 "dependency",
                 "package"
             ],
-            "time": "2016-12-01 13:33:53"
+            "time": "2016-12-06 21:00:51"
         },
         {
             "name": "composer/installers",
