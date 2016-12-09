@@ -37,6 +37,10 @@
       "url": "https://github.com/mikelking/wordpress-config-installer"
     },
     {
+      "type": "vcs",
+      "url": "https://github.com/ReadersDigest/wp-ultimate-recipe-premium"
+    },
+    {
       "type": "composer",
       "url": "https://wpackagist.org"
     }
@@ -55,8 +59,8 @@
     "mikelking/wpcfg": "0.0.6",
     "johnpbloch/wordpress": "4.6.1",
     "mikelking/bacon": "~1.0.0",
+    "ReadersDigest/wp-ultimate-recipe-premium": "~3.2.0",
     "wp-cli/wp-cli": "0.24.*",
     "wpackagist-plugin/akismet":"dev-trunk"
-
   }
 }
