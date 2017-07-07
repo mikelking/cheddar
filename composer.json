@@ -37,6 +37,10 @@
       "url": "https://github.com/ReadersDigest/wordpress-seo-premium"
     },
     {
+        "type": "vcs",
+        "url": "https://github.com/ReadersDigest/genesis-framework"
+    },
+    {
       "type": "composer",
       "url": "https://wpackagist.org"
     }
@@ -51,18 +55,19 @@
   },
   "require": {
     "php": ">=5.5",
-    "composer/installers": "v1.2.0",
-    "johnpbloch/wordpress-core": "4.8",
-    "mikelking/bacon": "~1.0.0",
-    "ReadersDigest/wordpress-seo-premium": "~4.0",
-    "wpackagist-plugin/akismet":"dev-trunk",
-    "wpackagist-plugin/jetpack":"~4.9",
-    "wpackagist-plugin/co-authors-plus":"~1.0",
-    "wpackagist-plugin/lazy-load":"~0.6",
-    "wpackagist-plugin/members":"~1.0",
-    "wpackagist-plugin/wp-bitly":"~1.0",
-    "wpackagist-plugin/tinymce-advanced":"~1.0",
-    "wpackagist-plugin/simple-iframe-buster":"~1.0",
-    "wpackagist-plugin/crayon-syntax-highlighter":"~1.0"
+    "composer/installers" : "v1.2.0",
+    "johnpbloch/wordpress-core" : "4.8",
+    "mikelking/bacon" : "~1.0.0",
+    "ReadersDigest/wordpress-seo-premium" : "~4.0",
+    "ReadersDigest/genesis-framework" : "~2.0.0",
+    "wpackagist-plugin/akismet" : "dev-trunk",
+    "wpackagist-plugin/jetpack" : "~4.9",
+    "wpackagist-plugin/co-authors-plus" : "~1.0",
+    "wpackagist-plugin/lazy-load" : "~0.6",
+    "wpackagist-plugin/members" : "~1.0",
+    "wpackagist-plugin/wp-bitly" : "~1.0",
+    "wpackagist-plugin/tinymce-advanced" : "~1.0",
+    "wpackagist-plugin/simple-iframe-buster" : "~1.0",
+    "wpackagist-plugin/crayon-syntax-highlighter" : "~1.0"
   }
 }
