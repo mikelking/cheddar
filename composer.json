@@ -30,19 +30,11 @@
     },
     {
       "type": "vcs",
-      "url": "https://github.com/mikelking/wpcfg"
-    },
-    {
-      "type": "vcs",
       "url": "https://github.com/mikelking/wordpress-config-installer"
     },
     {
       "type": "vcs",
-      "url": "https://github.com/ReadersDigest/wp-ultimate-recipe-premium"
-    },
-    {
-      "type": "vcs",
-      "url": "https://github.com/ReadersDigest/yoast-seo-premium"
+      "url": "https://github.com/ReadersDigest/wordpress-seo-premium"
     },
     {
       "type": "composer",
@@ -60,11 +52,9 @@
   "require": {
     "php": ">=5.5",
     "composer/installers": "v1.2.0",
-    "johnpbloch/wordpress": "4.8",
+    "johnpbloch/wordpress-core": "4.8",
     "mikelking/bacon": "~1.0.0",
-    "ReadersDigest/wp-ultimate-recipe-premium": "~3.2.0",
-    "ReadersDigest/yoast-seo-premium": "~4.0",
-    "wp-cli/wp-cli": "~1.0.*",
+    "ReadersDigest/wordpress-seo-premium": "~4.0",
     "wpackagist-plugin/akismet":"dev-trunk"
   }
 }
