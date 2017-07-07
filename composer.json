@@ -3,7 +3,7 @@
   "type": "project",
   "license": "BSD3",
   "description": "A WordPress site for testing Composer based deployments",
-  "homepage": "http://UNKN",
+  "homepage": "http://www.olivent.net",
   "authors": [
     {
       "name": "Olivent, llc.",
@@ -41,6 +41,10 @@
       "url": "https://github.com/ReadersDigest/wp-ultimate-recipe-premium"
     },
     {
+      "type": "vcs",
+      "url": "https://github.com/ReadersDigest/yoast-seo-premium"
+    },
+    {
       "type": "composer",
       "url": "https://wpackagist.org"
     }
@@ -60,6 +64,7 @@
     "johnpbloch/wordpress": "4.6.1",
     "mikelking/bacon": "~1.0.0",
     "ReadersDigest/wp-ultimate-recipe-premium": "~3.2.0",
+    "ReadersDigest/yoast-seo-premium": "~4.0",
     "wp-cli/wp-cli": "0.24.*",
     "wpackagist-plugin/akismet":"dev-trunk"
   }
