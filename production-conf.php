@@ -4,7 +4,7 @@
 	This file contains the configuration specific to the production site
 	@version 1.3
 */
-require( '/server-conf-base.php' );
+require( 'server-conf-base.php' );
 
 class ServerConfig extends ServerConfigBase {
 	const SITENAME         = 'olivent.net';
@@ -31,7 +31,7 @@ class ServerConfig extends ServerConfigBase {
 
 	// Setup Logging
 	const REPORTING_LEVEL  = 0;
-	const ERROR_LEVEL      = '';
+	const ERROR_LEVEL      = 'E_ALL';
 
 	// CMS Settings
 	const AUTO_SAVE_DELAY       = 86400; // seconds
@@ -129,16 +129,6 @@ class ServerConfig extends ServerConfigBase {
 	public function get_cache_salt() {
 		return( $this->get_salted_hash( 'cache_salt' ) );
 	}
-
-	abstract public function set_caching_options();
-
-	abstract public function set_logging_options();
-
-	/*
-		HyperDB is tricky in that you should have distinct credentials
-		for server in the database cluster
-	*/
-	abstract public function set_hyperdb_cfg();
 
 	public function check_caching_options() {
 		return(

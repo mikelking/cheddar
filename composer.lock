@@ -673,16 +673,16 @@
         },
         {
             "name": "mikelking/wpcfg",
-            "version": "0.0.8",
+            "version": "0.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mikelking/wpcfg.git",
-                "reference": "726e36752d7173b5a65ecca83309a43ef59034a2"
+                "reference": "cd51eda2d7cd522b19fc77a462257fdb3e024ec5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mikelking/wpcfg/zipball/726e36752d7173b5a65ecca83309a43ef59034a2",
-                "reference": "726e36752d7173b5a65ecca83309a43ef59034a2",
+                "url": "https://api.github.com/repos/mikelking/wpcfg/zipball/cd51eda2d7cd522b19fc77a462257fdb3e024ec5",
+                "reference": "cd51eda2d7cd522b19fc77a462257fdb3e024ec5",
                 "shasum": ""
             },
             "require": {
@@ -712,10 +712,10 @@
                 "wordpress-config"
             ],
             "support": {
-                "source": "https://github.com/mikelking/wpcfg/tree/0.0.8",
+                "source": "https://github.com/mikelking/wpcfg/tree/0.0.9",
                 "issues": "https://github.com/mikelking/wpcfg/issues"
             },
-            "time": "2017-12-02T02:08:31+00:00"
+            "time": "2017-12-02T02:27:56+00:00"
         },
         {
             "name": "wpackagist-plugin/ajax-heartbeat-tool",
