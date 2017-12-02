@@ -41,8 +41,28 @@
         "url": "https://github.com/ReadersDigest/genesis"
     },
     {
+      "type": "vcs",
+      "url": "https://github.com/ReadersDigest/Altitude-Pro"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/ReadersDigest/Magazine-Pro"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/ReadersDigest/News-Pro"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/ReadersDigest/wp-ultimate-recipe-premium"
+    },
+    {
         "type": "vcs",
-        "url": "https://github.com/ReadersDigest/wp-migrate-db-pro"
+        "url": "https://github.com/ReadersDigest/advanced-custom-fields-pro"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/ReadersDigest/wp-migrate-db-pro"
     },
     {
         "type": "vcs",
@@ -76,6 +96,11 @@
     "johnpbloch/wordpress" : "~4.9.0",
     "mikelking/bacon" : "~1.0.0",
     "ReadersDigest/genesis" : "~2.5.3",
+    "ReadersDigest/Altitude-Pro" : "~1.1.2",
+    "ReadersDigest/Magazine-Pro" : "~3.2.3",
+    "ReadersDigest/News-Pro" : "~3.2.1",
+    "ReadersDigest/advanced-custom-fields-pro" : "~5.5.2",
+    "ReadersDigest/wp-ultimate-recipe-premium" : "~3.4.1",
     "ReadersDigest/wp-migrate-db-pro" : "~1.8",
     "ReadersDigest/wp-migrate-db-pro-cli" : "~1.3.1",
     "ReadersDigest/wp-migrate-db-pro-multisite-tools" : "~1.2",
