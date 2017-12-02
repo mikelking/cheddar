@@ -4,19 +4,19 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "3f5960cbf40a50c6ecba1700db35f1a9",
+    "content-hash": "c52df1be052517df945eb99843e3a767",
     "packages": [
         {
             "name": "ReadersDigest/Altitude-Pro",
             "version": "1.1.2",
             "source": {
                 "type": "git",
-                "url": "git@github.com:ReadersDigest/Altitude-Pro.git",
+                "url": "git@github.com:ReadersDigest/altitude-pro.git",
                 "reference": "381fa892e653099e31f82b5638930ed34690fd46"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ReadersDigest/Altitude-Pro/zipball/381fa892e653099e31f82b5638930ed34690fd46",
+                "url": "https://api.github.com/repos/ReadersDigest/altitude-pro/zipball/381fa892e653099e31f82b5638930ed34690fd46",
                 "reference": "381fa892e653099e31f82b5638930ed34690fd46",
                 "shasum": ""
             },
@@ -45,12 +45,12 @@
             "version": "3.2.3",
             "source": {
                 "type": "git",
-                "url": "git@github.com:ReadersDigest/Magazine-Pro.git",
+                "url": "git@github.com:ReadersDigest/magazine-pro.git",
                 "reference": "abfd05d121210d20e911a901953946b06e6ac52a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ReadersDigest/Magazine-Pro/zipball/abfd05d121210d20e911a901953946b06e6ac52a",
+                "url": "https://api.github.com/repos/ReadersDigest/magazine-pro/zipball/abfd05d121210d20e911a901953946b06e6ac52a",
                 "reference": "abfd05d121210d20e911a901953946b06e6ac52a",
                 "shasum": ""
             },
@@ -79,12 +79,12 @@
             "version": "3.2.1",
             "source": {
                 "type": "git",
-                "url": "git@github.com:ReadersDigest/News-Pro.git",
+                "url": "git@github.com:ReadersDigest/news-pro.git",
                 "reference": "fe32ec28a652a99085d72fb76d292fb9538951b1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ReadersDigest/News-Pro/zipball/fe32ec28a652a99085d72fb76d292fb9538951b1",
+                "url": "https://api.github.com/repos/ReadersDigest/news-pro/zipball/fe32ec28a652a99085d72fb76d292fb9538951b1",
                 "reference": "fe32ec28a652a99085d72fb76d292fb9538951b1",
                 "shasum": ""
             },
@@ -673,16 +673,16 @@
         },
         {
             "name": "mikelking/wpcfg",
-            "version": "0.0.9",
+            "version": "0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mikelking/wpcfg.git",
-                "reference": "cd51eda2d7cd522b19fc77a462257fdb3e024ec5"
+                "reference": "6be35d647faffd8e22ab85b8324cd96597f978c4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mikelking/wpcfg/zipball/cd51eda2d7cd522b19fc77a462257fdb3e024ec5",
-                "reference": "cd51eda2d7cd522b19fc77a462257fdb3e024ec5",
+                "url": "https://api.github.com/repos/mikelking/wpcfg/zipball/6be35d647faffd8e22ab85b8324cd96597f978c4",
+                "reference": "6be35d647faffd8e22ab85b8324cd96597f978c4",
                 "shasum": ""
             },
             "require": {
@@ -712,10 +712,10 @@
                 "wordpress-config"
             ],
             "support": {
-                "source": "https://github.com/mikelking/wpcfg/tree/0.0.9",
+                "source": "https://github.com/mikelking/wpcfg/tree/0.1.0",
                 "issues": "https://github.com/mikelking/wpcfg/issues"
             },
-            "time": "2017-12-02T02:27:56+00:00"
+            "time": "2017-12-02T18:40:33+00:00"
         },
         {
             "name": "wpackagist-plugin/ajax-heartbeat-tool",
@@ -728,7 +728,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/ajax-heartbeat-tool.zip?timestamp=1469726157",
-                "reference": null,
+                "reference": "trunk",
                 "shasum": null
             },
             "require": {
@@ -748,7 +748,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/akismet.zip?timestamp=1509999857",
-                "reference": null,
+                "reference": "trunk",
                 "shasum": null
             },
             "require": {
@@ -769,7 +769,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/co-authors-plus.3.2.2.zip",
-                "reference": null,
+                "reference": "tags/3.2.2",
                 "shasum": null
             },
             "require": {
@@ -789,7 +789,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/crayon-syntax-highlighter.zip?timestamp=1462880237",
-                "reference": null,
+                "reference": "trunk",
                 "shasum": null
             },
             "require": {
@@ -809,7 +809,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/duo-wordpress.zip?timestamp=1497375497",
-                "reference": null,
+                "reference": "trunk",
                 "shasum": null
             },
             "require": {
@@ -829,7 +829,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/jetpack.5.5.1.zip",
-                "reference": null,
+                "reference": "tags/5.5.1",
                 "shasum": null
             },
             "require": {
@@ -849,7 +849,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/lazy-load.0.6.1.zip",
-                "reference": null,
+                "reference": "tags/0.6.1",
                 "shasum": null
             },
             "require": {
@@ -869,7 +869,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/members.1.1.3.zip",
-                "reference": null,
+                "reference": "tags/1.1.3",
                 "shasum": null
             },
             "require": {
@@ -889,7 +889,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/newsletter.5.1.6.zip",
-                "reference": null,
+                "reference": "tags/5.1.6",
                 "shasum": null
             },
             "require": {
@@ -909,7 +909,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/simple-iframe-buster.zip?timestamp=1469726044",
-                "reference": null,
+                "reference": "trunk",
                 "shasum": null
             },
             "require": {
@@ -929,7 +929,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/tinymce-advanced.4.6.7.zip",
-                "reference": null,
+                "reference": "tags/4.6.7",
                 "shasum": null
             },
             "require": {
@@ -949,7 +949,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/wordpress-seo.5.8.zip",
-                "reference": null,
+                "reference": "tags/5.8",
                 "shasum": null
             },
             "require": {
@@ -969,7 +969,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/wp-bitly.1.0.1.zip",
-                "reference": null,
+                "reference": "tags/1.0.1",
                 "shasum": null
             },
             "require": {
@@ -977,6 +977,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/wp-bitly/"
+        },
+        {
+            "name": "wpackagist-theme/twentyseventeen",
+            "version": "1.4",
+            "source": {
+                "type": "svn",
+                "url": "https://themes.svn.wordpress.org/twentyseventeen/",
+                "reference": "1.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/theme/twentyseventeen.1.4.zip",
+                "reference": "1.4",
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-theme",
+            "homepage": "https://wordpress.org/themes/twentyseventeen/"
         }
     ],
     "packages-dev": [],
