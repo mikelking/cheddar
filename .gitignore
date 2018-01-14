@@ -8,9 +8,9 @@ tmp
 
 vendor
 
-revision
 
 wproot
+wproot/revision
 ~wproot/dev-conf.php
 ~wproot/staging-conf.php
 ~wproot/production-conf.php
