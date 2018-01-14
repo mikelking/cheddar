@@ -8,6 +8,8 @@ tmp
 
 vendor
 
+revision
+
 wproot
 ~wproot/dev-conf.php
 ~wproot/staging-conf.php
