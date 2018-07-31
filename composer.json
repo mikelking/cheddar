@@ -37,46 +37,6 @@
       "url": "https://github.com/mikelking/wpcfg"
     },
     {
-        "type": "vcs",
-        "url": "https://github.com/ReadersDigest/genesis"
-    },
-    {
-      "type": "vcs",
-      "url": "https://github.com/ReadersDigest/altitude-pro"
-    },
-    {
-      "type": "vcs",
-      "url": "https://github.com/ReadersDigest/magazine-pro"
-    },
-    {
-      "type": "vcs",
-      "url": "https://github.com/ReadersDigest/news-pro"
-    },
-    {
-      "type": "vcs",
-      "url": "https://github.com/ReadersDigest/wp-ultimate-recipe-premium"
-    },
-    {
-        "type": "vcs",
-        "url": "https://github.com/ReadersDigest/advanced-custom-fields-pro"
-    },
-    {
-      "type": "vcs",
-      "url": "https://github.com/ReadersDigest/wp-migrate-db-pro"
-    },
-    {
-        "type": "vcs",
-        "url": "https://github.com/ReadersDigest/wp-migrate-db-pro-cli"
-    },
-    {
-        "type": "vcs",
-        "url": "https://github.com/ReadersDigest/wp-migrate-db-pro-media-files"
-    },
-    {
-        "type": "vcs",
-        "url": "https://github.com/ReadersDigest/wp-migrate-db-pro-multisite-tools"
-    },
-    {
       "type": "composer",
       "url": "https://wpackagist.org"
     }
@@ -95,18 +55,7 @@
     "mikelking/wpcfg" : "~0.1.0",
     "johnpbloch/wordpress" : "~4.9.1",
     "mikelking/bacon" : "~1.0.0",
-    "ReadersDigest/genesis" : "~2.5.3",
-    "ReadersDigest/altitude-pro" : "~1.1.2",
-    "ReadersDigest/magazine-pro" : "~3.2.3",
-    "ReadersDigest/news-pro" : "~3.2.1",
     "wpackagist-theme/twentyseventeen" : "*",
-    "ReadersDigest/advanced-custom-fields-pro" : "~5.5.2",
-    "ReadersDigest/wp-ultimate-recipe-premium" : "~3.6.1",
-    "ReadersDigest/wp-migrate-db-pro" : "~1.8.1",
-    "ReadersDigest/wp-migrate-db-pro-cli" : "~1.3.2",
-    "ReadersDigest/wp-migrate-db-pro-multisite-tools" : "~1.2",
-    "ReadersDigest/wp-migrate-db-pro-media-files" : "~1.4.9",
-    "wpackagist-plugin/wordpress-seo" : "~6.0",
     "wpackagist-plugin/akismet" : "dev-trunk",
     "wpackagist-plugin/jetpack" : "~5.4",
     "wpackagist-plugin/co-authors-plus" : "~3.2.2",
@@ -118,6 +67,10 @@
     "wpackagist-plugin/simple-iframe-buster" : "~1.0",
     "wpackagist-plugin/duo-wordpress" : "~2.5.4",
     "wpackagist-plugin/newsletter" : "~5.1.0",
-    "wpackagist-plugin/crayon-syntax-highlighter" : "~2.8.4"
+    "wpackagist-plugin/crayon-syntax-highlighter" : "~2.8.4",
+    "yoast/wordpress-seo": "7.9"
+  },
+  "require-dev": {
+    "wpackagist-plugin/show-current-template": "0.3.0"
   }
 }

@@ -4,342 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "14e1764cb7a2430afd60a6f79b93d938",
+    "content-hash": "d18cdecdaa7434bc48155b8a1f3afa8f",
     "packages": [
-        {
-            "name": "ReadersDigest/Altitude-Pro",
-            "version": "1.1.2",
-            "source": {
-                "type": "git",
-                "url": "git@github.com:ReadersDigest/altitude-pro.git",
-                "reference": "381fa892e653099e31f82b5638930ed34690fd46"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/ReadersDigest/altitude-pro/zipball/381fa892e653099e31f82b5638930ed34690fd46",
-                "reference": "381fa892e653099e31f82b5638930ed34690fd46",
-                "shasum": ""
-            },
-            "require": {
-                "composer/installers": "v1.2.0",
-                "php": ">=5.6"
-            },
-            "type": "wordpress-theme",
-            "license": [
-                "GPL-2"
-            ],
-            "description": "Altitude Pro Theme.",
-            "homepage": "https://my.studiopress.com/",
-            "keywords": [
-                "framework",
-                "theme"
-            ],
-            "support": {
-                "source": "https://github.com/ReadersDigest/Altitude-Pro/tree/1.1.2",
-                "issues": "https://github.com/ReadersDigest/Altitude-Pro/issues"
-            },
-            "time": "2017-05-22T15:00:52+00:00"
-        },
-        {
-            "name": "ReadersDigest/Magazine-Pro",
-            "version": "3.2.3",
-            "source": {
-                "type": "git",
-                "url": "git@github.com:ReadersDigest/magazine-pro.git",
-                "reference": "abfd05d121210d20e911a901953946b06e6ac52a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/ReadersDigest/magazine-pro/zipball/abfd05d121210d20e911a901953946b06e6ac52a",
-                "reference": "abfd05d121210d20e911a901953946b06e6ac52a",
-                "shasum": ""
-            },
-            "require": {
-                "composer/installers": "v1.2.0",
-                "php": ">=5.6"
-            },
-            "type": "wordpress-theme",
-            "license": [
-                "GPL-2"
-            ],
-            "description": "Magazine Pro Theme.",
-            "homepage": "https://my.studiopress.com/",
-            "keywords": [
-                "framework",
-                "theme"
-            ],
-            "support": {
-                "source": "https://github.com/ReadersDigest/Magazine-Pro/tree/3.2.3",
-                "issues": "https://github.com/ReadersDigest/Magazine-Pro/issues"
-            },
-            "time": "2017-05-22T15:07:49+00:00"
-        },
-        {
-            "name": "ReadersDigest/News-Pro",
-            "version": "3.2.1",
-            "source": {
-                "type": "git",
-                "url": "git@github.com:ReadersDigest/news-pro.git",
-                "reference": "fe32ec28a652a99085d72fb76d292fb9538951b1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/ReadersDigest/news-pro/zipball/fe32ec28a652a99085d72fb76d292fb9538951b1",
-                "reference": "fe32ec28a652a99085d72fb76d292fb9538951b1",
-                "shasum": ""
-            },
-            "require": {
-                "composer/installers": "v1.2.0",
-                "php": ">=5.6"
-            },
-            "type": "wordpress-theme",
-            "license": [
-                "GPL-2"
-            ],
-            "description": "News Pro Theme.",
-            "homepage": "https://my.studiopress.com/",
-            "keywords": [
-                "framework",
-                "theme"
-            ],
-            "support": {
-                "source": "https://github.com/ReadersDigest/News-Pro/tree/3.2.1",
-                "issues": "https://github.com/ReadersDigest/News-Pro/issues"
-            },
-            "time": "2017-05-22T15:04:00+00:00"
-        },
-        {
-            "name": "ReadersDigest/advanced-custom-fields-pro",
-            "version": "5.5.2",
-            "source": {
-                "type": "git",
-                "url": "git@github.com:ReadersDigest/advanced-custom-fields-pro.git",
-                "reference": "7d0a1c3212f68276cf62d7519697752b9c8d0693"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/ReadersDigest/advanced-custom-fields-pro/zipball/7d0a1c3212f68276cf62d7519697752b9c8d0693",
-                "reference": "7d0a1c3212f68276cf62d7519697752b9c8d0693",
-                "shasum": ""
-            },
-            "require": {
-                "composer/installers": "v1.2.0",
-                "php": ">=5.5"
-            },
-            "type": "wordpress-plugin",
-            "license": [
-                "GPL-2"
-            ],
-            "description": "Advance Custom Fields Pro",
-            "homepage": "https://www.advancedcustomfields.com/",
-            "keywords": [
-                "plugin"
-            ],
-            "support": {
-                "source": "https://github.com/ReadersDigest/advanced-custom-fields-pro/tree/5.5.2",
-                "issues": "https://github.com/ReadersDigest/advanced-custom-fields-pro/issues"
-            },
-            "time": "2016-12-09T15:45:44+00:00"
-        },
-        {
-            "name": "ReadersDigest/genesis",
-            "version": "2.5.3",
-            "source": {
-                "type": "git",
-                "url": "git@github.com:ReadersDigest/genesis.git",
-                "reference": "43f1244a90830ec08af21d47b7609e29ad438318"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/ReadersDigest/genesis/zipball/43f1244a90830ec08af21d47b7609e29ad438318",
-                "reference": "43f1244a90830ec08af21d47b7609e29ad438318",
-                "shasum": ""
-            },
-            "require": {
-                "composer/installers": "v1.2.0",
-                "php": ">=5.4"
-            },
-            "type": "wordpress-theme",
-            "license": [
-                "GPL-2"
-            ],
-            "description": "Genesis Theme framework.",
-            "homepage": "https://my.studiopress.com/",
-            "keywords": [
-                "framework",
-                "theme"
-            ],
-            "support": {
-                "source": "https://github.com/ReadersDigest/genesis/tree/2.5.3",
-                "issues": "https://github.com/ReadersDigest/genesis/issues"
-            },
-            "time": "2017-10-16T20:30:42+00:00"
-        },
-        {
-            "name": "ReadersDigest/wp-migrate-db-pro",
-            "version": "1.8.1",
-            "source": {
-                "type": "git",
-                "url": "git@github.com:ReadersDigest/wp-migrate-db-pro.git",
-                "reference": "3158df7e0cc376ed1171170ef899e82212afcfd2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/ReadersDigest/wp-migrate-db-pro/zipball/3158df7e0cc376ed1171170ef899e82212afcfd2",
-                "reference": "3158df7e0cc376ed1171170ef899e82212afcfd2",
-                "shasum": ""
-            },
-            "require": {
-                "composer/installers": "v1.2.0",
-                "php": ">=5.5"
-            },
-            "type": "wordpress-plugin",
-            "license": [
-                "GPL-2"
-            ],
-            "description": "WP MigrateDB-Pro",
-            "homepage": "https://deliciousbrains.com/",
-            "keywords": [
-                "plugin"
-            ],
-            "support": {
-                "source": "https://github.com/ReadersDigest/wp-migrate-db-pro/tree/1.8.1",
-                "issues": "https://github.com/ReadersDigest/wp-migrate-db-pro/issues"
-            },
-            "time": "2018-01-05T17:32:39+00:00"
-        },
-        {
-            "name": "ReadersDigest/wp-migrate-db-pro-cli",
-            "version": "1.3.2",
-            "source": {
-                "type": "git",
-                "url": "git@github.com:ReadersDigest/wp-migrate-db-pro-cli.git",
-                "reference": "51239dca14825d0005ca63fa85d6538cb0c55534"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/ReadersDigest/wp-migrate-db-pro-cli/zipball/51239dca14825d0005ca63fa85d6538cb0c55534",
-                "reference": "51239dca14825d0005ca63fa85d6538cb0c55534",
-                "shasum": ""
-            },
-            "require": {
-                "composer/installers": "v1.2.0",
-                "php": ">=5.5"
-            },
-            "type": "wordpress-plugin",
-            "license": [
-                "GPL-2"
-            ],
-            "description": "WP MigrateDB-Pro CLI",
-            "homepage": "https://deliciousbrains.com/",
-            "keywords": [
-                "plugin"
-            ],
-            "support": {
-                "source": "https://github.com/ReadersDigest/wp-migrate-db-pro-cli/tree/1.3.2",
-                "issues": "https://github.com/ReadersDigest/wp-migrate-db-pro-cli/issues"
-            },
-            "time": "2018-01-05T17:25:39+00:00"
-        },
-        {
-            "name": "ReadersDigest/wp-migrate-db-pro-media-files",
-            "version": "1.4.9",
-            "source": {
-                "type": "git",
-                "url": "git@github.com:ReadersDigest/wp-migrate-db-pro-media-files.git",
-                "reference": "068c4bfd2f3349567a1842a8ca0924e1ca002498"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/ReadersDigest/wp-migrate-db-pro-media-files/zipball/068c4bfd2f3349567a1842a8ca0924e1ca002498",
-                "reference": "068c4bfd2f3349567a1842a8ca0924e1ca002498",
-                "shasum": ""
-            },
-            "require": {
-                "composer/installers": "v1.2.0",
-                "php": ">=5.5"
-            },
-            "type": "wordpress-plugin",
-            "license": [
-                "GPL-2"
-            ],
-            "description": "WP MigrateDB-Pro Media Files",
-            "homepage": "https://deliciousbrains.com/",
-            "keywords": [
-                "plugin"
-            ],
-            "support": {
-                "source": "https://github.com/ReadersDigest/wp-migrate-db-pro-media-files/tree/1.4.9",
-                "issues": "https://github.com/ReadersDigest/wp-migrate-db-pro-media-files/issues"
-            },
-            "time": "2018-01-05T17:37:05+00:00"
-        },
-        {
-            "name": "ReadersDigest/wp-migrate-db-pro-multisite-tools",
-            "version": "1.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/ReadersDigest/wp-migrate-db-pro-multisite-tools.git",
-                "reference": "93c32568115fe7e243f19647998ed4b030406ecb"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/ReadersDigest/wp-migrate-db-pro-multisite-tools/zipball/93c32568115fe7e243f19647998ed4b030406ecb",
-                "reference": "93c32568115fe7e243f19647998ed4b030406ecb",
-                "shasum": ""
-            },
-            "require": {
-                "composer/installers": "v1.2.0",
-                "php": ">=5.5"
-            },
-            "type": "wordpress-plugin",
-            "license": [
-                "GPL-2"
-            ],
-            "description": "WP MigrateDB-Pro Multisite Tools",
-            "homepage": "https://deliciousbrains.com/",
-            "keywords": [
-                "plugin"
-            ],
-            "support": {
-                "source": "https://github.com/ReadersDigest/wp-migrate-db-pro-multisite-tools/tree/1.2",
-                "issues": "https://github.com/ReadersDigest/wp-migrate-db-pro-multisite-tools/issues"
-            },
-            "time": "2017-11-09T17:00:05+00:00"
-        },
-        {
-            "name": "ReadersDigest/wp-ultimate-recipe-premium",
-            "version": "3.6.1",
-            "source": {
-                "type": "git",
-                "url": "git@github.com:ReadersDigest/wp-ultimate-recipe-premium.git",
-                "reference": "59249405d3995d256bb6724d9dad1fff97977cc0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/ReadersDigest/wp-ultimate-recipe-premium/zipball/59249405d3995d256bb6724d9dad1fff97977cc0",
-                "reference": "59249405d3995d256bb6724d9dad1fff97977cc0",
-                "shasum": ""
-            },
-            "require": {
-                "composer/installers": "v1.2.0",
-                "php": ">=5.5"
-            },
-            "type": "wordpress-plugin",
-            "license": [
-                "GPL-2"
-            ],
-            "description": "WP Ultimate Recipe Premium",
-            "homepage": "http://www.wpultimaterecipe.com/",
-            "keywords": [
-                "plugin"
-            ],
-            "support": {
-                "source": "https://github.com/ReadersDigest/wp-ultimate-recipe-premium/tree/3.6.1",
-                "issues": "https://github.com/ReadersDigest/wp-ultimate-recipe-premium/issues"
-            },
-            "time": "2017-12-11T19:07:03+00:00"
-        },
         {
             "name": "composer/installers",
             "version": "v1.2.0",
@@ -449,20 +115,20 @@
         },
         {
             "name": "johnpbloch/wordpress",
-            "version": "4.9.1",
+            "version": "4.9.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress.git",
-                "reference": "988875c1ec9f0474d1f77038b7a52f91125fc5f4"
+                "reference": "6697a15cdfd60cfdf9f4bf04a4e7637a8d2a5afa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/988875c1ec9f0474d1f77038b7a52f91125fc5f4",
-                "reference": "988875c1ec9f0474d1f77038b7a52f91125fc5f4",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/6697a15cdfd60cfdf9f4bf04a4e7637a8d2a5afa",
+                "reference": "6697a15cdfd60cfdf9f4bf04a4e7637a8d2a5afa",
                 "shasum": ""
             },
             "require": {
-                "johnpbloch/wordpress-core": "4.9.1",
+                "johnpbloch/wordpress-core": "4.9.7",
                 "johnpbloch/wordpress-core-installer": "^1.0",
                 "php": ">=5.3.2"
             },
@@ -484,32 +150,32 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2017-11-29T21:57:18+00:00"
+            "time": "2018-07-05T18:12:19+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core",
-            "version": "4.9.1",
+            "version": "4.9.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress-core.git",
-                "reference": "e47f6652557c3160ee432c2fca5594ac1a8698f5"
+                "reference": "1116e10f71f8fb811856df212af652c427bc6bd1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/e47f6652557c3160ee432c2fca5594ac1a8698f5",
-                "reference": "e47f6652557c3160ee432c2fca5594ac1a8698f5",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/1116e10f71f8fb811856df212af652c427bc6bd1",
+                "reference": "1116e10f71f8fb811856df212af652c427bc6bd1",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.2"
             },
             "provide": {
-                "wordpress/core-implementation": "4.9.1"
+                "wordpress/core-implementation": "4.9.7"
             },
             "type": "wordpress-core",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -524,20 +190,20 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2017-11-29T21:57:13+00:00"
+            "time": "2018-07-05T18:12:13+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
-            "version": "1.0.0",
+            "version": "1.0.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress-core-installer.git",
-                "reference": "e9e767f2d9f994f358c34b41def2c410ad8717f2"
+                "reference": "7941acd71725710a789daabe0557429da63e7ac6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress-core-installer/zipball/e9e767f2d9f994f358c34b41def2c410ad8717f2",
-                "reference": "e9e767f2d9f994f358c34b41def2c410ad8717f2",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core-installer/zipball/7941acd71725710a789daabe0557429da63e7ac6",
+                "reference": "7941acd71725710a789daabe0557429da63e7ac6",
                 "shasum": ""
             },
             "require": {
@@ -573,20 +239,20 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2017-05-31T18:42:33+00:00"
+            "time": "2018-01-29T14:49:29+00:00"
         },
         {
             "name": "mikelking/bacon",
-            "version": "1.0.7",
+            "version": "1.0.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mikelking/bacon.git",
-                "reference": "ab345f77485382c53ecc7de4ecf189ef36319db3"
+                "reference": "98a78b2b45808fa37b62e39366ccf917a26bc8ed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mikelking/bacon/zipball/ab345f77485382c53ecc7de4ecf189ef36319db3",
-                "reference": "ab345f77485382c53ecc7de4ecf189ef36319db3",
+                "url": "https://api.github.com/repos/mikelking/bacon/zipball/98a78b2b45808fa37b62e39366ccf917a26bc8ed",
+                "reference": "98a78b2b45808fa37b62e39366ccf917a26bc8ed",
                 "shasum": ""
             },
             "require": {
@@ -616,10 +282,10 @@
                 "mu-plugin"
             ],
             "support": {
-                "source": "https://github.com/mikelking/bacon/tree/1.0.7",
+                "source": "https://github.com/mikelking/bacon/tree/1.0.10",
                 "issues": "https://github.com/mikelking/bacon/issues"
             },
-            "time": "2017-05-10T01:48:02+00:00"
+            "time": "2018-02-02T21:57:36+00:00"
         },
         {
             "name": "mikelking/wordpress-config-installer",
@@ -820,15 +486,15 @@
         },
         {
             "name": "wpackagist-plugin/jetpack",
-            "version": "5.7",
+            "version": "5.9",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/jetpack/",
-                "reference": "tags/5.7"
+                "reference": "tags/5.9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/jetpack.5.7.zip",
+                "url": "https://downloads.wordpress.org/plugin/jetpack.5.9.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -889,7 +555,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/newsletter.5.1.9.zip",
-                "reference": null,
+                "reference": "tags/5.1.9",
                 "shasum": null
             },
             "require": {
@@ -939,26 +605,6 @@
             "homepage": "https://wordpress.org/plugins/tinymce-advanced/"
         },
         {
-            "name": "wpackagist-plugin/wordpress-seo",
-            "version": "6.1.1",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/6.1.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.6.1.1.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/wordpress-seo/"
-        },
-        {
             "name": "wpackagist-plugin/wp-bitly",
             "version": "1.0.1",
             "source": {
@@ -980,16 +626,16 @@
         },
         {
             "name": "wpackagist-theme/twentyseventeen",
-            "version": "1.4",
+            "version": "1.6",
             "source": {
                 "type": "svn",
                 "url": "https://themes.svn.wordpress.org/twentyseventeen/",
-                "reference": "1.4"
+                "reference": "1.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/theme/twentyseventeen.1.4.zip",
-                "reference": "1.4",
+                "url": "https://downloads.wordpress.org/theme/twentyseventeen.1.6.zip",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -997,9 +643,280 @@
             },
             "type": "wordpress-theme",
             "homepage": "https://wordpress.org/themes/twentyseventeen/"
+        },
+        {
+            "name": "xrstf/composer-php52",
+            "version": "v1.0.20",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/composer-php52/composer-php52.git",
+                "reference": "bd41459d5e27df8d33057842b32377c39e97a5a8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/composer-php52/composer-php52/zipball/bd41459d5e27df8d33057842b32377c39e97a5a8",
+                "reference": "bd41459d5e27df8d33057842b32377c39e97a5a8",
+                "shasum": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-default": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "xrstf\\Composer52": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "time": "2016-04-16T21:52:24+00:00"
+        },
+        {
+            "name": "yoast/api-libs",
+            "version": "2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Yoast/api-libs.git",
+                "reference": "e7361081a1d6ae79c0b96c8363379435ea736ef8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Yoast/api-libs/zipball/e7361081a1d6ae79c0b96c8363379435ea736ef8",
+                "reference": "e7361081a1d6ae79c0b96c8363379435ea736ef8",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "class-api-libs.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Team Yoast",
+                    "email": "support@yoast.com",
+                    "homepage": "https://yoast.com"
+                }
+            ],
+            "description": "Shared API libraries for Yoast projects.",
+            "homepage": "https://github.com/Yoast/api-libs",
+            "keywords": [
+                "wordpress"
+            ],
+            "time": "2015-07-14T10:25:59+00:00"
+        },
+        {
+            "name": "yoast/i18n-module",
+            "version": "3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Yoast/i18n-module.git",
+                "reference": "76b1645aaf8cf9a07dc06ec0bbe2a6838feeed4c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Yoast/i18n-module/zipball/76b1645aaf8cf9a07dc06ec0bbe2a6838feeed4c",
+                "reference": "76b1645aaf8cf9a07dc06ec0bbe2a6838feeed4c",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Team Yoast",
+                    "email": "support@yoast.com",
+                    "homepage": "https://yoast.com"
+                }
+            ],
+            "description": "Handle i18n for WordPress plugins.",
+            "homepage": "https://github.com/Yoast/i18n-module",
+            "keywords": [
+                "wordpress"
+            ],
+            "time": "2017-09-06T07:17:52+00:00"
+        },
+        {
+            "name": "yoast/license-manager",
+            "version": "1.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Yoast/License-Manager.git",
+                "reference": "fbacabb06d788912fead4f32d0d1d8b9a2d883c9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Yoast/License-Manager/zipball/fbacabb06d788912fead4f32d0d1d8b9a2d883c9",
+                "reference": "fbacabb06d788912fead4f32d0d1d8b9a2d883c9",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "class-api-request.php",
+                    "class-license-manager.php",
+                    "class-plugin-license-manager.php",
+                    "class-plugin-update-manager.php",
+                    "class-product.php",
+                    "class-theme-license-manager.php",
+                    "class-theme-update-manager.php",
+                    "class-update-manager.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Team Yoast",
+                    "email": "support@yoast.com",
+                    "homepage": "https://yoast.com"
+                }
+            ],
+            "description": "Yoast License Manager.",
+            "homepage": "https://github.com/Yoast/License-Manager",
+            "keywords": [
+                "wordpress"
+            ],
+            "time": "2017-08-22T07:59:16+00:00"
+        },
+        {
+            "name": "yoast/whip",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Yoast/whip.git",
+                "reference": "f66106f5030a8f426ea2f0314bae814862336db1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Yoast/whip/zipball/f66106f5030a8f426ea2f0314bae814862336db1",
+                "reference": "f66106f5030a8f426ea2f0314bae814862336db1",
+                "shasum": ""
+            },
+            "require": {
+                "xrstf/composer-php52": "^1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^3.6.12"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/facades/wordpress.php"
+                ],
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Team Yoast",
+                    "email": "support@yoast.com"
+                }
+            ],
+            "description": "A WordPress package to nudge users to upgrade their software versions (starting with PHP)",
+            "time": "2017-08-04T10:00:35+00:00"
+        },
+        {
+            "name": "yoast/wordpress-seo",
+            "version": "7.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Yoast/wordpress-seo.git",
+                "reference": "9d2ba283c67e3a6fa7e563bb189a3c04bc13aee2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Yoast/wordpress-seo/zipball/9d2ba283c67e3a6fa7e563bb189a3c04bc13aee2",
+                "reference": "9d2ba283c67e3a6fa7e563bb189a3c04bc13aee2",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0",
+                "xrstf/composer-php52": "^1.0.20",
+                "yoast/api-libs": "^2.0",
+                "yoast/i18n-module": "^3.0",
+                "yoast/license-manager": "1.6.0",
+                "yoast/whip": "^1.1.0"
+            },
+            "require-dev": {
+                "roave/security-advisories": "dev-master",
+                "yoast/php-development-environment": "^1.0",
+                "yoast/yoastcs": "~0.4.3"
+            },
+            "type": "wordpress-plugin",
+            "autoload": {
+                "classmap": [
+                    "admin/",
+                    "frontend/",
+                    "inc/",
+                    "deprecated/",
+                    "cli/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Team Yoast",
+                    "email": "support@yoast.com",
+                    "homepage": "https://yoa.st/1--"
+                }
+            ],
+            "description": "Improve your WordPress SEO: Write better content and have a fully optimized WordPress site using the Yoast SEO plugin.",
+            "homepage": "https://yoa.st/1ui",
+            "keywords": [
+                "seo",
+                "wordpress"
+            ],
+            "time": "2018-07-24T09:24:50+00:00"
         }
     ],
-    "packages-dev": [],
+    "packages-dev": [
+        {
+            "name": "wpackagist-plugin/show-current-template",
+            "version": "0.3.0",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/show-current-template/",
+                "reference": "tags/0.3.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/show-current-template.0.3.0.zip",
+                "reference": "tags/0.3.0",
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/show-current-template/"
+        }
+    ],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
