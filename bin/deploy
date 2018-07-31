@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+rsync --stats -avzrp wproot mikel@ra2:/web/test/

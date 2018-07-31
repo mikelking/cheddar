@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+CMD="rsync --stats -avzrp"
+
+composer update
+
+cp etc/*-conf.php wproot/
+
+###
+# This section needs work but as a first pass it will suffice
+#
+${CMD} mu-plugins/ wproot/wordpress/wp-content/mu-plugins/
+${CMD} plugins/ wproot/wordpress/wp-content/plugins/
+${CMD} themes/ wproot/wordpress/wp-content/themes/
+

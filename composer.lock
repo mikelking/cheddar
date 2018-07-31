@@ -4,8 +4,143 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "51b9867301c73084bc7653f5ba7b9550",
+    "content-hash": "14e1764cb7a2430afd60a6f79b93d938",
     "packages": [
+        {
+            "name": "ReadersDigest/Altitude-Pro",
+            "version": "1.1.2",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:ReadersDigest/altitude-pro.git",
+                "reference": "381fa892e653099e31f82b5638930ed34690fd46"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ReadersDigest/altitude-pro/zipball/381fa892e653099e31f82b5638930ed34690fd46",
+                "reference": "381fa892e653099e31f82b5638930ed34690fd46",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "v1.2.0",
+                "php": ">=5.6"
+            },
+            "type": "wordpress-theme",
+            "license": [
+                "GPL-2"
+            ],
+            "description": "Altitude Pro Theme.",
+            "homepage": "https://my.studiopress.com/",
+            "keywords": [
+                "framework",
+                "theme"
+            ],
+            "support": {
+                "source": "https://github.com/ReadersDigest/Altitude-Pro/tree/1.1.2",
+                "issues": "https://github.com/ReadersDigest/Altitude-Pro/issues"
+            },
+            "time": "2017-05-22T15:00:52+00:00"
+        },
+        {
+            "name": "ReadersDigest/Magazine-Pro",
+            "version": "3.2.3",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:ReadersDigest/magazine-pro.git",
+                "reference": "abfd05d121210d20e911a901953946b06e6ac52a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ReadersDigest/magazine-pro/zipball/abfd05d121210d20e911a901953946b06e6ac52a",
+                "reference": "abfd05d121210d20e911a901953946b06e6ac52a",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "v1.2.0",
+                "php": ">=5.6"
+            },
+            "type": "wordpress-theme",
+            "license": [
+                "GPL-2"
+            ],
+            "description": "Magazine Pro Theme.",
+            "homepage": "https://my.studiopress.com/",
+            "keywords": [
+                "framework",
+                "theme"
+            ],
+            "support": {
+                "source": "https://github.com/ReadersDigest/Magazine-Pro/tree/3.2.3",
+                "issues": "https://github.com/ReadersDigest/Magazine-Pro/issues"
+            },
+            "time": "2017-05-22T15:07:49+00:00"
+        },
+        {
+            "name": "ReadersDigest/News-Pro",
+            "version": "3.2.1",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:ReadersDigest/news-pro.git",
+                "reference": "fe32ec28a652a99085d72fb76d292fb9538951b1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ReadersDigest/news-pro/zipball/fe32ec28a652a99085d72fb76d292fb9538951b1",
+                "reference": "fe32ec28a652a99085d72fb76d292fb9538951b1",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "v1.2.0",
+                "php": ">=5.6"
+            },
+            "type": "wordpress-theme",
+            "license": [
+                "GPL-2"
+            ],
+            "description": "News Pro Theme.",
+            "homepage": "https://my.studiopress.com/",
+            "keywords": [
+                "framework",
+                "theme"
+            ],
+            "support": {
+                "source": "https://github.com/ReadersDigest/News-Pro/tree/3.2.1",
+                "issues": "https://github.com/ReadersDigest/News-Pro/issues"
+            },
+            "time": "2017-05-22T15:04:00+00:00"
+        },
+        {
+            "name": "ReadersDigest/advanced-custom-fields-pro",
+            "version": "5.5.2",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:ReadersDigest/advanced-custom-fields-pro.git",
+                "reference": "7d0a1c3212f68276cf62d7519697752b9c8d0693"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ReadersDigest/advanced-custom-fields-pro/zipball/7d0a1c3212f68276cf62d7519697752b9c8d0693",
+                "reference": "7d0a1c3212f68276cf62d7519697752b9c8d0693",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "v1.2.0",
+                "php": ">=5.5"
+            },
+            "type": "wordpress-plugin",
+            "license": [
+                "GPL-2"
+            ],
+            "description": "Advance Custom Fields Pro",
+            "homepage": "https://www.advancedcustomfields.com/",
+            "keywords": [
+                "plugin"
+            ],
+            "support": {
+                "source": "https://github.com/ReadersDigest/advanced-custom-fields-pro/tree/5.5.2",
+                "issues": "https://github.com/ReadersDigest/advanced-custom-fields-pro/issues"
+            },
+            "time": "2016-12-09T15:45:44+00:00"
+        },
         {
             "name": "ReadersDigest/genesis",
             "version": "2.5.3",
@@ -42,16 +177,16 @@
         },
         {
             "name": "ReadersDigest/wp-migrate-db-pro",
-            "version": "1.8",
+            "version": "1.8.1",
             "source": {
                 "type": "git",
                 "url": "git@github.com:ReadersDigest/wp-migrate-db-pro.git",
-                "reference": "19e82cfb89d1506f05a8fcbda2387eb39424b711"
+                "reference": "3158df7e0cc376ed1171170ef899e82212afcfd2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ReadersDigest/wp-migrate-db-pro/zipball/19e82cfb89d1506f05a8fcbda2387eb39424b711",
-                "reference": "19e82cfb89d1506f05a8fcbda2387eb39424b711",
+                "url": "https://api.github.com/repos/ReadersDigest/wp-migrate-db-pro/zipball/3158df7e0cc376ed1171170ef899e82212afcfd2",
+                "reference": "3158df7e0cc376ed1171170ef899e82212afcfd2",
                 "shasum": ""
             },
             "require": {
@@ -68,23 +203,23 @@
                 "plugin"
             ],
             "support": {
-                "source": "https://github.com/ReadersDigest/wp-migrate-db-pro/tree/1.8",
+                "source": "https://github.com/ReadersDigest/wp-migrate-db-pro/tree/1.8.1",
                 "issues": "https://github.com/ReadersDigest/wp-migrate-db-pro/issues"
             },
-            "time": "2017-09-14T18:45:27+00:00"
+            "time": "2018-01-05T17:32:39+00:00"
         },
         {
             "name": "ReadersDigest/wp-migrate-db-pro-cli",
-            "version": "1.3.1",
+            "version": "1.3.2",
             "source": {
                 "type": "git",
                 "url": "git@github.com:ReadersDigest/wp-migrate-db-pro-cli.git",
-                "reference": "59348d4fad55dd3c7a12d7eb1d81c402010fe1b1"
+                "reference": "51239dca14825d0005ca63fa85d6538cb0c55534"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ReadersDigest/wp-migrate-db-pro-cli/zipball/59348d4fad55dd3c7a12d7eb1d81c402010fe1b1",
-                "reference": "59348d4fad55dd3c7a12d7eb1d81c402010fe1b1",
+                "url": "https://api.github.com/repos/ReadersDigest/wp-migrate-db-pro-cli/zipball/51239dca14825d0005ca63fa85d6538cb0c55534",
+                "reference": "51239dca14825d0005ca63fa85d6538cb0c55534",
                 "shasum": ""
             },
             "require": {
@@ -101,23 +236,23 @@
                 "plugin"
             ],
             "support": {
-                "source": "https://github.com/ReadersDigest/wp-migrate-db-pro-cli/tree/1.3.1",
+                "source": "https://github.com/ReadersDigest/wp-migrate-db-pro-cli/tree/1.3.2",
                 "issues": "https://github.com/ReadersDigest/wp-migrate-db-pro-cli/issues"
             },
-            "time": "2017-09-14T19:07:30+00:00"
+            "time": "2018-01-05T17:25:39+00:00"
         },
         {
             "name": "ReadersDigest/wp-migrate-db-pro-media-files",
-            "version": "1.4.8",
+            "version": "1.4.9",
             "source": {
                 "type": "git",
                 "url": "git@github.com:ReadersDigest/wp-migrate-db-pro-media-files.git",
-                "reference": "706ced09b4769d91705a9568f9b9af3c0fefa955"
+                "reference": "068c4bfd2f3349567a1842a8ca0924e1ca002498"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ReadersDigest/wp-migrate-db-pro-media-files/zipball/706ced09b4769d91705a9568f9b9af3c0fefa955",
-                "reference": "706ced09b4769d91705a9568f9b9af3c0fefa955",
+                "url": "https://api.github.com/repos/ReadersDigest/wp-migrate-db-pro-media-files/zipball/068c4bfd2f3349567a1842a8ca0924e1ca002498",
+                "reference": "068c4bfd2f3349567a1842a8ca0924e1ca002498",
                 "shasum": ""
             },
             "require": {
@@ -134,10 +269,10 @@
                 "plugin"
             ],
             "support": {
-                "source": "https://github.com/ReadersDigest/wp-migrate-db-pro-media-files/tree/1.4.8",
+                "source": "https://github.com/ReadersDigest/wp-migrate-db-pro-media-files/tree/1.4.9",
                 "issues": "https://github.com/ReadersDigest/wp-migrate-db-pro-media-files/issues"
             },
-            "time": "2017-09-14T19:15:55+00:00"
+            "time": "2018-01-05T17:37:05+00:00"
         },
         {
             "name": "ReadersDigest/wp-migrate-db-pro-multisite-tools",
@@ -171,6 +306,39 @@
                 "issues": "https://github.com/ReadersDigest/wp-migrate-db-pro-multisite-tools/issues"
             },
             "time": "2017-11-09T17:00:05+00:00"
+        },
+        {
+            "name": "ReadersDigest/wp-ultimate-recipe-premium",
+            "version": "3.6.1",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:ReadersDigest/wp-ultimate-recipe-premium.git",
+                "reference": "59249405d3995d256bb6724d9dad1fff97977cc0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ReadersDigest/wp-ultimate-recipe-premium/zipball/59249405d3995d256bb6724d9dad1fff97977cc0",
+                "reference": "59249405d3995d256bb6724d9dad1fff97977cc0",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "v1.2.0",
+                "php": ">=5.5"
+            },
+            "type": "wordpress-plugin",
+            "license": [
+                "GPL-2"
+            ],
+            "description": "WP Ultimate Recipe Premium",
+            "homepage": "http://www.wpultimaterecipe.com/",
+            "keywords": [
+                "plugin"
+            ],
+            "support": {
+                "source": "https://github.com/ReadersDigest/wp-ultimate-recipe-premium/tree/3.6.1",
+                "issues": "https://github.com/ReadersDigest/wp-ultimate-recipe-premium/issues"
+            },
+            "time": "2017-12-11T19:07:03+00:00"
         },
         {
             "name": "composer/installers",
@@ -505,16 +673,16 @@
         },
         {
             "name": "mikelking/wpcfg",
-            "version": "0.0.7",
+            "version": "0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mikelking/wpcfg.git",
-                "reference": "5fbfadf3fe238617b9332a9f9c6151b24860a7da"
+                "reference": "6be35d647faffd8e22ab85b8324cd96597f978c4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mikelking/wpcfg/zipball/5fbfadf3fe238617b9332a9f9c6151b24860a7da",
-                "reference": "5fbfadf3fe238617b9332a9f9c6151b24860a7da",
+                "url": "https://api.github.com/repos/mikelking/wpcfg/zipball/6be35d647faffd8e22ab85b8324cd96597f978c4",
+                "reference": "6be35d647faffd8e22ab85b8324cd96597f978c4",
                 "shasum": ""
             },
             "require": {
@@ -544,10 +712,10 @@
                 "wordpress-config"
             ],
             "support": {
-                "source": "https://github.com/mikelking/wpcfg/tree/0.0.7",
+                "source": "https://github.com/mikelking/wpcfg/tree/0.1.0",
                 "issues": "https://github.com/mikelking/wpcfg/issues"
             },
-            "time": "2017-12-01T22:18:29+00:00"
+            "time": "2017-12-02T18:40:33+00:00"
         },
         {
             "name": "wpackagist-plugin/ajax-heartbeat-tool",
@@ -560,7 +728,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/ajax-heartbeat-tool.zip?timestamp=1469726157",
-                "reference": null,
+                "reference": "trunk",
                 "shasum": null
             },
             "require": {
@@ -580,7 +748,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/akismet.zip?timestamp=1509999857",
-                "reference": null,
+                "reference": "trunk",
                 "shasum": null
             },
             "require": {
@@ -601,7 +769,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/co-authors-plus.3.2.2.zip",
-                "reference": null,
+                "reference": "tags/3.2.2",
                 "shasum": null
             },
             "require": {
@@ -621,7 +789,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/crayon-syntax-highlighter.zip?timestamp=1462880237",
-                "reference": null,
+                "reference": "trunk",
                 "shasum": null
             },
             "require": {
@@ -641,7 +809,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/duo-wordpress.zip?timestamp=1497375497",
-                "reference": null,
+                "reference": "trunk",
                 "shasum": null
             },
             "require": {
@@ -652,15 +820,15 @@
         },
         {
             "name": "wpackagist-plugin/jetpack",
-            "version": "5.5.1",
+            "version": "5.7",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/jetpack/",
-                "reference": "tags/5.5.1"
+                "reference": "tags/5.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/jetpack.5.5.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/jetpack.5.7.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -681,7 +849,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/lazy-load.0.6.1.zip",
-                "reference": null,
+                "reference": "tags/0.6.1",
                 "shasum": null
             },
             "require": {
@@ -701,7 +869,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/members.1.1.3.zip",
-                "reference": null,
+                "reference": "tags/1.1.3",
                 "shasum": null
             },
             "require": {
@@ -712,15 +880,15 @@
         },
         {
             "name": "wpackagist-plugin/newsletter",
-            "version": "5.1.6",
+            "version": "5.1.9",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/newsletter/",
-                "reference": "tags/5.1.6"
+                "reference": "tags/5.1.9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/newsletter.5.1.6.zip",
+                "url": "https://downloads.wordpress.org/plugin/newsletter.5.1.9.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -741,7 +909,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/simple-iframe-buster.zip?timestamp=1469726044",
-                "reference": null,
+                "reference": "trunk",
                 "shasum": null
             },
             "require": {
@@ -761,7 +929,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/tinymce-advanced.4.6.7.zip",
-                "reference": null,
+                "reference": "tags/4.6.7",
                 "shasum": null
             },
             "require": {
@@ -772,15 +940,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "5.8",
+            "version": "6.1.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/5.8"
+                "reference": "tags/6.1.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.5.8.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.6.1.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -801,7 +969,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/wp-bitly.1.0.1.zip",
-                "reference": null,
+                "reference": "tags/1.0.1",
                 "shasum": null
             },
             "require": {
@@ -809,6 +977,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/wp-bitly/"
+        },
+        {
+            "name": "wpackagist-theme/twentyseventeen",
+            "version": "1.4",
+            "source": {
+                "type": "svn",
+                "url": "https://themes.svn.wordpress.org/twentyseventeen/",
+                "reference": "1.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/theme/twentyseventeen.1.4.zip",
+                "reference": "1.4",
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-theme",
+            "homepage": "https://wordpress.org/themes/twentyseventeen/"
         }
     ],
     "packages-dev": [],
