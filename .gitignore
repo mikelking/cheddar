@@ -7,6 +7,7 @@ logs
 tmp
 
 vendor
+etc/phpcs/wpcs
 
 wproot
 wproot/revision
