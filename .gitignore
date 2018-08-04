@@ -1,6 +1,6 @@
 # Untapped iggies...
 .idea
-
+.DS_Store
 .vagrant
 
 logs
@@ -8,7 +8,6 @@ tmp
 
 vendor
 
-old-wproot
 wproot
 wproot/revision
 ~wproot/dev-conf.php
