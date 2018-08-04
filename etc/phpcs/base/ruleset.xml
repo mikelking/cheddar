@@ -5,6 +5,7 @@
 	<rule ref="WordPress-Core">
 		<!-- This rule is foolish and breaks many clean code uses -->
 		<exclude name="PEAR.Functions.FunctionCallSignature.Indent" />
+		<exclude name="WordPress.Files.FileName.InvalidClassFileName" />
 		<exclude name="WordPress.PHP.YodaConditions" />
 		<exclude name="WordPress.Variables.GlobalVariables" />
 		<!-- This rule is foolish and breaks many legitimate uses -->
