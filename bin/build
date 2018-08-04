@@ -9,7 +9,21 @@ cp etc/*-conf.php wproot/
 ###
 # This section needs work but as a first pass it will suffice
 #
-${CMD} mu-plugins/ wproot/wordpress/wp-content/mu-plugins/
-${CMD} plugins/ wproot/wordpress/wp-content/plugins/
-${CMD} themes/ wproot/wordpress/wp-content/themes/
 
+# Check for local mu-plugins
+if [ -e mu-plugins ]
+then
+    ${CMD} mu-plugins/ wproot/wordpress/wp-content/mu-plugins/
+fi
+
+# Check for local plugins
+if [ -e plugins ]
+then
+    ${CMD} plugins/ wproot/wordpress/wp-content/plugins/
+fi
+
+# Check for local themes
+if [ -e themes ]
+then
+${CMD} themes/ wproot/wordpress/wp-content/themes/
+fi

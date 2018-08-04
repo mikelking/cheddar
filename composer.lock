@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "14e1764cb7a2430afd60a6f79b93d938",
+    "content-hash": "ad834f6fa09e255fad896daaf8c209ad",
     "packages": [
         {
             "name": "ReadersDigest/Altitude-Pro",
-            "version": "1.1.2",
+            "version": "1.1.3",
             "source": {
                 "type": "git",
                 "url": "git@github.com:ReadersDigest/altitude-pro.git",
-                "reference": "381fa892e653099e31f82b5638930ed34690fd46"
+                "reference": "d19956f5f63ecf1a069e22591b00e036488083b1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ReadersDigest/altitude-pro/zipball/381fa892e653099e31f82b5638930ed34690fd46",
-                "reference": "381fa892e653099e31f82b5638930ed34690fd46",
+                "url": "https://api.github.com/repos/ReadersDigest/altitude-pro/zipball/d19956f5f63ecf1a069e22591b00e036488083b1",
+                "reference": "d19956f5f63ecf1a069e22591b00e036488083b1",
                 "shasum": ""
             },
             "require": {
@@ -35,23 +35,23 @@
                 "theme"
             ],
             "support": {
-                "source": "https://github.com/ReadersDigest/Altitude-Pro/tree/1.1.2",
-                "issues": "https://github.com/ReadersDigest/Altitude-Pro/issues"
+                "source": "https://github.com/ReadersDigest/altitude-pro/tree/1.1.3",
+                "issues": "https://github.com/ReadersDigest/altitude-pro/issues"
             },
-            "time": "2017-05-22T15:00:52+00:00"
+            "time": "2018-03-13T10:15:11+00:00"
         },
         {
             "name": "ReadersDigest/Magazine-Pro",
-            "version": "3.2.3",
+            "version": "3.2.4",
             "source": {
                 "type": "git",
                 "url": "git@github.com:ReadersDigest/magazine-pro.git",
-                "reference": "abfd05d121210d20e911a901953946b06e6ac52a"
+                "reference": "ad45a5b0fc55e9b0bba66c3e97398b17cec7cd45"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ReadersDigest/magazine-pro/zipball/abfd05d121210d20e911a901953946b06e6ac52a",
-                "reference": "abfd05d121210d20e911a901953946b06e6ac52a",
+                "url": "https://api.github.com/repos/ReadersDigest/magazine-pro/zipball/ad45a5b0fc55e9b0bba66c3e97398b17cec7cd45",
+                "reference": "ad45a5b0fc55e9b0bba66c3e97398b17cec7cd45",
                 "shasum": ""
             },
             "require": {
@@ -69,23 +69,23 @@
                 "theme"
             ],
             "support": {
-                "source": "https://github.com/ReadersDigest/Magazine-Pro/tree/3.2.3",
-                "issues": "https://github.com/ReadersDigest/Magazine-Pro/issues"
+                "source": "https://github.com/ReadersDigest/magazine-pro/tree/3.2.4",
+                "issues": "https://github.com/ReadersDigest/magazine-pro/issues"
             },
-            "time": "2017-05-22T15:07:49+00:00"
+            "time": "2018-03-09T22:43:19+00:00"
         },
         {
             "name": "ReadersDigest/News-Pro",
-            "version": "3.2.1",
+            "version": "3.2.2",
             "source": {
                 "type": "git",
                 "url": "git@github.com:ReadersDigest/news-pro.git",
-                "reference": "fe32ec28a652a99085d72fb76d292fb9538951b1"
+                "reference": "93a1a0ec89f977a1265bfe4ac738e1d07bfddc71"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ReadersDigest/news-pro/zipball/fe32ec28a652a99085d72fb76d292fb9538951b1",
-                "reference": "fe32ec28a652a99085d72fb76d292fb9538951b1",
+                "url": "https://api.github.com/repos/ReadersDigest/news-pro/zipball/93a1a0ec89f977a1265bfe4ac738e1d07bfddc71",
+                "reference": "93a1a0ec89f977a1265bfe4ac738e1d07bfddc71",
                 "shasum": ""
             },
             "require": {
@@ -103,10 +103,10 @@
                 "theme"
             ],
             "support": {
-                "source": "https://github.com/ReadersDigest/News-Pro/tree/3.2.1",
-                "issues": "https://github.com/ReadersDigest/News-Pro/issues"
+                "source": "https://github.com/ReadersDigest/news-pro/tree/3.2.2",
+                "issues": "https://github.com/ReadersDigest/news-pro/issues"
             },
-            "time": "2017-05-22T15:04:00+00:00"
+            "time": "2018-03-13T10:19:28+00:00"
         },
         {
             "name": "ReadersDigest/advanced-custom-fields-pro",
@@ -449,20 +449,20 @@
         },
         {
             "name": "johnpbloch/wordpress",
-            "version": "4.9.1",
+            "version": "4.9.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress.git",
-                "reference": "988875c1ec9f0474d1f77038b7a52f91125fc5f4"
+                "reference": "5394373d26a8e304eb293c2a9359701a7ab03131"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/988875c1ec9f0474d1f77038b7a52f91125fc5f4",
-                "reference": "988875c1ec9f0474d1f77038b7a52f91125fc5f4",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/5394373d26a8e304eb293c2a9359701a7ab03131",
+                "reference": "5394373d26a8e304eb293c2a9359701a7ab03131",
                 "shasum": ""
             },
             "require": {
-                "johnpbloch/wordpress-core": "4.9.1",
+                "johnpbloch/wordpress-core": "4.9.4",
                 "johnpbloch/wordpress-core-installer": "^1.0",
                 "php": ">=5.3.2"
             },
@@ -484,32 +484,32 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2017-11-29T21:57:18+00:00"
+            "time": "2018-02-06T16:42:18+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core",
-            "version": "4.9.1",
+            "version": "4.9.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress-core.git",
-                "reference": "e47f6652557c3160ee432c2fca5594ac1a8698f5"
+                "reference": "eef672cdb4ae9e846c464d4d03684b43d4108eda"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/e47f6652557c3160ee432c2fca5594ac1a8698f5",
-                "reference": "e47f6652557c3160ee432c2fca5594ac1a8698f5",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/eef672cdb4ae9e846c464d4d03684b43d4108eda",
+                "reference": "eef672cdb4ae9e846c464d4d03684b43d4108eda",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.2"
             },
             "provide": {
-                "wordpress/core-implementation": "4.9.1"
+                "wordpress/core-implementation": "4.9.4"
             },
             "type": "wordpress-core",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -524,20 +524,20 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2017-11-29T21:57:13+00:00"
+            "time": "2018-02-06T16:42:13+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
-            "version": "1.0.0",
+            "version": "1.0.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress-core-installer.git",
-                "reference": "e9e767f2d9f994f358c34b41def2c410ad8717f2"
+                "reference": "7941acd71725710a789daabe0557429da63e7ac6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress-core-installer/zipball/e9e767f2d9f994f358c34b41def2c410ad8717f2",
-                "reference": "e9e767f2d9f994f358c34b41def2c410ad8717f2",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core-installer/zipball/7941acd71725710a789daabe0557429da63e7ac6",
+                "reference": "7941acd71725710a789daabe0557429da63e7ac6",
                 "shasum": ""
             },
             "require": {
@@ -573,20 +573,20 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2017-05-31T18:42:33+00:00"
+            "time": "2018-01-29T14:49:29+00:00"
         },
         {
             "name": "mikelking/bacon",
-            "version": "1.0.7",
+            "version": "1.0.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mikelking/bacon.git",
-                "reference": "ab345f77485382c53ecc7de4ecf189ef36319db3"
+                "reference": "98a78b2b45808fa37b62e39366ccf917a26bc8ed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mikelking/bacon/zipball/ab345f77485382c53ecc7de4ecf189ef36319db3",
-                "reference": "ab345f77485382c53ecc7de4ecf189ef36319db3",
+                "url": "https://api.github.com/repos/mikelking/bacon/zipball/98a78b2b45808fa37b62e39366ccf917a26bc8ed",
+                "reference": "98a78b2b45808fa37b62e39366ccf917a26bc8ed",
                 "shasum": ""
             },
             "require": {
@@ -616,10 +616,10 @@
                 "mu-plugin"
             ],
             "support": {
-                "source": "https://github.com/mikelking/bacon/tree/1.0.7",
+                "source": "https://github.com/mikelking/bacon/tree/1.0.10",
                 "issues": "https://github.com/mikelking/bacon/issues"
             },
-            "time": "2017-05-10T01:48:02+00:00"
+            "time": "2018-02-02T21:57:36+00:00"
         },
         {
             "name": "mikelking/wordpress-config-installer",
@@ -819,26 +819,6 @@
             "homepage": "https://wordpress.org/plugins/duo-wordpress/"
         },
         {
-            "name": "wpackagist-plugin/jetpack",
-            "version": "5.7",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/jetpack/",
-                "reference": "tags/5.7"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/jetpack.5.7.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/jetpack/"
-        },
-        {
             "name": "wpackagist-plugin/lazy-load",
             "version": "0.6.1",
             "source": {
@@ -889,7 +869,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/newsletter.5.1.9.zip",
-                "reference": null,
+                "reference": "tags/5.1.9",
                 "shasum": null
             },
             "require": {
@@ -940,15 +920,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "6.1.1",
+            "version": "7.0.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/6.1.1"
+                "reference": "tags/7.0.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.6.1.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.7.0.3.zip",
                 "reference": null,
                 "shasum": null
             },
