@@ -19,6 +19,9 @@ A dummy repo for experimenting with composer to build a local (or remote) develo
 
 - Updated to installed the WordPress common config system. DONE
 
+- Composerafy development only plugins: DONE
+    - Installation of debugbar and other dev only safe plugins via composer. 
+
 - Integrate PHPCS: DONE
   - While this is technically complete I am not yet satisfied with the implementation. It works but there is room for improvement.
   - see [PHPCodeSniffer project](https://github.com/squizlabs/PHP_CodeSniffer/) for details.
