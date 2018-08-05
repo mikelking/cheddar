@@ -14,3 +14,8 @@ OPTIONS="--progress --ansi --no-interaction --log-pmd=logs/phpcpd.xml mu-plugins
 
 
 ${CMD} ${OPTIONS}
+
+CMD="vendor/bin/phploc"
+OPTIONS="--ansi --no-interaction --count-tests --log-xml=logs/phploc.xml mu-plugins/ plugins/ themes/"
+
+${CMD} ${OPTIONS}
