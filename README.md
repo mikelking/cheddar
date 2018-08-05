@@ -14,6 +14,8 @@ A dummy repo for experimenting with composer to build a local (or remote) develo
 
 - This process allows one to clone or fork dummy and then create a branch specific to a particular site you wish to construct. It all affords the opportunity to build a single mu-plugin, plugin or theme in a uniform environment. 
 
+- Assuming that you already have a DB setup and enter the appropriate details in the respective config file this should yield a working shell site. 
+
 ##### TODO:
 - Updated to install the mu-plugins. DONE
 
@@ -45,21 +47,27 @@ A dummy repo for experimenting with composer to build a local (or remote) develo
 - Integreate PHPcpd: Installed but not configured
   - see [PHP Copy/Paste Detector project](https://github.com/sebastianbergmann/phpcpd) for details.
 
+- Implement a build system strategy: In progress
+  - Still need to hook all of this into a deployment solution like deploybot. However for the time being and testing purposes I have written a simple set of build and deploy scripts that utilize rsync. Honestly the result has been better than I expected and were someone to make this easily configurable then one could use something like Jenkins or even ansible to execute a build.
 
-- Assuming that you already have a DB setup and enter the appropriate details in the respective config file this should yield a working shell site. 
+- Implement wpcliL In Progress
+  - https://wp-cli.org in order for this to be truly useful wpcli will need to be added.
 
-- Still need to hook all of this into a deployment solution like deploybot. TODO
+- Integrate a vagrant: In progress
+  - Need to add a Vagrant conf so that one can eventually run vagrant up to build a working local dev based upon the WordPress tree installed by composer. The Vagrant system would need to setup the db and conf files. PARTIAL
 
-- Implement wpcli https://wp-cli.org in order for this to be truly useful wpcli will need to be added.
-
-- Need to add a Vagrant conf so that one can eventually run vagrant up to build a working local dev based upon the WordPress tree installed by composer. The Vagrant system would need to setup the db and conf files. PARTIAL
-
-- Add demo to explain how to add plugins and themes from https://wpackagist.org. By adding the following line to the build chain in the required section of the composer.json it will add the appropriate plugin to the installation. You want to ensure that you add this line after the line that directs composer to install wordpress.
+- Setup demos: In progress
+  - Add demo to explain how to add plugins and themes from https://wpackagist.org. By adding the following line to the build chain in the required section of the composer.json it will add the appropriate plugin to the installation. You want to ensure that you add this line after the line that directs composer to install wordpress.
 
 ```
 "wpackagist-plugin/akismet": "dev-trunk",
 ```
 
-###EXPRIMENTAL
+- Implement documentation: In progress
+  - Documentation shall take the form of markdown files in a doc directory relative to this repo and mu-plugin, plugin or theme respectively. 
+  
+- Outline a recommended Plugin structure: In progress 
+
+##### EXPRIMENTAL
 
 - Refactor shell scripts into PHP
