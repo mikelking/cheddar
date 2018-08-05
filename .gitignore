@@ -1,14 +1,16 @@
 # Untapped iggies...
 .idea
-
+.DS_Store
 .vagrant
 
 logs
 tmp
 
 vendor
+etc/phpcs/wpcs
 
 wproot
+wproot/revision
 ~wproot/dev-conf.php
 ~wproot/staging-conf.php
 ~wproot/production-conf.php
