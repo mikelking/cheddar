@@ -8,15 +8,15 @@ require( 'server-conf-base.php' );
 
 class ServerConfig extends ServerConfigBase {
 	const SITENAME         = 'olivent.net';
-	const SITE_SALT        = 'olivent_rule$';
+	const SITE_SALT        = 'ol1v3nt_$alt';
 	const PROTOCOL         = 'http';
 	const PROTOCOL_DELIM   = '://';
 	const DEFAULT_TIMEZONE = 'America/New_York';
 
 	// DB Access
-	const DB_PASSWORD = 'P0pc0rn78%32';
-	const DB_USER     = 'oliventdbadm';
-	const DB_NAME     = 'olivent_network';
+	const DB_PASSWORD = '';
+	const DB_USER     = 'dbadm';
+	const DB_NAME     = 'db';
 	const DB_HOST     = 'localhost';
 
 	// Caching
