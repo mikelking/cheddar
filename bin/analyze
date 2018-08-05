@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+CMD="vendor/bin/phpcpd"
+OPTIONS="--progress --ansi --no-interaction --log-pmd=logs/phpcpd.xml mu-plugins/ plugins/ themes/"
+
+#echo Analyzing the mu-plugins.
+#${CMD} ${OPTIONS}logs/phpcpd-mu-plugins.xml mu-plugins/
+
+#echo Analyzing the plugins.
+#${CMD} ${OPTIONS}logs/phpcpd-plugins.xml plugins/
+
+#echo Analyzing the themes.
+#${CMD} ${OPTIONS}logs/phpcpd-themes.xml themes/
+
+
+${CMD} ${OPTIONS}
