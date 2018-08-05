@@ -24,20 +24,24 @@ A dummy repo for experimenting with composer to build a local (or remote) develo
   - see [PHPCodeSniffer project](https://github.com/squizlabs/PHP_CodeSniffer/) for details.
   - see [WordPress Coding standards project](https://github.com/WordPress-Coding-Standards) for details.
 
-- Integrate PHPUnit: Incomplete
+- Integrate PHPUnit: Installed but not configured
     - see [PHPUnit website](https://phpunit.de/) for details.
 
 - Integrate PHPloc: Incomplete
   - see [PHPloc project](https://github.com/sebastianbergmann/phploc) for details.
 
-- Integrate PHPmd: DONE
+- Integrate PHPmd: Installed but not configured
   - This is being installed by composer but I am not yet confident that it is 100% working. It need more testing. 
   - see [PHPmd website](https://phpmd.org/) for details.
 
 - Integreate PHPdocumentor or PHPdox: Incomplete
-  - see [PHPdocumentor Website](https://www.phpdoc.org/) for details.
+  - see [PHPdocumentor website](https://www.phpdoc.org/) for details.
   - see [PHPdox website](http://phpdox.de/) for details.
     - Remember that this relies on the [PHP-paser project](https://github.com/nikic/PHP-Parser/) for details.
+
+- Integreate PHPcpd: Installed but not configured
+  - see [PHP Copy/Paste Detector project](https://github.com/sebastianbergmann/phpcpd) for details.
+
 
 - Assuming that you already have a DB setup and enter the appropriate details in the respective config file this should yield a working shell site. 
 
