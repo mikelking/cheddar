@@ -1,16 +1,15 @@
 # dummy
 A dummy repo for experimenting with composer to build a local (or remote) development, staging and production WordPress system.
 
-- So the purpose of this test is to build a working composer driven build of WordPress and related plugins. I hope to define a site by plugins and git libraries in a composer.json manifest and have a site completely assembled via a _composer update_ type command.
+Purpose of this test is to use composer to define all of the external assets necessary to build a working WordPress and related plugins. The hope is to define a site's plugins, themes and git libraries in a composer.json manifest. Then have a site completely assembled via a _composer update_ type command.
   - see [Composer website](https://getcomposer.org) for details.
 
 - At this point I have it building the WordPress tree and have setup the iggie file to ignore ALL of WordPress core.
-
-- The order of requirement is critical to successfully install ing all of the moving parts. The following outlines the order of operations:
-  1. The wproot is installed first
-  2. The WordPress core
-  3. The composer dependencies mu-plugins, plugins and themes
-  4. The local mu-plugins, plugins and themes
+  - The order of requirement is critical to successfully install ing all of the moving parts. The following outlines the order of operations:
+    1. The wproot is installed first
+    2. The WordPress core
+    3. The composer dependencies mu-plugins, plugins and themes
+    4. The local mu-plugins, plugins and themes
 
 - This process allows one to clone or fork dummy and then create a branch specific to a particular site you wish to construct. It all affords the opportunity to build a single mu-plugin, plugin or theme in a uniform environment. 
 
