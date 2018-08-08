@@ -41,8 +41,68 @@ License URI: http://opensource.org/licenses/BSD-3-Clause
 
 // <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>'
 
-require( 'inc/adsense-controller.php' );
+class Adsense_Controller extends Base_Plugin {
+	const VERSION        = '0.0.1';
+	const FILE_SPEC      = __FILE__;
+	const ADSENSE_URL    = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js';
+	const ADSENSE_SLUG   = 'adsense';
+	const AS_SCRIPT_FILE = 'js/adsense.js';
+	const AS_SCRIPT_SLUG = 'as-file';
+
+
+	/**
+	 * Registers and enqueues the appropriate scripts into WP
+	 */
+	public function register_scripts() {
+		wp_register_script(
+			self::ADSENSE_SLUG,
+			self::ADSENSE_URL,
+			[],
+			self::VERSION,
+			self::IN_HEADER
+		);
+		Base_Plugin::set_async_assets( self::ADSENSE_SLUG );
+
+		wp_register_script(
+			self::AS_SCRIPT_SLUG,
+			self::get_asset_url( self::AS_SCRIPT_FILE ),
+			array( self::ADSENSE_SLUG ),
+			self::VERSION,
+			self::IN_HEADER
+		);
+
+		wp_enqueue_script( self::ADSENSE_SLUG );
+		wp_enqueue_script( self::AS_SCRIPT_SLUG );
+	}
+
+
+
+
+
+	protected function __construct() {
+		parent::__construct();
+		add_action( 'wp_enqueue_scripts', array( $this, 'register_scripts' ) );
+		add_filter( 'script_loader_tag', array( __CLASS__, 'async_filter_tag' ), self::PRIORITY, 3 );
+	}
+
+	protected function activation_actions() {}
+
+	protected function deactivation_actions() {}
+
+	protected function uninstallation_actions() {}
+
+	public function init() {
+		// This is how to add an activation hook if needed
+		register_activation_hook( __FILE__, array( 'Your_Plugin_Controller', 'activator' ) );
+
+		// This is how to add an deactivation hook if needed
+		register_activation_hook( __FILE__, array( 'Your_Plugin_Controller', 'deactivator' ) );
+
+		// This is how to add an uninstallation hook if needed
+		register_uninstall_hook( __FILE__, array( 'Your_Plugin_Controller', 'uninstallor' ) );
+	}
+}
 
 Adsense_Controller::get_instance();
-
-
+//register_activation_hook( __FILE__, array( $ypc, 'activator'));
+//register_deactivation_hook( __FILE__, array( $ypc, 'deactivator'));
