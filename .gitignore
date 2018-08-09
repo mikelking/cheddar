@@ -3,6 +3,8 @@
 .DS_Store
 .vagrant
 
+#ignore backups, logs, and temporary files
+*bu-*
 logs
 tmp
 

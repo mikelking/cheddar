@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+CMD="vendor/bin/phpunit"
+CFG="-c etc/phpunit.xml"
+
+echo "Attempting to run tests."
+
+${CMD} ${CFG}
