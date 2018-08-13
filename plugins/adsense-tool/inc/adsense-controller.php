@@ -75,21 +75,11 @@ class Adsense_Controller extends Base_Plugin {
 		wp_enqueue_script( self::AS_SCRIPT_SLUG );
 	}
 
-
-
-
-
 	protected function __construct() {
 		parent::__construct();
 		add_action( 'wp_enqueue_scripts', array( $this, 'register_scripts' ) );
 		add_filter( 'script_loader_tag', array( __CLASS__, 'async_filter_tag' ), self::PRIORITY, 3 );
 	}
-
-	protected function activation_actions() {}
-
-	protected function deactivation_actions() {}
-
-	protected function uninstallation_actions() {}
 
 	public function init() {
 		// This is how to add an activation hook if needed
@@ -103,6 +93,6 @@ class Adsense_Controller extends Base_Plugin {
 	}
 }
 
-Adsense_Controller::get_instance();
+//Adsense_Controller::get_instance();
 //register_activation_hook( __FILE__, array( $ypc, 'activator'));
 //register_deactivation_hook( __FILE__, array( $ypc, 'deactivator'));

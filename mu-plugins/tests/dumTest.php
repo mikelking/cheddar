@@ -8,12 +8,13 @@ $bootstrap_path = dirname( dirname( dirname( __FILE__ ) ) );
 $base_path = dirname( __DIR__ );
 
 /* Verification step
-*/
+
 print( 'bootstrap: ' . $bootstrap_path . PHP_EOL );
     //bootstrap: /Volumes/osiris/Users/mikel/Projects/git/dum
 
 print( 'base: ' . $base_path . PHP_EOL );
     //base: /Volumes/osiris/Users/mikel/Projects/git/dum/mu-plugins
+*/
 
 /**
  * Bootstrap the test systems
@@ -45,11 +46,14 @@ class DumTest extends TestCase {
         );
     }
 */
+    /**
+     * @test
+     */
     public function testGetStupid() {
         $this->assertEquals(
             true,
             Dum::STUPID,
-            'The dum class has STUPID and it is true.'
+            'The dum class has STUPID but it is NOT true.'
         );
     }
 
