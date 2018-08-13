@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 CMD="vendor/bin/phpunit"
-CFG="-c etc/phpunit.xml"
+CFG="-c etc/mu-plugins-phpunit.xml"
 
 echo "Attempting to run tests."
 
