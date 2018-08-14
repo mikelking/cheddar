@@ -4,7 +4,14 @@ CMD="rsync --stats -avzrp"
 
 composer update
 
+# Install the config files
 cp etc/*-conf.php wproot/
+
+# Install the subdirectory htaccess
+cp etc/htaccess wproot/wordpress/.htaccess
+
+# Set the revision from git.
+git rev-parse --short HEAD > wproot/revision
 
 ###
 # This section needs work but as a first pass it will suffice
