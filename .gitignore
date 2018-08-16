@@ -13,6 +13,8 @@ etc/phpcs/wpcs
 
 etc/production-conf.php
 
+work
+
 wproot
 wproot/revision
 ~wproot/dev-conf.php
