@@ -11,4 +11,7 @@
 #
 # TODO Make the deployment drive a build for the appropriate destination environment
 #
+
+pushd work/production
 rsync --stats -avzrp wproot mikel@ra2:/web/test/
+popd

@@ -21,6 +21,20 @@ if [ ! -z "$SETUP_DBDUMP" -o ! -z "$SETUP_DBDUMP_PATH" ]; then
 	TARGET=local
 fi
 
+
+function preBuild() {
+    ####
+    # Install/update as necessary any package changes FIRST
+    #
+    composer update
+
+    ####
+    # Install the config files as necessary
+    # TODO: change this to symlinks on local builds and persist the copy for deployment builds
+    #
+    cp etc/*-conf.php wproot/ SECOND
+}
+
 ####
 # Because even in BASH we should build reusable entities
 #
@@ -66,50 +80,72 @@ function localBuild() {
 }
 
 function preDeployBuild() {
-####
-# This section needs work but as a first pass it will suffice
-# TODO: change the following to symlink on local builds and cp for all deployment builds
-# This change will require new functions that search the source path(s) and symlink the
-# top level items into the destinations the symlink operation(s) should be indempotent
-# thus we may need to check the existence of the target in the destination directory.
-#
-# The plan is to pass in a deployment destination target on the command line and build
-# a hard copy read for shipping to that end point.
+    ENTITY=${1}
+    DEST='work/'${ENTITY}/
+    mkdir -p ${DEST}
+    pushd ${DEST}
 
-# Check for local mu-plugins
-if [ -e mu-plugins ]
-then
-    ${CMD} mu-plugins/ wproot/wordpress/wp-content/mu-plugins/
-fi
+    ####
+    # by symlinking the composer manifest and vendor direcory it saves us from having to
+    # resinstall everything that shoudl already be in the dev tree.
+    ln -s ../../composer.json
+    ln -s ../../vendor
 
-# Check for local plugins
-if [ -e plugins ]
-then
-    ${CMD} plugins/ wproot/wordpress/wp-content/plugins/
-fi
+    ####
+    # This will look st the manifest and vendor tree see symlinking above
+    preBuild
+    popd
 
-# Check for local themes
-if [ -e themes ]
-then
-${CMD} themes/ wproot/wordpress/wp-content/themes/
-fi
+    ####
+    # This section needs work but as a first pass it will suffice
+    # TODO: change the following to symlink on local builds and cp for all deployment builds
+    # This change will require new functions that search the source path(s) and symlink the
+    # top level items into the destinations the symlink operation(s) should be indempotent
+    # thus we may need to check the existence of the target in the destination directory.
+    #
+    # The plan is to pass in a deployment destination target on the command line and build
+    # a hard copy read for shipping to that end point.
+
+    # Check for local mu-plugins
+    if [ -e mu-plugins ]
+    then
+        ${CMD} mu-plugins/ ${DEST}${DESTBASE}mu-plugins/
+    fi
+
+    # Check for local plugins
+    if [ -e plugins ]
+    then
+        ${CMD} plugins/ ${DEST}${DESTBASE}plugins/
+    fi
+
+    # Check for local themes
+    if [ -e themes ]
+    then
+        ${CMD} themes/ ${DEST}${DESTBASE}themes/
+    fi
 }
 
 ####
+# Update the mu-plugins, plugins and themes as necessary
+# Some of this actually could be move into the deploy script
 # TODO: change targets to work/TARGET/wproot/...
 #
 case "$TARGET" in
 	local)
+	    preBuild
 		localBuild
 		exit 0
 		;;
 	production)
+		preDeployBuild production
 		url=git@git.wpengine.com:production/rdigest.git
 		;;
 	preprod)
+	    preDeployBuild preprod
 		url=git@git.wpengine.com:staging/rdigest.git
 		;;
 	staging)
+	    preDeployBuild staging
 		url=git@git.wpengine.com:production/readersdigest.git
 		;;
 	*)
@@ -117,15 +153,3 @@ case "$TARGET" in
 		exit 1
 		;;
 esac
-
-####
-# Install/update as necessary any package changes
-#
-composer update
-
-####
-# Install the config files as necessary
-# TODO: change this to symlinks on local builds and persist the copy for deployment builds
-#
-cp etc/*-conf.php wproot/
-
