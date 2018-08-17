@@ -21,6 +21,23 @@ if [ ! -z "$SETUP_DBDUMP" -o ! -z "$SETUP_DBDUMP_PATH" ]; then
 	TARGET=local
 fi
 
+function getRevision() {
+    git rev-parse --short HEAD > revision
+}
+
+function getComposerManifest() {
+    if [ ! -e composer.json ]
+    then
+        ln -s ../../composer.json
+    fi
+}
+
+function getVendors() {
+    if [ ! -e vendor ]
+    then
+        ln -s ../../vendor
+    fi
+}
 
 function preBuild() {
     ####
@@ -33,6 +50,8 @@ function preBuild() {
     # TODO: change this to symlinks on local builds and persist the copy for deployment builds
     #
     cp etc/*-conf.php wproot/ SECOND
+
+    getRevision
 }
 
 ####
@@ -88,8 +107,8 @@ function preDeployBuild() {
     ####
     # by symlinking the composer manifest and vendor direcory it saves us from having to
     # resinstall everything that shoudl already be in the dev tree.
-    ln -s ../../composer.json
-    ln -s ../../vendor
+    getComposerManifest
+    getVendors
 
     ####
     # This will look st the manifest and vendor tree see symlinking above
@@ -138,6 +157,7 @@ case "$TARGET" in
 		;;
 	production)
 		preDeployBuild production
+
 		url=git@git.wpengine.com:production/rdigest.git
 		;;
 	preprod)
