@@ -22,7 +22,7 @@ if [ ! -z "$SETUP_DBDUMP" -o ! -z "$SETUP_DBDUMP_PATH" ]; then
 fi
 
 function getRevision() {
-    git rev-parse --short HEAD > revision
+    git rev-parse --short HEAD > wproot/revision
 }
 
 function getComposerManifest() {
@@ -49,7 +49,7 @@ function preBuild() {
     # Install the config files as necessary
     # TODO: change this to symlinks on local builds and persist the copy for deployment builds
     #
-    cp etc/*-conf.php wproot/ SECOND
+    cp etc/*-conf.php wproot/
 
     getRevision
 }
