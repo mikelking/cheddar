@@ -39,6 +39,17 @@ function getVendors() {
     fi
 }
 
+function installWordPressCore() {
+    if [ -e vendor/johnpbloch/wordpress-core/ ]
+    then
+        if [ ! -e wproot/wordpress ]
+        then
+            mkdir -p wproot/wordpress
+        fi
+        ${CMD} vendor/johnpbloch/wordpress-core/ wproot/wordpress/
+    fi
+}
+
 function preBuild() {
     ####
     # Install/update as necessary any package changes FIRST
@@ -49,7 +60,7 @@ function preBuild() {
     # Install the config files as necessary
     # TODO: change this to symlinks on local builds and persist the copy for deployment builds
     #
-    cp etc/*-conf.php wproot/
+    cp ${OWD}/etc/*-conf.php wproot/
 
     getRevision
 }
@@ -93,9 +104,11 @@ function localBuild() {
     ####
     # Check for items in mu-plugins and symlink the ones that don't
     # already exist into the destination
+    installWordPressCore
     linkAssets 'mu-plugins'
     linkAssets 'plugins'
     linkAssets 'themes'
+
 }
 
 function preDeployBuild() {
@@ -109,6 +122,7 @@ function preDeployBuild() {
     # resinstall everything that shoudl already be in the dev tree.
     getComposerManifest
     getVendors
+    installWordPressCore
 
     ####
     # This will look st the manifest and vendor tree see symlinking above

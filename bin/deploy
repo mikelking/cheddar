@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+ECLUSIONS='--exclude=".git" --exclude=".svn"'
+
 ####
 # Deployment is dependent up the appropriate destination being
 # properly configured in the .ssh/config. This eliminates the
@@ -13,5 +15,5 @@
 #
 
 pushd work/production
-rsync --stats -avzrp wproot mikel@ra2:/web/test/
+rsync ${EXCLUSIONS} --stats -avzrp wproot mikel@ra2:/web/test/
 popd
