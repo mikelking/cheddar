@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "41de0b4388815366eb4ca33bc918b722",
+    "content-hash": "7bf2d39908d0a2592ce73f658f398c46",
     "packages": [
         {
             "name": "composer/installers",
@@ -251,16 +251,16 @@
         },
         {
             "name": "mikelking/wpcfg",
-            "version": "0.1.6",
+            "version": "0.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mikelking/wpcfg.git",
-                "reference": "f14e8fd09fbae27afa32d275837d9c60db3bc6c9"
+                "reference": "4d98b595c9d56d053f2d5e64a6b60064aa57fa5e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mikelking/wpcfg/zipball/f14e8fd09fbae27afa32d275837d9c60db3bc6c9",
-                "reference": "f14e8fd09fbae27afa32d275837d9c60db3bc6c9",
+                "url": "https://api.github.com/repos/mikelking/wpcfg/zipball/4d98b595c9d56d053f2d5e64a6b60064aa57fa5e",
+                "reference": "4d98b595c9d56d053f2d5e64a6b60064aa57fa5e",
                 "shasum": ""
             },
             "require": {
@@ -293,7 +293,7 @@
                 "source": "https://github.com/mikelking/wpcfg/tree/0.1.7",
                 "issues": "https://github.com/mikelking/wpcfg/issues"
             },
-            "time": "2018-08-17T18:52:01+00:00"
+            "time": "2018-08-20T13:26:54+00:00"
         },
         {
             "name": "wpackagist-plugin/ajax-heartbeat-tool",
