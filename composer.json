@@ -60,7 +60,7 @@
   "require": {
     "php": ">=7.0",
     "composer/installers" : "v1.2.0",
-    "mikelking/wpcfg" : "0.1.6",
+    "mikelking/wpcfg" : "0.1.7",
     "johnpbloch/wordpress-core" : "4.9.8",
     "mikelking/bacon" : "1.0.10",
     "wpackagist-theme/twentyseventeen" : "*",
