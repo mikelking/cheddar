@@ -41,6 +41,10 @@
       "url": "https://github.com/johnpbloch/wordpress-core"
     },
     {
+      "type": "vcs",
+      "url": "https://github.com/mikelking/pyramid"
+    },
+    {
       "type": "composer",
       "url": "https://wpackagist.org"
     },
@@ -63,7 +67,8 @@
     "mikelking/wpcfg" : "0.1.7",
     "johnpbloch/wordpress-core" : "4.9.8",
     "mikelking/bacon" : "1.0.10",
-    "wpackagist-theme/twentyseventeen" : "*",
+    "wpackagist-theme/twentyseventeen" : "1.7",
+    "wpackagist-theme/third-style" : "1.1.1",
     "wpackagist-plugin/akismet" : "dev-trunk",
     "wpackagist-plugin/jetpack" : "6.4.2",
     "wpackagist-plugin/classic-editor" : "0.4",
@@ -78,7 +83,8 @@
     "wpackagist-plugin/duo-wordpress" : "2.5.4",
     "wpackagist-plugin/newsletter" : "5.6.5",
     "wpackagist-plugin/crayon-syntax-highlighter" : "2.8.4",
-    "wpackagist-plugin/wordpress-seo": "8.0"
+    "wpackagist-plugin/wordpress-seo": "8.0",
+    "mikelking/pyramid": "0.0.2"
   },
   "require-dev": {
     "wpackagist-plugin/show-current-template": "0.3.0",

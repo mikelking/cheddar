@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7bf2d39908d0a2592ce73f658f398c46",
+    "content-hash": "cc9026b96635c0f5bd4af63a86dfb3f7",
     "packages": [
         {
             "name": "composer/installers",
@@ -198,6 +198,37 @@
                 "issues": "https://github.com/mikelking/bacon/issues"
             },
             "time": "2018-02-02T21:57:36+00:00"
+        },
+        {
+            "name": "mikelking/pyramid",
+            "version": "0.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mikelking/pyramid.git",
+                "reference": "05cdf68668b94fc9d27eea536eb53f8cc196c546"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mikelking/pyramid/zipball/05cdf68668b94fc9d27eea536eb53f8cc196c546",
+                "reference": "05cdf68668b94fc9d27eea536eb53f8cc196c546",
+                "shasum": ""
+            },
+            "type": "vagrant-bundle",
+            "license": [
+                "BSD-3"
+            ],
+            "description": "Vagrant bundle.",
+            "homepage": "https://www.jafdip.com/",
+            "keywords": [
+                "ansible",
+                "vagrant",
+                "virtualbox"
+            ],
+            "support": {
+                "source": "https://github.com/mikelking/pyramid/tree/0.0.2",
+                "issues": "https://github.com/mikelking/pyramid/issues"
+            },
+            "time": "2018-08-20T16:52:05+00:00"
         },
         {
             "name": "mikelking/wordpress-config-installer",
@@ -597,6 +628,26 @@
             "homepage": "https://wordpress.org/plugins/wp-bitly/"
         },
         {
+            "name": "wpackagist-theme/third-style",
+            "version": "1.1.1",
+            "source": {
+                "type": "svn",
+                "url": "https://themes.svn.wordpress.org/third-style/",
+                "reference": "1.1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/theme/third-style.1.1.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-theme",
+            "homepage": "https://wordpress.org/themes/third-style/"
+        },
+        {
             "name": "wpackagist-theme/twentyseventeen",
             "version": "1.7",
             "source": {
@@ -961,16 +1012,16 @@
         },
         {
             "name": "composer/xdebug-handler",
-            "version": "1.2.0",
+            "version": "1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/xdebug-handler.git",
-                "reference": "e1809da56ce1bd1b547a752936817341ac244d8e"
+                "reference": "e37cbd80da64afe314c72de8d2d2fec0e40d9373"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/xdebug-handler/zipball/e1809da56ce1bd1b547a752936817341ac244d8e",
-                "reference": "e1809da56ce1bd1b547a752936817341ac244d8e",
+                "url": "https://api.github.com/repos/composer/xdebug-handler/zipball/e37cbd80da64afe314c72de8d2d2fec0e40d9373",
+                "reference": "e37cbd80da64afe314c72de8d2d2fec0e40d9373",
                 "shasum": ""
             },
             "require": {
@@ -1001,7 +1052,7 @@
                 "Xdebug",
                 "performance"
             ],
-            "time": "2018-08-16T10:54:23+00:00"
+            "time": "2018-08-23T12:00:19+00:00"
         },
         {
             "name": "doctrine/instantiator",
@@ -1059,16 +1110,16 @@
         },
         {
             "name": "gettext/gettext",
-            "version": "v4.6.0",
+            "version": "v4.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/oscarotero/Gettext.git",
-                "reference": "cae84aff39a87e07bd6e5cddb5adb720a0ffa357"
+                "reference": "854ff5f5aaf92d2af7080ba8fc15718b27b5c89a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/oscarotero/Gettext/zipball/cae84aff39a87e07bd6e5cddb5adb720a0ffa357",
-                "reference": "cae84aff39a87e07bd6e5cddb5adb720a0ffa357",
+                "url": "https://api.github.com/repos/oscarotero/Gettext/zipball/854ff5f5aaf92d2af7080ba8fc15718b27b5c89a",
+                "reference": "854ff5f5aaf92d2af7080ba8fc15718b27b5c89a",
                 "shasum": ""
             },
             "require": {
@@ -1117,7 +1168,7 @@
                 "po",
                 "translation"
             ],
-            "time": "2018-06-26T16:51:09+00:00"
+            "time": "2018-08-27T15:40:19+00:00"
         },
         {
             "name": "gettext/languages",
@@ -2263,16 +2314,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "6.5.11",
+            "version": "6.5.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "7bab54cb366076023bbf457a2a0d513332cd40f2"
+                "reference": "24da433d7384824d65ea93fbb462e2f31bbb494e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/7bab54cb366076023bbf457a2a0d513332cd40f2",
-                "reference": "7bab54cb366076023bbf457a2a0d513332cd40f2",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/24da433d7384824d65ea93fbb462e2f31bbb494e",
+                "reference": "24da433d7384824d65ea93fbb462e2f31bbb494e",
                 "shasum": ""
             },
             "require": {
@@ -2343,7 +2394,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2018-08-07T07:05:35+00:00"
+            "time": "2018-08-22T06:32:48+00:00"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -3388,16 +3439,16 @@
         },
         {
             "name": "symfony/config",
-            "version": "v4.1.3",
+            "version": "v4.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/config.git",
-                "reference": "c868972ac26e4e19860ce11b300bb74145246ff9"
+                "reference": "76015a3cc372b14d00040ff58e18e29f69eba717"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/config/zipball/c868972ac26e4e19860ce11b300bb74145246ff9",
-                "reference": "c868972ac26e4e19860ce11b300bb74145246ff9",
+                "url": "https://api.github.com/repos/symfony/config/zipball/76015a3cc372b14d00040ff58e18e29f69eba717",
+                "reference": "76015a3cc372b14d00040ff58e18e29f69eba717",
                 "shasum": ""
             },
             "require": {
@@ -3447,11 +3498,11 @@
             ],
             "description": "Symfony Config Component",
             "homepage": "https://symfony.com",
-            "time": "2018-07-26T11:24:31+00:00"
+            "time": "2018-08-08T06:37:38+00:00"
         },
         {
             "name": "symfony/console",
-            "version": "v4.1.3",
+            "version": "v4.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
@@ -3519,16 +3570,16 @@
         },
         {
             "name": "symfony/dependency-injection",
-            "version": "v4.1.3",
+            "version": "v4.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/dependency-injection.git",
-                "reference": "f4f401fc2766eb8d766fc6043d9e6489b37a41e4"
+                "reference": "bae4983003c9d451e278504d7d9b9d7fc1846873"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/f4f401fc2766eb8d766fc6043d9e6489b37a41e4",
-                "reference": "f4f401fc2766eb8d766fc6043d9e6489b37a41e4",
+                "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/bae4983003c9d451e278504d7d9b9d7fc1846873",
+                "reference": "bae4983003c9d451e278504d7d9b9d7fc1846873",
                 "shasum": ""
             },
             "require": {
@@ -3586,20 +3637,20 @@
             ],
             "description": "Symfony DependencyInjection Component",
             "homepage": "https://symfony.com",
-            "time": "2018-08-01T08:24:03+00:00"
+            "time": "2018-08-08T11:48:58+00:00"
         },
         {
             "name": "symfony/filesystem",
-            "version": "v4.1.3",
+            "version": "v4.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
-                "reference": "2e30335e0aafeaa86645555959572fe7cea22b43"
+                "reference": "c0f5f62db218fa72195b8b8700e4b9b9cf52eb5e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/filesystem/zipball/2e30335e0aafeaa86645555959572fe7cea22b43",
-                "reference": "2e30335e0aafeaa86645555959572fe7cea22b43",
+                "url": "https://api.github.com/repos/symfony/filesystem/zipball/c0f5f62db218fa72195b8b8700e4b9b9cf52eb5e",
+                "reference": "c0f5f62db218fa72195b8b8700e4b9b9cf52eb5e",
                 "shasum": ""
             },
             "require": {
@@ -3636,11 +3687,11 @@
             ],
             "description": "Symfony Filesystem Component",
             "homepage": "https://symfony.com",
-            "time": "2018-07-26T11:24:31+00:00"
+            "time": "2018-08-18T16:52:46+00:00"
         },
         {
             "name": "symfony/finder",
-            "version": "v4.1.3",
+            "version": "v4.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
@@ -3806,16 +3857,16 @@
         },
         {
             "name": "symfony/process",
-            "version": "v4.1.3",
+            "version": "v4.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
-                "reference": "f01fc7a4493572f7f506c49dcb50ad01fb3a2f56"
+                "reference": "86cdb930a6a855b0ab35fb60c1504cb36184f843"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/f01fc7a4493572f7f506c49dcb50ad01fb3a2f56",
-                "reference": "f01fc7a4493572f7f506c49dcb50ad01fb3a2f56",
+                "url": "https://api.github.com/repos/symfony/process/zipball/86cdb930a6a855b0ab35fb60c1504cb36184f843",
+                "reference": "86cdb930a6a855b0ab35fb60c1504cb36184f843",
                 "shasum": ""
             },
             "require": {
@@ -3851,7 +3902,7 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
-            "time": "2018-07-26T11:24:31+00:00"
+            "time": "2018-08-03T11:13:38+00:00"
         },
         {
             "name": "theseer/fdomdocument",
@@ -4108,16 +4159,16 @@
         },
         {
             "name": "wp-cli/config-command",
-            "version": "v2.0.0",
+            "version": "v2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-cli/config-command.git",
-                "reference": "e6f9ae208f85efe65e13ffaf433ba9d418076edb"
+                "reference": "044c550ef4e4d4fae6ed62daad13f94959696453"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-cli/config-command/zipball/e6f9ae208f85efe65e13ffaf433ba9d418076edb",
-                "reference": "e6f9ae208f85efe65e13ffaf433ba9d418076edb",
+                "url": "https://api.github.com/repos/wp-cli/config-command/zipball/044c550ef4e4d4fae6ed62daad13f94959696453",
+                "reference": "044c550ef4e4d4fae6ed62daad13f94959696453",
                 "shasum": ""
             },
             "require": {
@@ -4173,7 +4224,7 @@
             ],
             "description": "Generates and reads the wp-config.php file.",
             "homepage": "https://github.com/wp-cli/config-command",
-            "time": "2018-08-05T12:28:47+00:00"
+            "time": "2018-08-20T10:59:48+00:00"
         },
         {
             "name": "wp-cli/core-command",
@@ -4438,16 +4489,16 @@
         },
         {
             "name": "wp-cli/entity-command",
-            "version": "v2.0.0",
+            "version": "v2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-cli/entity-command.git",
-                "reference": "e3f3d244ae5e88c2ef347966e4b74872c8fe6408"
+                "reference": "80d4b667555f74b29f57c92cf0fbf363b1f93474"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-cli/entity-command/zipball/e3f3d244ae5e88c2ef347966e4b74872c8fe6408",
-                "reference": "e3f3d244ae5e88c2ef347966e4b74872c8fe6408",
+                "url": "https://api.github.com/repos/wp-cli/entity-command/zipball/80d4b667555f74b29f57c92cf0fbf363b1f93474",
+                "reference": "80d4b667555f74b29f57c92cf0fbf363b1f93474",
                 "shasum": ""
             },
             "require": {
@@ -4458,7 +4509,7 @@
                 "wp-cli/db-command": "^1.3 || ^2",
                 "wp-cli/extension-command": "^1.2 || ^2",
                 "wp-cli/media-command": "^1.1 || ^2",
-                "wp-cli/wp-cli-tests": "^2"
+                "wp-cli/wp-cli-tests": "^2.0.7"
             },
             "type": "wp-cli-package",
             "extra": {
@@ -4639,7 +4690,7 @@
             ],
             "description": "Manage WordPress core entities.",
             "homepage": "https://github.com/wp-cli/entity-command",
-            "time": "2018-08-05T18:29:31+00:00"
+            "time": "2018-08-17T11:08:49+00:00"
         },
         {
             "name": "wp-cli/eval-command",
@@ -4755,16 +4806,16 @@
         },
         {
             "name": "wp-cli/extension-command",
-            "version": "v2.0.0",
+            "version": "v2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-cli/extension-command.git",
-                "reference": "4fed9eeb946229ce4f611752433e942a9f49edc2"
+                "reference": "49273af9aaa77fe795ae3564b3c68086ed8068a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-cli/extension-command/zipball/4fed9eeb946229ce4f611752433e942a9f49edc2",
-                "reference": "4fed9eeb946229ce4f611752433e942a9f49edc2",
+                "url": "https://api.github.com/repos/wp-cli/extension-command/zipball/49273af9aaa77fe795ae3564b3c68086ed8068a2",
+                "reference": "49273af9aaa77fe795ae3564b3c68086ed8068a2",
                 "shasum": ""
             },
             "require": {
@@ -4774,7 +4825,7 @@
             "require-dev": {
                 "wp-cli/entity-command": "^1.3 || ^2",
                 "wp-cli/scaffold-command": "^1.2 || ^2",
-                "wp-cli/wp-cli-tests": "^2"
+                "wp-cli/wp-cli-tests": "^2.0.7"
             },
             "type": "wp-cli-package",
             "extra": {
@@ -4838,30 +4889,30 @@
             ],
             "description": "Manages plugins and themes, including installs, activations, and updates.",
             "homepage": "https://github.com/wp-cli/extension-command",
-            "time": "2018-08-05T15:59:47+00:00"
+            "time": "2018-08-23T13:40:50+00:00"
         },
         {
             "name": "wp-cli/i18n-command",
-            "version": "v2.0.0",
+            "version": "v2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-cli/i18n-command.git",
-                "reference": "963a56727d9215282c373452cb0fda0bea654879"
+                "reference": "29446614189605dd7df174f31069b7009cd4b28c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-cli/i18n-command/zipball/963a56727d9215282c373452cb0fda0bea654879",
-                "reference": "963a56727d9215282c373452cb0fda0bea654879",
+                "url": "https://api.github.com/repos/wp-cli/i18n-command/zipball/29446614189605dd7df174f31069b7009cd4b28c",
+                "reference": "29446614189605dd7df174f31069b7009cd4b28c",
                 "shasum": ""
             },
             "require": {
                 "gettext/gettext": "^4.6",
-                "mck89/peast": "^1.8"
+                "mck89/peast": "^1.8",
+                "wp-cli/wp-cli": "^2"
             },
             "require-dev": {
                 "wp-cli/scaffold-command": "^1.2 || ^2",
-                "wp-cli/wp-cli": "^2",
-                "wp-cli/wp-cli-tests": "^2"
+                "wp-cli/wp-cli-tests": "^2.0.7"
             },
             "type": "wp-cli-package",
             "extra": {
@@ -4894,7 +4945,7 @@
             ],
             "description": "Provides internationalization tools for WordPress projects.",
             "homepage": "https://github.com/wp-cli/i18n-command",
-            "time": "2018-08-06T22:10:36+00:00"
+            "time": "2018-08-14T17:01:11+00:00"
         },
         {
             "name": "wp-cli/import-command",
@@ -4954,16 +5005,16 @@
         },
         {
             "name": "wp-cli/language-command",
-            "version": "v2.0.0",
+            "version": "v2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-cli/language-command.git",
-                "reference": "c74a7819dea6cfbf00017d79388c605400b3c385"
+                "reference": "8f6618323d1486e1c93967349c1823558649d6a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-cli/language-command/zipball/c74a7819dea6cfbf00017d79388c605400b3c385",
-                "reference": "c74a7819dea6cfbf00017d79388c605400b3c385",
+                "url": "https://api.github.com/repos/wp-cli/language-command/zipball/8f6618323d1486e1c93967349c1823558649d6a9",
+                "reference": "8f6618323d1486e1c93967349c1823558649d6a9",
                 "shasum": ""
             },
             "require": {
@@ -4973,7 +5024,7 @@
                 "wp-cli/db-command": "^1.3 || ^2",
                 "wp-cli/entity-command": "^1.3 || ^2",
                 "wp-cli/extension-command": "^1.2 || ^2",
-                "wp-cli/wp-cli-tests": "^2"
+                "wp-cli/wp-cli-tests": "^2.0.7"
             },
             "type": "wp-cli-package",
             "extra": {
@@ -5025,7 +5076,7 @@
             ],
             "description": "Installs, activates, and manages language packs.",
             "homepage": "https://github.com/wp-cli/language-command",
-            "time": "2018-08-05T16:31:01+00:00"
+            "time": "2018-08-15T12:15:34+00:00"
         },
         {
             "name": "wp-cli/media-command",
@@ -5364,16 +5415,16 @@
         },
         {
             "name": "wp-cli/scaffold-command",
-            "version": "v2.0.0",
+            "version": "v2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-cli/scaffold-command.git",
-                "reference": "7975548a5028c3209c3b5ce3ca444f14da59a79f"
+                "reference": "2ee679ff1746dcf9b28a0d6c1a7f9b02de7916d2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-cli/scaffold-command/zipball/7975548a5028c3209c3b5ce3ca444f14da59a79f",
-                "reference": "7975548a5028c3209c3b5ce3ca444f14da59a79f",
+                "url": "https://api.github.com/repos/wp-cli/scaffold-command/zipball/2ee679ff1746dcf9b28a0d6c1a7f9b02de7916d2",
+                "reference": "2ee679ff1746dcf9b28a0d6c1a7f9b02de7916d2",
                 "shasum": ""
             },
             "require": {
@@ -5381,7 +5432,7 @@
             },
             "require-dev": {
                 "wp-cli/extension-command": "^1.2 || ^2",
-                "wp-cli/wp-cli-tests": "^2"
+                "wp-cli/wp-cli-tests": "^2.0.7"
             },
             "type": "wp-cli-package",
             "extra": {
@@ -5422,7 +5473,7 @@
             ],
             "description": "Generates code for post types, taxonomies, blocks, plugins, child themes, etc.",
             "homepage": "https://github.com/wp-cli/scaffold-command",
-            "time": "2018-08-05T14:28:43+00:00"
+            "time": "2018-08-14T17:05:41+00:00"
         },
         {
             "name": "wp-cli/search-replace-command",
@@ -5709,16 +5760,16 @@
         },
         {
             "name": "wp-cli/wp-cli",
-            "version": "v2.0.0",
+            "version": "v2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-cli/wp-cli.git",
-                "reference": "55a71cce0562fd9d6f7d742cbe2d85a6ea1a80e5"
+                "reference": "8b47483c730b592ca956f1447bb064e90606e4ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-cli/wp-cli/zipball/55a71cce0562fd9d6f7d742cbe2d85a6ea1a80e5",
-                "reference": "55a71cce0562fd9d6f7d742cbe2d85a6ea1a80e5",
+                "url": "https://api.github.com/repos/wp-cli/wp-cli/zipball/8b47483c730b592ca956f1447bb064e90606e4ba",
+                "reference": "8b47483c730b592ca956f1447bb064e90606e4ba",
                 "shasum": ""
             },
             "require": {
@@ -5736,7 +5787,7 @@
                 "wp-cli/entity-command": "^1.2 || ^2",
                 "wp-cli/extension-command": "^1.1 || ^2",
                 "wp-cli/package-command": "^1 || ^2",
-                "wp-cli/wp-cli-tests": "^2"
+                "wp-cli/wp-cli-tests": "^2.0.8"
             },
             "bin": [
                 "bin/wp",
@@ -5763,20 +5814,20 @@
                 "cli",
                 "wordpress"
             ],
-            "time": "2018-08-08T19:37:37+00:00"
+            "time": "2018-08-23T23:01:42+00:00"
         },
         {
             "name": "wp-cli/wp-cli-bundle",
-            "version": "v2.0.0",
+            "version": "v2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-cli/wp-cli-bundle.git",
-                "reference": "628717ffe556bc74722162ac11337e47aa4e7ceb"
+                "reference": "89cc6c148d4569fcfbd42914505501145be73d8f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-cli/wp-cli-bundle/zipball/628717ffe556bc74722162ac11337e47aa4e7ceb",
-                "reference": "628717ffe556bc74722162ac11337e47aa4e7ceb",
+                "url": "https://api.github.com/repos/wp-cli/wp-cli-bundle/zipball/89cc6c148d4569fcfbd42914505501145be73d8f",
+                "reference": "89cc6c148d4569fcfbd42914505501145be73d8f",
                 "shasum": ""
             },
             "require": {
@@ -5805,11 +5856,11 @@
                 "wp-cli/shell-command": "^2",
                 "wp-cli/super-admin-command": "^2",
                 "wp-cli/widget-command": "^2",
-                "wp-cli/wp-cli": "^2"
+                "wp-cli/wp-cli": "^2.0.1"
             },
             "require-dev": {
                 "roave/security-advisories": "dev-master",
-                "wp-cli/wp-cli-tests": "^2"
+                "wp-cli/wp-cli-tests": "^2.0.7"
             },
             "suggest": {
                 "psy/psysh": "Enhanced `wp shell` functionality"
@@ -5830,7 +5881,7 @@
                 "cli",
                 "wordpress"
             ],
-            "time": "2018-08-08T20:52:21+00:00"
+            "time": "2018-08-23T23:10:02+00:00"
         },
         {
             "name": "wp-cli/wp-config-transformer",

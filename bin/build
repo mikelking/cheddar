@@ -2,7 +2,9 @@
 
 CMD="rsync --stats -avzrp"
 OWD=`pwd`
-DESTBASE=wproot/wordpress/wp-content/
+SRC=${OWD}/src
+DESTBASE=wproot/wordpress/wp-content
+SILENT=/dev/null 2>&1
 
 # Deploy to environment: 'production' or 'staging'
 TARGET=$1
@@ -32,6 +34,9 @@ function getComposerManifest() {
     fi
 }
 
+#####
+# SymLink the dev system vendors into the destination; this reduces the need to reinstall each build.
+#
 function getVendors() {
     if [ ! -e vendor ]
     then
@@ -39,6 +44,10 @@ function getVendors() {
     fi
 }
 
+#####
+# At the time of this development something has gone awry with
+# the composer auto-installer. This is a suitable backup.
+#
 function installWordPressCore() {
     if [ -e vendor/johnpbloch/wordpress-core/ ]
     then
@@ -50,48 +59,54 @@ function installWordPressCore() {
     fi
 }
 
+####
+# Install/update as necessary any package changes FIRST
+#
 function preBuild() {
-    ####
-    # Install/update as necessary any package changes FIRST
-    #
     composer update
-
-    ####
-    # Install the config files as necessary
-    # TODO: change this to symlinks on local builds and persist the copy for deployment builds
-    #
-    cp ${OWD}/etc/*-conf.php wproot/
-
-    getRevision
 }
 
 ####
-# Because even in BASH we should build reusable entities
+# Install the config files as necessary
+# TODO: change this to symlinks on local builds and persist the copy for deployment builds
 #
+function installConfigs() {
+    cp ${OWD}/etc/*-conf.php wproot/
+}
+
+####
+# Because even in BASH we should build reusable blocks
+#
+# This searches for source files in the appropriate entity
+# spaces and SymLink them into the local dev build
 #
 function linkAssets() {
-    ENTITY=${1}
-    DEST=${DESTBASE}${ENTITY}/
-    pushd ${DEST}
+    ENTITY=${1} # mu-plugins, plugins, themes
+    DEST=${DESTBASE}/${ENTITY}/
+    pushd ${DEST} > ${SILENT}
 
-    if [ -e ${OWD}/${ENTITY} ]
+    # Search the source for the entity
+    if [ -e ${SRC}/${ENTITY} ]
     then
-        echo "${ENTITY} exists, searching for mu-plugin assets"
-        for ASSET in ${OWD}/${ENTITY}/*
+        #echo "The ${ENTITY} destination exists."
+        for ASSET in ${SRC}/${ENTITY}/*
         do
-            echo ${ASSET##*/}
+            #echo "Searching for source matching assets in ${ENTITY}."
+            # echo ${ASSET##*/}
             if [ ! -e ${ASSET##*/} ]
             then
-                echo "Missing ${ENTITY} assets found attempting to symlink them."
+                #echo "Missing ${ASSET##*/} asset, attempting to symlink from ${SRC}/${ENTITY}/${ASSET##*/}."
+                #echo ${SRC}/${ENTITY}/${ASSET}
                 #echo ${ASSET}
                 #echo -n "Current working directory is "
                 #pwd
+                #ln -s ${SRC}/${ENTITY}/${ASSET}
                 ln -s ${ASSET}
-                #popd
+                #popd > ${SILENT}
             fi
         done
     fi
-    popd
+    popd > ${SILENT}
 }
 
 
@@ -108,18 +123,33 @@ function localBuild() {
     linkAssets 'mu-plugins'
     linkAssets 'plugins'
     linkAssets 'themes'
-
 }
 
+####
+# Simple hack to make WordPress uploads work in the vagrant.
+# This is for local dev ONLY!
+#
+function createUploads() {
+    if [ ! -e ${DESTBASE}/uploads ]
+    then
+        mkdir ${DESTBASE}/uploads
+        chmod -R 777 ${DESTBASE}/uploads
+    fi
+}
+
+####
+# This symlinks parts of the build composer manifest and vendor directory that would
+# result in unnecessary duplication or even possible build discrepancies. Thus installing
+# from vendor cache.
+#
+# There's just no viable reason to reinstall everything that should already
+# be in the dev tree.
 function preDeployBuild() {
     ENTITY=${1}
     DEST='work/'${ENTITY}/
     mkdir -p ${DEST}
-    pushd ${DEST}
+    pushd ${DEST} > ${SILENT}
 
-    ####
-    # by symlinking the composer manifest and vendor direcory it saves us from having to
-    # resinstall everything that shoudl already be in the dev tree.
     getComposerManifest
     getVendors
     installWordPressCore
@@ -127,34 +157,29 @@ function preDeployBuild() {
     ####
     # This will look st the manifest and vendor tree see symlinking above
     preBuild
-    popd
 
-    ####
-    # This section needs work but as a first pass it will suffice
-    # TODO: change the following to symlink on local builds and cp for all deployment builds
-    # This change will require new functions that search the source path(s) and symlink the
-    # top level items into the destinations the symlink operation(s) should be indempotent
-    # thus we may need to check the existence of the target in the destination directory.
-    #
-    # The plan is to pass in a deployment destination target on the command line and build
-    # a hard copy read for shipping to that end point.
+    installConfigs
+
+    getRevision
+
+    popd > ${SILENT}
 
     # Check for local mu-plugins
-    if [ -e mu-plugins ]
+    if [ -e ${SRC}/mu-plugins ]
     then
-        ${CMD} mu-plugins/ ${DEST}${DESTBASE}mu-plugins/
+        ${CMD} ${SRC}/mu-plugins/ ${DEST}${DESTBASE}/mu-plugins/
     fi
 
     # Check for local plugins
-    if [ -e plugins ]
+    if [ -e ${SRC}/plugins ]
     then
-        ${CMD} plugins/ ${DEST}${DESTBASE}plugins/
+        ${CMD} ${SRC}/plugins/ ${DEST}${DESTBASE}/plugins/
     fi
 
     # Check for local themes
-    if [ -e themes ]
+    if [ -e ${SRC}/themes ]
     then
-        ${CMD} themes/ ${DEST}${DESTBASE}themes/
+        ${CMD} ${SRC}/themes/ ${DEST}${DESTBASE}/themes/
     fi
 }
 
@@ -166,21 +191,24 @@ function preDeployBuild() {
 case "$TARGET" in
 	local)
 	    preBuild
+	    installConfigs
+        getRevision
 		localBuild
+		createUploads
 		exit 0
 		;;
 	production)
 		preDeployBuild production
 
-		url=git@git.wpengine.com:production/rdigest.git
+		GITURL=git@git.wpengine.com:production/somesite.git
 		;;
 	preprod)
 	    preDeployBuild preprod
-		url=git@git.wpengine.com:staging/rdigest.git
+		GITURL=git@git.wpengine.com:staging/somesite.git
 		;;
 	staging)
 	    preDeployBuild staging
-		url=git@git.wpengine.com:production/readersdigest.git
+		GITURL=git@git.wpengine.com:production/somesite.git
 		;;
 	*)
 		echo "Invalid environment: '$env'. Must be 'production', 'preprod', 'staging' or 'local'"

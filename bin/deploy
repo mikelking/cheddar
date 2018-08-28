@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-ECLUSIONS='--exclude=".git" --exclude=".svn"'
+EXCLUSIONS="--exclude='.git*' --exclude='.svn*'"
 
 ####
 # Deployment is dependent up the appropriate destination being
@@ -15,5 +15,5 @@ ECLUSIONS='--exclude=".git" --exclude=".svn"'
 #
 
 pushd work/production
-rsync ${EXCLUSIONS} --stats -avzrp wproot mikel@ra2:/web/test/
+rsync ${EXCLUSIONS} --stats -avzCrp wproot mikel@ra2:/web/test/
 popd

@@ -14,7 +14,7 @@ etc/phpcs/wpcs
 etc/production-conf.php
 
 work
-
+web
 wproot
 wproot/revision
 ~wproot/dev-conf.php
