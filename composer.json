@@ -45,6 +45,10 @@
       "url": "https://github.com/mikelking/pyramid"
     },
     {
+      "type": "vcs",
+      "url": "https://github.com/mikelking/virtual-ads-txt"
+    },
+    {
       "type": "composer",
       "url": "https://wpackagist.org"
     },
@@ -67,6 +71,7 @@
     "mikelking/wpcfg" : "0.1.7",
     "johnpbloch/wordpress-core" : "4.9.8",
     "mikelking/bacon" : "1.0.10",
+    "mikelking/virtual-ads-txt" : "1.0.1",
     "wpackagist-theme/twentyseventeen" : "1.7",
     "wpackagist-theme/third-style" : "1.1.1",
     "wpackagist-plugin/akismet" : "dev-trunk",

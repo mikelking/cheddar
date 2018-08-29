@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cc9026b96635c0f5bd4af63a86dfb3f7",
+    "content-hash": "864a54f5eda8c3e800c3b4442af00c49",
     "packages": [
         {
             "name": "composer/installers",
@@ -229,6 +229,40 @@
                 "issues": "https://github.com/mikelking/pyramid/issues"
             },
             "time": "2018-08-20T16:52:05+00:00"
+        },
+        {
+            "name": "mikelking/virtual-ads-txt",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mikelking/virtual-ads-txt.git",
+                "reference": "b9ff183c81d02dcc3aeb7400f308220949b89a56"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mikelking/virtual-ads-txt/zipball/b9ff183c81d02dcc3aeb7400f308220949b89a56",
+                "reference": "b9ff183c81d02dcc3aeb7400f308220949b89a56",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "v1.2.0",
+                "php": ">=5.6"
+            },
+            "type": "wordpress-plugin",
+            "license": [
+                "GPL-2"
+            ],
+            "description": "Virtual Ads.txt",
+            "homepage": "https://github.com/mikelking/virtual-ads-txt",
+            "keywords": [
+                "framework",
+                "plugin"
+            ],
+            "support": {
+                "source": "https://github.com/mikelking/virtual-ads-txt/tree/1.0.1",
+                "issues": "https://github.com/mikelking/virtual-ads-txt/issues"
+            },
+            "time": "2018-08-28T20:45:04+00:00"
         },
         {
             "name": "mikelking/wordpress-config-installer",
