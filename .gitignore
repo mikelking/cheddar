@@ -3,11 +3,17 @@
 .DS_Store
 .vagrant
 
+#ignore backups, logs, and temporary files
+*bu-*
 logs
 tmp
 
 vendor
 etc/phpcs/wpcs
+
+etc/production-conf.php
+
+work
 
 wproot
 wproot/revision

@@ -1,3 +1,94 @@
 #!/usr/bin/env bash
 
-rsync --stats -avzrp wproot mikel@ra2:/web/test/
+EXCLUSIONS="--exclude='.git*' --exclude='.svn*'"
+SILENT=/dev/null 2>&1
+
+####
+# Deployment is dependent up the appropriate destination being
+# properly configured in the .ssh/config. This eliminates the
+# need for us to store any ssh keys or other sensitive information
+# in the repository.
+#
+# This does mean that everyone involved in deployment would need
+# to agree on as well asv have the same set of ssh destinations
+#
+# TODO Make the deployment drive a build for the appropriate destination environment
+#
+
+####
+# Setup deployment destination
+# TODO: change this to local by default and add a true help option
+if [ -z "$1" ]; then
+	TARGET=local
+else
+    TARGET=$1
+fi
+
+####
+# TODO: add a getopt process to pull out command line switches like -h
+#
+function helpMsg() {
+	echo "Usage: $0 [production|preprod|staging|local]"
+	exit 1
+}
+
+function verifyEntity() {
+    ENTITY=${1}
+    if [ ! -e work/${ENTITY} ]
+    then
+        echo
+        echo "The '${ENTITY}' target was not found."
+        echo "Suggest trying to execute 'build ${ENTITY}' first."
+        echo
+        exit 1
+    fi
+}
+
+function deployToProd() {
+    pushd work/production > ${SILENT}
+    rsync ${EXCLUSIONS} --stats -avzCrp wproot mikel@ra2:/web/olivent_network/
+    popd > ${SILENT}
+}
+
+function deployToPreProd() {
+    pushd work/production > ${SILENT}
+    rsync ${EXCLUSIONS} --stats -avzCrp wproot mikel@ra2:/web/test/
+    popd > ${SILENT}
+}
+
+function deployToStag() {
+    pushd work/production > ${SILENT}
+    rsync ${EXCLUSIONS} --stats -avzCrp wproot mikel@ra2:/web/staging/
+    popd > ${SILENT}
+}
+
+####
+# Update the mu-plugins, plugins and themes as necessary
+#
+# TODO: change targets to be dynamic
+#
+case "$TARGET" in
+	local)
+	    verifyEntity ${TARGET}
+		exit 0
+		;;
+	production)
+		verifyEntity ${TARGET}
+		deployToProd
+		GITURL=git@git.wpengine.com:production/somesite.git
+		;;
+	preprod)
+	    verifyEntity ${TARGET}
+	    deployToPreProd
+		GITURL=git@git.wpengine.com:staging/somesite.git
+		;;
+	staging)
+	    verifyEntity ${TARGET}
+	    deployToStag
+		GITURL=git@git.wpengine.com:production/somesite.git
+		;;
+	*)
+		echo "Invalid environment: '$env'. Must be 'production', 'preprod', 'staging' or 'local'"
+		exit 1
+		;;
+esac

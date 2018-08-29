@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+CMD="vendor/bin/phpunit"
+CFG="-c etc/mu-plugins-phpunit.xml"
+OPTIONS="--colors=always"
+TESTS_PATH=mu-plugins/tests/
+
+echo
+echo "Attempting to run mu-plugin tests."
+echo
+
+#${CMD} ${CFG} ${OPTIONS}
+
+#phpunit mu-plugins/tests/ --colors=always
+
+${CMD} ${OPTIONS} ${TESTS_PATH}
+
+
+CMD="vendor/bin/phpunit"
+OPTIONS="--colors=always"
+TESTS_PATH=plugins/adsense-tool/tests/
+
+${CMD} ${OPTIONS} ${TESTS_PATH}
