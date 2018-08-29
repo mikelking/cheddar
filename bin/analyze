@@ -1,21 +1,21 @@
 #!/usr/bin/env bash
 
 CMD="vendor/bin/phpcpd"
-OPTIONS="--progress --ansi --no-interaction --log-pmd=logs/phpcpd.xml mu-plugins/ plugins/ themes/"
+OPTIONS="--progress --ansi --no-interaction --log-pmd=logs/phpcpd.xml src/mu-plugins/ src/plugins/ src/themes/"
 
 #echo Analyzing the mu-plugins.
-#${CMD} ${OPTIONS}logs/phpcpd-mu-plugins.xml mu-plugins/
+#${CMD} ${OPTIONS}logs/phpcpd-mu-plugins.xml src/mu-plugins/
 
 #echo Analyzing the plugins.
-#${CMD} ${OPTIONS}logs/phpcpd-plugins.xml plugins/
+#${CMD} ${OPTIONS}logs/phpcpd-plugins.xml src/plugins/
 
 #echo Analyzing the themes.
-#${CMD} ${OPTIONS}logs/phpcpd-themes.xml themes/
+#${CMD} ${OPTIONS}logs/phpcpd-themes.xml src/themes/
 
 
 ${CMD} ${OPTIONS}
 
 CMD="vendor/bin/phploc"
-OPTIONS="--ansi --no-interaction --count-tests --log-xml=logs/phploc.xml mu-plugins/ plugins/ themes/"
+OPTIONS="--ansi --no-interaction --count-tests --log-xml=logs/phploc.xml src/mu-plugins/ src/plugins/ src/themes/"
 
 ${CMD} ${OPTIONS}
