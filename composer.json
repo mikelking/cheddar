@@ -49,6 +49,10 @@
       "url": "https://github.com/mikelking/virtual-ads-txt"
     },
     {
+      "type": "vcs",
+      "url": "https://github.com/mikelking/quotes"
+    },
+    {
       "type": "composer",
       "url": "https://wpackagist.org"
     },
@@ -93,6 +97,7 @@
     "wpackagist-plugin/lazy-load" : "0.6.1",
     "wpackagist-plugin/members" : "2.1.0",
     "wpackagist-plugin/newsletter" : "5.6.6",
+    "mikelking/quotes" : "0.1.2",
     "wpackagist-plugin/simple-iframe-buster" : "~1.0",
     "wpackagist-plugin/tinymce-advanced" : "4.8.0",
     "wpackagist-plugin/triberr-wordpress-plugin" : "4.0.8",

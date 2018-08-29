@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "71e4791fa1b769bfc3edde15496524ce",
+    "content-hash": "031c19e65e99151b5bc510331a6b241f",
     "packages": [
         {
             "name": "composer/installers",
@@ -229,6 +229,40 @@
                 "issues": "https://github.com/mikelking/pyramid/issues"
             },
             "time": "2018-08-20T16:52:05+00:00"
+        },
+        {
+            "name": "mikelking/quotes",
+            "version": "0.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mikelking/quotes.git",
+                "reference": "d5ddff7b47d5d43a320438c1492f8adade1528bb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mikelking/quotes/zipball/d5ddff7b47d5d43a320438c1492f8adade1528bb",
+                "reference": "d5ddff7b47d5d43a320438c1492f8adade1528bb",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "v1.2.0",
+                "php": ">=5.6"
+            },
+            "type": "wordpress-plugin",
+            "license": [
+                "BSD3"
+            ],
+            "description": "Quotes CPT",
+            "homepage": "https://github.com/mikelking/quotes",
+            "keywords": [
+                "framework",
+                "plugin"
+            ],
+            "support": {
+                "source": "https://github.com/mikelking/quotes/tree/0.1.2",
+                "issues": "https://github.com/mikelking/quotes/issues"
+            },
+            "time": "2018-08-29T19:26:42+00:00"
         },
         {
             "name": "mikelking/virtual-ads-txt",
