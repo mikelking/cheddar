@@ -3,9 +3,9 @@ WPCS_REVISION=539c6d74e6207daa22b7ea754d6f103e9abb2755 # version 1.0.0
 
 # Validate only the following paths by default:
 FILES=(
-	themes/
-	plugins/
-	mu-plugins/
+	src/themes/
+	src/plugins/
+	src/mu-plugins/
 )
 
 # And ignore these files (Not used when files are specified
