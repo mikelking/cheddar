@@ -13,10 +13,16 @@ TARGET=$1
 # Setup deployment destination
 # TODO: change this to local by default and add a true help option
 if [ -z "$1" ]; then
-	#echo "Usage: $0 [production|staging|local]"
-	#exit 1
 	TARGET=local
 fi
+
+####
+# TODO: add a getopt process to pull out command line switches like -h
+#
+function helpMsg() {
+	echo "Usage: $0 [production|preprod|staging|local]"
+	exit 1
+}
 
 # Do a local deploy if SETUP_DBDUMP or SETUP_DBDUMP
 if [ ! -z "$SETUP_DBDUMP" -o ! -z "$SETUP_DBDUMP_PATH" ]; then
