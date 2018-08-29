@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "031c19e65e99151b5bc510331a6b241f",
+    "content-hash": "ab8c632a8677aea0bddce55c9012f2e6",
     "packages": [
         {
             "name": "composer/installers",
@@ -232,16 +232,16 @@
         },
         {
             "name": "mikelking/quotes",
-            "version": "0.1.2",
+            "version": "0.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mikelking/quotes.git",
-                "reference": "d5ddff7b47d5d43a320438c1492f8adade1528bb"
+                "reference": "9ce3b20017c5b0fbc9fa85616192fb3263f6b1b9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mikelking/quotes/zipball/d5ddff7b47d5d43a320438c1492f8adade1528bb",
-                "reference": "d5ddff7b47d5d43a320438c1492f8adade1528bb",
+                "url": "https://api.github.com/repos/mikelking/quotes/zipball/9ce3b20017c5b0fbc9fa85616192fb3263f6b1b9",
+                "reference": "9ce3b20017c5b0fbc9fa85616192fb3263f6b1b9",
                 "shasum": ""
             },
             "require": {
@@ -259,10 +259,10 @@
                 "plugin"
             ],
             "support": {
-                "source": "https://github.com/mikelking/quotes/tree/0.1.2",
+                "source": "https://github.com/mikelking/quotes/tree/0.1.3",
                 "issues": "https://github.com/mikelking/quotes/issues"
             },
-            "time": "2018-08-29T19:26:42+00:00"
+            "time": "2018-08-29T19:38:04+00:00"
         },
         {
             "name": "mikelking/virtual-ads-txt",
