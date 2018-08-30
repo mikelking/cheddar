@@ -1,5 +1,5 @@
 {
-  "name": "mikelking/dummy",
+  "name": "mikelking/chaddar",
   "type": "project",
   "license": "BSD3",
   "description": "A WordPress site for testing Composer based deployments",
@@ -8,7 +8,7 @@
     {
       "name": "Olivent, llc.",
       "email": "info@olivent.com",
-      "homepage": "https://github.com/mikelking/dummy"
+      "homepage": "https://github.com/mikelking/cheddar"
     },
     {
       "name": "Mikel King",
