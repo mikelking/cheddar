@@ -1,7 +1,9 @@
-# dummy
-Welcome to the dummy project. It is called _dummy_ because the base is just a dummy framework that pulls together a lot of other parts into a single functioning entity. It is a foundational system initially intended as a learning tool that grew into a full blown system tool. To use you simply clone or fork and then start adding your site specific changes. Most og these changes are entered in the composer.json manifest and that file in essence becomes the documentation source for your site.
+# Cheddar
+Welcome to the cheddar project. 
 
-Dummy out of the box will let you build a local development site. However you will need to understand some of the basics around vagrant and WordPress configurations to achieve the full potential. Dummy can hep you build a resilient tiered development system complete with dev, staging, preprod and production WordPress environments.
+It was called _dummy_ because the base is just a dummy framework that pulls together a lot of other parts into a single functioning entity. It is a foundational system initially intended as a learning tool that grew into a full blown system tool. To use you simply clone or fork and then start adding your site specific changes. Most og these changes are entered in the composer.json manifest and that file in essence becomes the documentation source for your site. However, dummy was really a prototype project and now that this has developed into a truly useful system I have decided that _Cheddar_ is better name and besides it goes so well with [bacon](https://github.com/mikelking/bacon).
+
+Cheddar out of the box will let you build a local development site. However you will need to understand some of the basics around vagrant and WordPress configurations to achieve the full potential. Dummy can hep you build a resilient tiered development system complete with dev, staging, preprod and production WordPress environments.
 
 ##### NOTE:
 In order to get the most out of dummy you will need to have some familiarity with Composer, Vagrant, WordPress configurations and Apache Server configurations. 
@@ -36,6 +38,9 @@ Purpose of this test is to use composer to define all of the external assets nec
   - see the validate script
   - see [PHPCodeSniffer project](https://github.com/squizlabs/PHP_CodeSniffer/) for details.
   - see [WordPress Coding standards project](https://github.com/WordPress-Coding-Standards) for details.
+
+- Integrate Phan: _Researching_
+  - see [PHP Static Analyzer project](https://github.com/phan/phan/)
 
 - Integrate PHPUnit: _Installed but fully not configured_
   - Currently some dummy tests are functional and composer is bringing in 10Up's WP_Mock to facilitate proper unit testing. The official WordPress unit testing is actually integration testing and that is NOT the purpose of this stage.   
