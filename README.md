@@ -1,5 +1,9 @@
 # dummy
-Welcome to the dummy project. It is called _dummy_ because the base is just a dummy framework that pulls together a lot of other parts into a single functioning entity. It is a foundational system initially intended as a learning tool that grew into a full blown system tool. To use you simply clone or fork and then start adding your site specific changes. Most og these changes are entered in the composer.json manifest and that file in essence becomes the documentation source for your site.
+Welcome to the dummy project. Considering renaming this project to:
+# Cheddar #
+A rename will change the URL of the project.
+
+It is called _dummy_ because the base is just a dummy framework that pulls together a lot of other parts into a single functioning entity. It is a foundational system initially intended as a learning tool that grew into a full blown system tool. To use you simply clone or fork and then start adding your site specific changes. Most og these changes are entered in the composer.json manifest and that file in essence becomes the documentation source for your site.
 
 Dummy out of the box will let you build a local development site. However you will need to understand some of the basics around vagrant and WordPress configurations to achieve the full potential. Dummy can hep you build a resilient tiered development system complete with dev, staging, preprod and production WordPress environments.
 

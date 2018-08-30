@@ -39,6 +39,20 @@
  */
 
 /**
+ * Example of current_screen usage
+ * @param $current_screen
+ */
+/*
+function wporg_current_screen_example( $current_screen ) {
+    if ( 'someposttype' == $current_screen->post_type && 'post' == $current_screen->base ) {
+        // Do something in the edit screen of this post type
+    }
+
+    print_r( '<h2>current screen: ' . $current_screen . '</h2>'. PHP_EOL );
+}
+add_action( 'current_screen', 'wporg_current_screen_example' );
+*/
+/**
  * Set the content width based on the theme's design and stylesheet.
  *
  * Used to set the width of images and content. Should be equal to the width the theme
