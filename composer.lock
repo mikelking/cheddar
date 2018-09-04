@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b2091bf43598bf6433c6b63c48896929",
+    "content-hash": "b961e97bcaaa3f1751c77b5c2be6492b",
     "packages": [
         {
             "name": "composer/installers",
@@ -597,15 +597,15 @@
         },
         {
             "name": "wpackagist-plugin/gutenberg",
-            "version": "3.6.2",
+            "version": "3.7.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/gutenberg/",
-                "reference": "tags/3.6.2"
+                "reference": "tags/3.7.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gutenberg.3.6.2.zip",
+                "url": "https://downloads.wordpress.org/plugin/gutenberg.3.7.0.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -677,15 +677,15 @@
         },
         {
             "name": "wpackagist-plugin/newsletter",
-            "version": "5.6.6",
+            "version": "5.6.7",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/newsletter/",
-                "reference": "tags/5.6.6"
+                "reference": "tags/5.6.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/newsletter.5.6.6.zip",
+                "url": "https://downloads.wordpress.org/plugin/newsletter.5.6.7.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -757,15 +757,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "8.1",
+            "version": "8.1.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/8.1"
+                "reference": "tags/8.1.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.8.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.8.1.1.zip",
                 "reference": null,
                 "shasum": null
             },
