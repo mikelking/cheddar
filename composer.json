@@ -85,6 +85,7 @@
     "wpackagist-theme/third-style" : "1.1.1",
     "wpackagist-plugin/ajax-heartbeat-tool" : "~1.0",
     "wpackagist-plugin/akismet" : "dev-trunk",
+    "wpackagist-plugin/bj-lazy-load" : "1.0.9",
     "wpackagist-plugin/classic-editor" : "0.4",
     "wpackagist-plugin/cloudflare" : "3.3.2",
     "wpackagist-plugin/co-authors-plus" : "3.3.0",

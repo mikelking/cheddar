@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0edd060d5d91a6727994a0012117618a",
+    "content-hash": "b2091bf43598bf6433c6b63c48896929",
     "packages": [
         {
             "name": "composer/installers",
@@ -434,6 +434,26 @@
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/akismet/",
             "time": "2018-08-14T06:52:08+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/bj-lazy-load",
+            "version": "1.0.9",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/bj-lazy-load/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/bj-lazy-load.zip?timestamp=1502280365",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/bj-lazy-load/"
         },
         {
             "name": "wpackagist-plugin/classic-editor",
