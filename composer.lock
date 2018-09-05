@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b961e97bcaaa3f1751c77b5c2be6492b",
+    "content-hash": "99ba39fe78f066a652216a4a29d8d561",
     "packages": [
         {
             "name": "composer/installers",
@@ -263,6 +263,52 @@
                 "issues": "https://github.com/mikelking/quotes/issues"
             },
             "time": "2018-08-29T19:38:04+00:00"
+        },
+        {
+            "name": "mikelking/smart-images",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mikelking/smart-images.git",
+                "reference": "0195cf674b269f7c6a9aef0d1a5f72d7fd440e1a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mikelking/smart-images/zipball/0195cf674b269f7c6a9aef0d1a5f72d7fd440e1a",
+                "reference": "0195cf674b269f7c6a9aef0d1a5f72d7fd440e1a",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "v1.2.0",
+                "php": ">=5.5"
+            },
+            "type": "wordpress-plugin",
+            "license": [
+                "GPL-2"
+            ],
+            "authors": [
+                {
+                    "name": "Olivent, llc.",
+                    "email": "info@olivent.com",
+                    "homepage": "https://github.com/mikelking/smart-images"
+                },
+                {
+                    "name": "Mikel King",
+                    "email": "mikel.king@olivent.com",
+                    "homepage": "https://github.com/mikelking"
+                }
+            ],
+            "description": "WordPress image lazy loading plugin.",
+            "homepage": "https://github.com/mikelking/smart-images",
+            "keywords": [
+                "lazy loading",
+                "plugin",
+                "wordpress"
+            ],
+            "support": {
+                "source": "https://github.com/mikelking/smart-images/tree/1.0.0"
+            },
+            "time": "2018-09-05T13:21:40+00:00"
         },
         {
             "name": "mikelking/virtual-ads-txt",
