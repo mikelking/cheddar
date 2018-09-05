@@ -105,6 +105,7 @@
     "wpackagist-plugin/members" : "2.1.0",
     "wpackagist-plugin/newsletter" : "5.6.7",
     "wpackagist-plugin/simple-iframe-buster" : "~1.0",
+    "wpackagist-plugin/stream" : "3.2.3",
     "wpackagist-plugin/tinymce-advanced" : "4.8.0",
     "wpackagist-plugin/triberr-wordpress-plugin" : "4.0.8",
     "wpackagist-plugin/wordpress-seo": "8.1.1",
