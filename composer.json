@@ -100,6 +100,7 @@
     "wpackagist-plugin/fftf-alerts" : "1.3.1",
     "wpackagist-plugin/google-analytics-for-wordpress" : "7.1.0",
     "wpackagist-plugin/gutenberg" : "3.7.0",
+    "wpackagist-plugin/jackmail-newsletters" : "1.0.65",
     "wpackagist-plugin/jetpack" : "6.4.2",
     "wpackagist-plugin/lazy-load" : "0.6.1",
     "wpackagist-plugin/members" : "2.1.0",
