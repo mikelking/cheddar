@@ -1,0 +1,197 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: AgentPress Pro\n"
+"POT-Creation-Date: 2016-05-01 09:59-0400\n"
+"PO-Revision-Date: 2016-05-01 09:59-0400\n"
+"Last-Translator: StudioPress <translations@studiopress.com>\n"
+"Language-Team: StudioPress <translations@studiopress.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: archive-listing.php:86 taxonomy.php:86
+msgid "View Listing"
+msgstr ""
+
+#: archive-listing.php:95 taxonomy.php:95
+msgid "Sorry, no properties matched your criteria."
+msgstr ""
+
+#: functions.php:15
+msgid "AgentPress Pro Theme"
+msgstr ""
+
+#: functions.php:65
+msgid "AgentPress Pro Blue"
+msgstr ""
+
+#: functions.php:66
+msgid "AgentPress Pro Gold"
+msgstr ""
+
+#: functions.php:67
+msgid "AgentPress Pro Green"
+msgstr ""
+
+#: functions.php:75
+msgid "Price:"
+msgstr ""
+
+#: functions.php:76
+msgid "Address:"
+msgstr ""
+
+#: functions.php:77
+msgid "City:"
+msgstr ""
+
+#: functions.php:78
+msgid "State:"
+msgstr ""
+
+#: functions.php:79
+msgid "ZIP:"
+msgstr ""
+
+#: functions.php:82
+msgid "MLS #:"
+msgstr ""
+
+#: functions.php:83
+msgid "Square Feet:"
+msgstr ""
+
+#: functions.php:84
+msgid "Bedrooms:"
+msgstr ""
+
+#: functions.php:85
+msgid "Bathrooms:"
+msgstr ""
+
+#: functions.php:86
+msgid "Basement:"
+msgstr ""
+
+#: functions.php:94
+msgid "Before Header Menu"
+msgstr ""
+
+#: functions.php:94
+msgid "Footer Menu"
+msgstr ""
+
+#: functions.php:168
+msgid "Home - Featured"
+msgstr ""
+
+#: functions.php:169
+msgid "This is the featured section at the top of the homepage."
+msgstr ""
+
+#: functions.php:173
+msgid "Home - Top"
+msgstr ""
+
+#: functions.php:174
+msgid "This is the top section of the content area on the homepage."
+msgstr ""
+
+#: functions.php:178
+msgid "Home - Middle 1"
+msgstr ""
+
+#: functions.php:179
+msgid ""
+"This is first widget-area in the middle section of the content area on the "
+"homepage."
+msgstr ""
+
+#: functions.php:183
+msgid "Home - Middle 2"
+msgstr ""
+
+#: functions.php:184
+msgid ""
+"This is second widget-area in the middle section of the content area on the "
+"homepage."
+msgstr ""
+
+#: functions.php:188
+msgid "Home - Middle 3"
+msgstr ""
+
+#: functions.php:189
+msgid ""
+"This is third widget-area in the middle section of the content area on the "
+"homepage."
+msgstr ""
+
+#: functions.php:193
+msgid "Home - Bottom"
+msgstr ""
+
+#: functions.php:194
+msgid "This is the bottom section of the content area on the homepage."
+msgstr ""
+
+#: functions.php:198
+msgid "Listings Archive"
+msgstr ""
+
+#: functions.php:199
+msgid "This is the widget-area at the top of the listings archive."
+msgstr ""
+
+#: functions.php:203
+msgid "Disclaimer"
+msgstr ""
+
+#: functions.php:204
+msgid "This is the disclaimer section of the footer."
+msgstr ""
+
+#: lib/customize.php:17
+msgid "Background Image"
+msgstr ""
+
+#: lib/customize.php:18
+msgid ""
+"<p>Personalize the top of your site home page by uploading an image.</p><p> "
+"The image used on the demo is <strong>1600 x 870 pixels</strong>.</p>"
+msgstr ""
+
+#: lib/customize.php:33
+msgid "Home Image Upload"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "AgentPress Pro"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "http://my.studiopress.com/themes/agentpress/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "A mobile responsive and HTML5 theme built for the Genesis Framework."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "StudioPress"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://www.studiopress.com/"
+msgstr ""
