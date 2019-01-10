@@ -20,7 +20,7 @@
     "wordpress", "stack", "composer", "vagrant", "wp"
   ],
   "config": {
-    "preferred-install": "source",
+    "preferred-install": "dist",
     "generate-salts": true
   },
   "repositories": [
