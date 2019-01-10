@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4e9710fab69053a3bceecbe5afca87c5",
+    "content-hash": "72ff5bc722348e720f9e997d37f9b955",
     "packages": [
         {
             "name": "composer/installers",
@@ -202,21 +202,33 @@
         },
         {
             "name": "mikelking/bacon",
-            "version": "1.0.11",
+            "version": "1.0.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mikelking/bacon.git",
-                "reference": "501e09e903ea3467e363537c38c223a34991a669"
+                "reference": "d2b41b500c1ecc860f94dbdcf618037fb0a02a00"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mikelking/bacon/zipball/501e09e903ea3467e363537c38c223a34991a669",
-                "reference": "501e09e903ea3467e363537c38c223a34991a669",
+                "url": "https://api.github.com/repos/mikelking/bacon/zipball/d2b41b500c1ecc860f94dbdcf618037fb0a02a00",
+                "reference": "d2b41b500c1ecc860f94dbdcf618037fb0a02a00",
                 "shasum": ""
+            },
+            "archive": {
+                "exclude": [
+                    ".editorconfig",
+                    ".gitattributes",
+                    ".gitignore",
+                    "CODE_OF_CONDUCT.md",
+                    "CONTRIBUTING.md",
+                    "ISSUE_TEMPLATE.md",
+                    "PULL_REQUEST_TEMPLATE.md",
+                    "/tests"
+                ]
             },
             "require": {
                 "composer/installers": "v1.2.0",
-                "php": ">=5.5"
+                "php": ">=5.6"
             },
             "type": "wordpress-muplugin",
             "license": [
@@ -241,10 +253,10 @@
                 "mu-plugin"
             ],
             "support": {
-                "source": "https://github.com/mikelking/bacon/tree/1.0.11",
+                "source": "https://github.com/mikelking/bacon/tree/1.0.12",
                 "issues": "https://github.com/mikelking/bacon/issues"
             },
-            "time": "2019-01-10T14:15:21+00:00"
+            "time": "2019-01-10T14:44:59+00:00"
         },
         {
             "name": "mikelking/pyramid",
