@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ec1916fb7d454983845ed9332765d0d3",
+    "content-hash": "4e9710fab69053a3bceecbe5afca87c5",
     "packages": [
         {
             "name": "composer/installers",
@@ -202,16 +202,16 @@
         },
         {
             "name": "mikelking/bacon",
-            "version": "1.0.10",
+            "version": "1.0.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mikelking/bacon.git",
-                "reference": "98a78b2b45808fa37b62e39366ccf917a26bc8ed"
+                "reference": "501e09e903ea3467e363537c38c223a34991a669"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mikelking/bacon/zipball/98a78b2b45808fa37b62e39366ccf917a26bc8ed",
-                "reference": "98a78b2b45808fa37b62e39366ccf917a26bc8ed",
+                "url": "https://api.github.com/repos/mikelking/bacon/zipball/501e09e903ea3467e363537c38c223a34991a669",
+                "reference": "501e09e903ea3467e363537c38c223a34991a669",
                 "shasum": ""
             },
             "require": {
@@ -241,10 +241,10 @@
                 "mu-plugin"
             ],
             "support": {
-                "source": "https://github.com/mikelking/bacon/tree/1.0.10",
+                "source": "https://github.com/mikelking/bacon/tree/1.0.11",
                 "issues": "https://github.com/mikelking/bacon/issues"
             },
-            "time": "2018-02-02T21:57:36+00:00"
+            "time": "2019-01-10T14:15:21+00:00"
         },
         {
             "name": "mikelking/pyramid",
