@@ -110,6 +110,7 @@
     "wpackagist-plugin/lazy-load" : "0.6.1",
     "wpackagist-plugin/members" : "2.1.0",
     "wpackagist-plugin/newsletter" : "5.6.7",
+    "wpackagist-plugin/ninja-forms" : "3.3.21.3",
     "wpackagist-plugin/scheduled-tweets" : "0.0.5",
     "wpackagist-plugin/simple-iframe-buster" : "~1.0",
     "wpackagist-plugin/stream" : "3.2.3",
