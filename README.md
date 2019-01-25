@@ -1,16 +1,19 @@
 # Cheddar
-Welcome to the cheddar project. 
+Welcome to the cheddar project.
 
-It was called _dummy_ because the base is just a dummy framework that pulls together a lot of other parts into a single functioning entity. It is a foundational system initially intended as a learning tool that grew into a full blown system tool. To use you simply clone or fork and then start adding your site specific changes. Most og these changes are entered in the composer.json manifest and that file in essence becomes the documentation source for your site. However, dummy was really a prototype project and now that this has developed into a truly useful system I have decided that _Cheddar_ is better name and besides it goes so well with [bacon](https://github.com/mikelking/bacon).
+It was called _dummy_ because the base is just a dummy framework that pulls together a lot of other parts into a single functioning entity. It is a foundational system initially intended as a learning tool that grew into a full blown system tool. To use you simply clone or fork and then start adding your site specific changes. Most of these changes are entered in the composer.json manifest and that file in essence becomes the documentation source for your site. However, dummy was really a prototype project and now that this has developed into a truly useful system I have decided that _Cheddar_ is better name and besides it goes so well with [bacon](https://github.com/mikelking/bacon).
 
-Cheddar out of the box will let you build a local development site. However you will need to understand some of the basics around vagrant and WordPress configurations to achieve the full potential. Dummy can hep you build a resilient tiered development system complete with dev, staging, preprod and production WordPress environments.
+Cheddar out of the box will let you build a local development site. However you will need to understand some of the basics around vagrant and WordPress configurations to achieve the full potential. Cheddar can hep you build a resilient tiered (multi stage)development system complete with dev, staging, preprod and production WordPress environments.
+
+The project is managed at https://tree.taiga.io/project/mikel-cheddar/
 
 ##### NOTE:
-In order to get the most out of dummy you will need to have some familiarity with Composer, Vagrant, WordPress configurations and Apache Server configurations. 
+In order to get the most out of cheddar you will need to have some familiarity with Composer, Vagrant, advanced WordPress configurations and Apache Server configurations.
 
-Purpose of this test is to use composer to define all of the external assets necessary to build a working WordPress and related plugins. The hope is to define a site's plugins, themes and git libraries in a composer.json manifest. Then have a site completely assembled via a _composer update_ type command.
+Purpose of this is to use composer to define all of the external assets necessary to build a working WordPress and related plugins. The hope is to define a site's plugins, themes and git libraries in a composer.json manifest. Then have a site completely assembled by issuing the _composer update_ command.
   - see [Composer website](https://getcomposer.org) for details.
 
+##### CURRENT:
 - At this point I have it building the WordPress tree and have setup the iggie file to ignore ALL of WordPress core.
   - The order of requirement is critical to successfully install ing all of the moving parts. The following outlines the order of operations:
     1. The wproot is installed first
@@ -18,9 +21,15 @@ Purpose of this test is to use composer to define all of the external assets nec
     3. The composer dependencies mu-plugins, plugins and themes
     4. The local mu-plugins, plugins and themes
 
-- This process allows one to clone or fork dummy and then create a branch specific to a particular site you wish to construct. It all affords the opportunity to build a single mu-plugin, plugin or theme in a uniform environment. 
+##### PROPOSED CHANGE:
+- To simplify things I plan on refactoring this to install WordPress into it's own directory separate form the wp-content space. This is a tactic taken but several other projects and it affords cleaner management and upgrades of the core files. See => https://codex.wordpress.org/Giving_WordPress_Its_Own_Directory for details.
+    1. The build and deployment script will require refactoring
+    2. Ultimately the builds and deployments will be simpler
+    3. The validation should also be easier to manage
 
-- Assuming that you already have a DB setup and enter the appropriate details in the respective config file this should yield a working shell site. 
+- This process allows one to clone or fork cheddar and then create a branch specific to a particular site you wish to construct. It all affords the opportunity to build a single mu-plugin, plugin or theme in a uniform environment.
+
+- Assuming that you already have a DB setup and enter the appropriate details in the respective config file this should yield a working shell site.
 
 ##### TODO:
 - Updated to install the mu-plugins. **DONE**
@@ -31,7 +40,7 @@ Purpose of this test is to use composer to define all of the external assets nec
   - see the [WordPress Abstract Configuration System project](https://github.com/mikelking/wpcfg) for details.
 
 - Composerafy development only plugins: **DONE**
-    - Installation of debugbar and other dev only safe plugins via composer. 
+    - Installation of debugbar and other dev only safe plugins via composer.
 
 - Integrate PHPCS: **DONE**
   - While this is technically complete I am not yet satisfied with the implementation. It works but there is room for improvement.
@@ -43,7 +52,7 @@ Purpose of this test is to use composer to define all of the external assets nec
   - see [PHP Static Analyzer project](https://github.com/phan/phan/)
 
 - Integrate PHPUnit: _Installed but fully not configured_
-  - Currently some dummy tests are functional and composer is bringing in 10Up's WP_Mock to facilitate proper unit testing. The official WordPress unit testing is actually integration testing and that is NOT the purpose of this stage.   
+  - Currently some dummy tests are functional and composer is bringing in 10Up's WP_Mock to facilitate proper unit testing. The official WordPress unit testing is actually integration testing and that is NOT the purpose of this stage.
   - see [PHPUnit website](https://phpunit.de/) for details.
 
 - Integrate PHPloc: **DONE**
@@ -51,7 +60,7 @@ Purpose of this test is to use composer to define all of the external assets nec
   - see [PHPloc project](https://github.com/sebastianbergmann/phploc) for details.
 
 - Integrate PHPmd: _Installed but not configured_
-  - This is being installed by composer but I am not yet confident that it is 100% working. It need more testing. 
+  - This is being installed by composer but I am not yet confident that it is 100% working. It need more testing.
   - see [PHPmd website](https://phpmd.org/) for details.
 
 - Integreate PHPdocumentor or PHPdox: _Incomplete_
@@ -81,9 +90,9 @@ Purpose of this test is to use composer to define all of the external assets nec
 ```
 
 - Implement documentation: _In progress_
-  - Documentation shall take the form of markdown files in a doc directory relative to this repo and mu-plugin, plugin or theme respectively. 
-  
-- Outline a recommended Plugin structure: In progress 
+  - Documentation shall take the form of markdown files in a doc directory relative to this repo and mu-plugin, plugin or theme respectively.
+
+- Outline a recommended Plugin structure: In progress
 
 ##### EXPRIMENTAL
 
