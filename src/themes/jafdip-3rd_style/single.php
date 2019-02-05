@@ -46,6 +46,7 @@ get_header(); ?>
 							</div><!-- #author-link	-->
 						</div><!-- #author-description -->
 					</div><!-- #entry-author-info -->
+					<div class="addthis_relatedposts_inline"></div>
 <?php endif; ?>
 
 					<div class="entry-utility">
