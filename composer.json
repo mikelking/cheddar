@@ -90,6 +90,7 @@
     "wpackagist-theme/twentyfourteen" : "2.2",
     "wpackagist-theme/twentyseventeen" : "1.7",
     "wpackagist-theme/third-style" : "1.1.1",
+    "wpackagist-plugin/addthis-all" : "3.1.8",
     "wpackagist-plugin/ajax-heartbeat-tool" : "~1.0",
     "wpackagist-plugin/akismet" : "dev-trunk",
     "wpackagist-plugin/bj-lazy-load" : "1.0.9",

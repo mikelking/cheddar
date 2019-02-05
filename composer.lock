@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0443ff3bc988159c716729abc883c3f4",
+    "content-hash": "eb91cf2b25dc00607b3da81d7b5ca01e",
     "packages": [
         {
             "name": "composer/installers",
@@ -558,6 +558,26 @@
                 "issues": "https://github.com/wp-graphql/wp-graphql/issues"
             },
             "time": "2018-12-19T21:22:31+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/addthis-all",
+            "version": "3.1.8",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/addthis-all/",
+                "reference": "tags/3.1.8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/addthis-all.3.1.8.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/addthis-all/"
         },
         {
             "name": "wpackagist-plugin/ajax-heartbeat-tool",
