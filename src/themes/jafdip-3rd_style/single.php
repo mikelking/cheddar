@@ -46,7 +46,6 @@ get_header(); ?>
 							</div><!-- #author-link	-->
 						</div><!-- #author-description -->
 					</div><!-- #entry-author-info -->
-					<div class="addthis_relatedposts_inline"></div>
 <?php endif; ?>
 
 					<div class="entry-utility">
@@ -54,6 +53,7 @@ get_header(); ?>
 						<?php edit_post_link( __( 'Edit', 'thirdstyle' ), '<span class="edit-link">', '</span>' ); ?>
 					</div><!-- .entry-utility -->
 				</div><!-- #post-## -->
+				<div class="addthis_relatedposts_inline"></div>
 
 				<div id="nav-below" class="navigation">
 					<div class="nav-previous"><?php previous_post_link( '%link', '<span class="meta-nav">' . _x( '&larr;', 'Previous post link', 'thirdstyle' ) . '</span> %title' ); ?></div>
