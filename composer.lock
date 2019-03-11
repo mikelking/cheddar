@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2d1c1eb8576795cb84f2dfb087c649f8",
+    "content-hash": "8bd04fb45398e57bfe4c3d0f3c38b12a",
     "packages": [
         {
             "name": "composer/installers",
@@ -867,6 +867,24 @@
             "homepage": "https://wordpress.org/plugins/gutenberg/"
         },
         {
+            "name": "wpackagist-plugin/health-check",
+            "version": "1.2.5",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/health-check/",
+                "reference": "tags/1.2.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/health-check.1.2.5.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/health-check/"
+        },
+        {
             "name": "wpackagist-plugin/jackmail-newsletters",
             "version": "1.0.65",
             "source": {
@@ -919,6 +937,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/lazy-load/"
+        },
+        {
+            "name": "wpackagist-plugin/media-deduper",
+            "version": "1.5.2",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/media-deduper/",
+                "reference": "tags/1.5.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/media-deduper.1.5.2.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/media-deduper/"
         },
         {
             "name": "wpackagist-plugin/members",
