@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2db604eb9696be1a4d5674fc60e4cb48",
+    "content-hash": "bc3319f3aa778a34579ed12113c4cd50",
     "packages": [
         {
             "name": "composer/installers",
@@ -605,14 +605,14 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/akismet.zip?timestamp=1547078148"
+                "url": "https://downloads.wordpress.org/plugin/akismet.zip?timestamp=1551375918"
             },
             "require": {
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/akismet/",
-            "time": "2019-01-09T23:55:48+00:00"
+            "time": "2019-02-28T17:45:18+00:00"
         },
         {
             "name": "wpackagist-plugin/bj-lazy-load",
@@ -832,15 +832,15 @@
         },
         {
             "name": "wpackagist-plugin/google-analytics-for-wordpress",
-            "version": "7.1.0",
+            "version": "7.4.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/google-analytics-for-wordpress/",
-                "reference": "tags/7.1.0"
+                "reference": "tags/7.4.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/google-analytics-for-wordpress.7.1.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/google-analytics-for-wordpress.7.4.2.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -4722,7 +4722,7 @@
                 },
                 {
                     "name": "Gert de Pagter",
-                    "email": "BackEndTea@gmail.com"
+                    "email": "backendtea@gmail.com"
                 }
             ],
             "description": "Symfony polyfill for ctype functions",
