@@ -569,9 +569,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/addthis-all.3.1.8.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/addthis-all.3.1.8.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -589,9 +587,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ajax-heartbeat-tool.zip?timestamp=1469726157",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/ajax-heartbeat-tool.zip?timestamp=1469726157"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -609,9 +605,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/akismet.zip?timestamp=1547078148",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/akismet.zip?timestamp=1547078148"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -630,9 +624,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/bj-lazy-load.zip?timestamp=1502280365",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/bj-lazy-load.zip?timestamp=1502280365"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -650,9 +642,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/classic-editor.0.4.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/classic-editor.0.4.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -670,9 +660,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/cloudflare.3.3.2.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/cloudflare.3.3.2.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -690,9 +678,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/co-authors-plus.3.3.0.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/co-authors-plus.3.3.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -710,9 +696,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/crayon-syntax-highlighter.zip?timestamp=1462880237",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/crayon-syntax-highlighter.zip?timestamp=1462880237"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -730,9 +714,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/duo-wordpress.2.5.4.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/duo-wordpress.2.5.4.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -750,9 +732,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/fftf-alerts.1.3.1.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/fftf-alerts.1.3.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -770,9 +750,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/genesis-simple-edits.2.2.1.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/genesis-simple-edits.2.2.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -790,9 +768,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/genesis-simple-faq.0.9.1.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/genesis-simple-faq.0.9.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -810,9 +786,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/genesis-simple-hooks.2.2.1.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/genesis-simple-hooks.2.2.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -830,9 +804,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/genesis-simple-sidebars.2.1.0.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/genesis-simple-sidebars.2.1.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -850,9 +822,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/google-analytics-dashboard-for-wp.5.3.7.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/google-analytics-dashboard-for-wp.5.3.7.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -870,9 +840,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/google-analytics-for-wordpress.7.1.0.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/google-analytics-for-wordpress.7.1.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -890,9 +858,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gutenberg.4.8.0.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/gutenberg.4.8.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -910,9 +876,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/jackmail-newsletters.1.0.65.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/jackmail-newsletters.1.0.65.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -930,9 +894,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/jetpack.6.4.2.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/jetpack.6.4.2.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -950,9 +912,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/lazy-load.0.6.1.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/lazy-load.0.6.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -970,9 +930,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/members.2.1.0.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/members.2.1.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -990,9 +948,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/newsletter.5.6.7.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/newsletter.5.6.7.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -1010,9 +966,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/ninja-forms.3.3.21.3.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/ninja-forms.3.3.21.3.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -1030,9 +984,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/page-links-to.3.0.1.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/page-links-to.3.0.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -1050,9 +1002,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/scheduled-tweets.0.0.5.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/scheduled-tweets.0.0.5.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -1070,9 +1020,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/simple-iframe-buster.zip?timestamp=1533565877",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/simple-iframe-buster.zip?timestamp=1533565877"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -1090,9 +1038,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/stream.3.2.3.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/stream.3.2.3.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -1110,9 +1056,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/tablepress.1.9.1.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/tablepress.1.9.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -1130,9 +1074,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/tinymce-advanced.4.8.0.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/tinymce-advanced.4.8.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -1150,9 +1092,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/triberr-wordpress-plugin.4.0.8.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/triberr-wordpress-plugin.4.0.8.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -1170,9 +1110,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.9.5.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.9.5.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -1190,9 +1128,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-bitly.2.5.2.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/wp-bitly.2.5.2.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -1210,9 +1146,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-optimize.2.2.4.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/wp-optimize.2.2.4.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -1230,9 +1164,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/theme/third-style.1.1.1.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/theme/third-style.1.1.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -1250,9 +1182,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/theme/twentyeleven.2.8.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/theme/twentyeleven.2.8.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -1270,9 +1200,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/theme/twentyfourteen.2.2.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/theme/twentyfourteen.2.2.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -1290,9 +1218,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/theme/twentyseventeen.1.7.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/theme/twentyseventeen.1.7.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -1310,9 +1236,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/theme/twentyten.2.5.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/theme/twentyten.2.5.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -1330,9 +1254,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/theme/twentythirteen.2.4.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/theme/twentythirteen.2.4.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -1350,9 +1272,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/theme/twentytwelve.2.5.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/theme/twentytwelve.2.5.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -2167,16 +2087,16 @@
         },
         {
             "name": "mockery/mockery",
-            "version": "1.2.1",
+            "version": "1.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mockery/mockery.git",
-                "reference": "dc4f10b6b1148744facb784015e4b339d7feec23"
+                "reference": "0eb0b48c3f07b3b89f5169ce005b7d05b18cf1d2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mockery/mockery/zipball/dc4f10b6b1148744facb784015e4b339d7feec23",
-                "reference": "dc4f10b6b1148744facb784015e4b339d7feec23",
+                "url": "https://api.github.com/repos/mockery/mockery/zipball/0eb0b48c3f07b3b89f5169ce005b7d05b18cf1d2",
+                "reference": "0eb0b48c3f07b3b89f5169ce005b7d05b18cf1d2",
                 "shasum": ""
             },
             "require": {
@@ -2228,7 +2148,7 @@
                 "test double",
                 "testing"
             ],
-            "time": "2019-02-08T14:43:54+00:00"
+            "time": "2019-02-13T09:37:52+00:00"
         },
         {
             "name": "mustache/mustache",
@@ -2449,21 +2369,21 @@
         },
         {
             "name": "phan/phan",
-            "version": "1.2.3",
+            "version": "1.2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phan/phan.git",
-                "reference": "532c43562af1206f68b504a89cc71737063b3972"
+                "reference": "78b8f2bdab9dab2146872bf130a9265a3f1f9a27"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phan/phan/zipball/532c43562af1206f68b504a89cc71737063b3972",
-                "reference": "532c43562af1206f68b504a89cc71737063b3972",
+                "url": "https://api.github.com/repos/phan/phan/zipball/78b8f2bdab9dab2146872bf130a9265a3f1f9a27",
+                "reference": "78b8f2bdab9dab2146872bf130a9265a3f1f9a27",
                 "shasum": ""
             },
             "require": {
                 "composer/semver": "^1.4",
-                "composer/xdebug-handler": "^1.3",
+                "composer/xdebug-handler": "^1.3.2",
                 "ext-filter": "*",
                 "ext-json": "*",
                 "felixfbecker/advanced-json-rpc": "^3.0.3",
@@ -2476,7 +2396,8 @@
                 "phpunit/phpunit": "^6.3.0"
             },
             "suggest": {
-                "ext-ast": "Needed for parsing ASTs (unless --use-fallback-parser is used). php-ast ^0.1.5|^1.0.0 is needed.",
+                "ext-ast": "Needed for parsing ASTs (unless --use-fallback-parser is used). 1.0.1+ is recommended, php-ast ^0.1.5|^1.0.0 is needed.",
+                "ext-igbinary": "Improves performance of polyfill when ext-ast is unavailable",
                 "ext-tokenizer": "Needed for non-AST support and file/line-based suppressions."
             },
             "bin": [
@@ -2511,7 +2432,7 @@
                 "php",
                 "static"
             ],
-            "time": "2019-02-10T23:34:07+00:00"
+            "time": "2019-03-09T19:38:20+00:00"
         },
         {
             "name": "phar-io/manifest",
@@ -3335,6 +3256,7 @@
                 "mock",
                 "xunit"
             ],
+            "abandoned": true,
             "time": "2018-08-09T05:50:03+00:00"
         },
         {
@@ -4382,16 +4304,16 @@
         },
         {
             "name": "symfony/config",
-            "version": "v4.2.3",
+            "version": "v4.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/config.git",
-                "reference": "25a2e7abe0d97e70282537292e3df45cf6da7b98"
+                "reference": "7f70d79c7a24a94f8e98abb988049403a53d7b31"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/config/zipball/25a2e7abe0d97e70282537292e3df45cf6da7b98",
-                "reference": "25a2e7abe0d97e70282537292e3df45cf6da7b98",
+                "url": "https://api.github.com/repos/symfony/config/zipball/7f70d79c7a24a94f8e98abb988049403a53d7b31",
+                "reference": "7f70d79c7a24a94f8e98abb988049403a53d7b31",
                 "shasum": ""
             },
             "require": {
@@ -4441,20 +4363,20 @@
             ],
             "description": "Symfony Config Component",
             "homepage": "https://symfony.com",
-            "time": "2019-01-30T11:44:30+00:00"
+            "time": "2019-02-23T15:17:42+00:00"
         },
         {
             "name": "symfony/console",
-            "version": "v4.2.3",
+            "version": "v4.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "1f0ad51dfde4da8a6070f06adc58b4e37cbb37a4"
+                "reference": "9dc2299a016497f9ee620be94524e6c0af0280a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/1f0ad51dfde4da8a6070f06adc58b4e37cbb37a4",
-                "reference": "1f0ad51dfde4da8a6070f06adc58b4e37cbb37a4",
+                "url": "https://api.github.com/repos/symfony/console/zipball/9dc2299a016497f9ee620be94524e6c0af0280a9",
+                "reference": "9dc2299a016497f9ee620be94524e6c0af0280a9",
                 "shasum": ""
             },
             "require": {
@@ -4513,7 +4435,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2019-01-25T14:35:16+00:00"
+            "time": "2019-02-23T15:17:42+00:00"
         },
         {
             "name": "symfony/contracts",
@@ -4585,16 +4507,16 @@
         },
         {
             "name": "symfony/dependency-injection",
-            "version": "v4.2.3",
+            "version": "v4.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/dependency-injection.git",
-                "reference": "72c14cbc0c27706b9b4c33b9cd7a280972ff4806"
+                "reference": "cdadb3765df7c89ac93628743913b92bb91f1704"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/72c14cbc0c27706b9b4c33b9cd7a280972ff4806",
-                "reference": "72c14cbc0c27706b9b4c33b9cd7a280972ff4806",
+                "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/cdadb3765df7c89ac93628743913b92bb91f1704",
+                "reference": "cdadb3765df7c89ac93628743913b92bb91f1704",
                 "shasum": ""
             },
             "require": {
@@ -4654,20 +4576,20 @@
             ],
             "description": "Symfony DependencyInjection Component",
             "homepage": "https://symfony.com",
-            "time": "2019-01-30T17:51:38+00:00"
+            "time": "2019-02-23T15:17:42+00:00"
         },
         {
             "name": "symfony/filesystem",
-            "version": "v4.2.3",
+            "version": "v4.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
-                "reference": "7c16ebc2629827d4ec915a52ac809768d060a4ee"
+                "reference": "e16b9e471703b2c60b95f14d31c1239f68f11601"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/filesystem/zipball/7c16ebc2629827d4ec915a52ac809768d060a4ee",
-                "reference": "7c16ebc2629827d4ec915a52ac809768d060a4ee",
+                "url": "https://api.github.com/repos/symfony/filesystem/zipball/e16b9e471703b2c60b95f14d31c1239f68f11601",
+                "reference": "e16b9e471703b2c60b95f14d31c1239f68f11601",
                 "shasum": ""
             },
             "require": {
@@ -4704,20 +4626,20 @@
             ],
             "description": "Symfony Filesystem Component",
             "homepage": "https://symfony.com",
-            "time": "2019-01-16T20:35:37+00:00"
+            "time": "2019-02-07T11:40:08+00:00"
         },
         {
             "name": "symfony/finder",
-            "version": "v4.2.3",
+            "version": "v4.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "ef71816cbb264988bb57fe6a73f610888b9aa70c"
+                "reference": "267b7002c1b70ea80db0833c3afe05f0fbde580a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/ef71816cbb264988bb57fe6a73f610888b9aa70c",
-                "reference": "ef71816cbb264988bb57fe6a73f610888b9aa70c",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/267b7002c1b70ea80db0833c3afe05f0fbde580a",
+                "reference": "267b7002c1b70ea80db0833c3afe05f0fbde580a",
                 "shasum": ""
             },
             "require": {
@@ -4753,7 +4675,7 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
-            "time": "2019-01-16T20:35:37+00:00"
+            "time": "2019-02-23T15:42:05+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -4874,7 +4796,7 @@
         },
         {
             "name": "symfony/process",
-            "version": "v4.2.3",
+            "version": "v4.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
@@ -6961,9 +6883,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/show-current-template.0.3.0.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://downloads.wordpress.org/plugin/show-current-template.0.3.0.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
