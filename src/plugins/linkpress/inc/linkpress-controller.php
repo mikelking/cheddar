@@ -9,23 +9,8 @@ class LinkPress_Controller {
 	const URL_FMT = '<a href="%s%s">%s</a>';
 
 	public $prefixes_stack = array(
-		'wpdt'     => 'https://readersdigest.atlassian.net/browse/',
-		'pr'       => 'https://github.com/ReadersDigest/rdnap/pull/',
-		'devops'   => 'https://readersdigest.atlassian.net/browse/',
-		'plt'      => 'https://readersdigest.atlassian.net/browse/',
-		'cat'      => 'https://readersdigest.atlassian.net/browse/',
-		'dt'       => 'https://readersdigest.atlassian.net/browse/',
-		'rdc'      => 'https://readersdigest.atlassian.net/browse/',
-		'wpdt_pr'  => 'https://github.com/ReadersDigest/wpdt.rda.net/pull/',
-		'ctmbi_pr' => 'https://github.com/ReadersDigest/contests.tmbi.com/pull/',
-		'itmbi_pr' => 'https://github.com/ReadersDigest/intranet.tmbi.com/pull/',
-		'tmbi_pr'  => 'https://github.com/ReadersDigest/tmbi/pull/',
-		'dev_pr'   => 'https://github.com/ReadersDigest/developer_vagrant/pull/',
-		'dir_pr'   => 'https://github.com/ReadersDigest/dir/pull/',
-		'rdc_pr'   => 'https://github.com/ReadersDigest/rd.ca/pull/',
-		'srd_pr'   => 'https://github.com/ReadersDigest/srd/pull/',
-		'bhc_pr'   => 'https://github.com/ReadersDigest/besthealthmag.ca/pull/',
-		'bhu_pr'   => 'https://github.com/ReadersDigest/besthealthus.com/pull/',
+		'wp'       => 'https://haymarket.atlassian.net/browse/',
+		'mr'       => 'https://gitlab.com/mikelking/HmEvents/merge_requests/',
 		'bnb_pr'   => 'https://github.com/ReadersDigest/birdsandblooms/pull/'
 	);
 
@@ -44,7 +29,10 @@ class LinkPress_Controller {
 		if ( $result !== false ) {
 			if (stripos( $this->prefixes_stack[$needle], 'atlassian' ) ) {
 				$output = sprintf( self::URL_FMT, $this->prefixes_stack[$needle], $issue, $issue );
-			} elseif (stripos( $this->prefixes_stack[$needle], 'github' ) ) {
+			} elseif (stripos( $this->prefixes_stack[$needle], 'gitlab' ) ) {
+				$output = sprintf( self::URL_FMT, $this->prefixes_stack[$needle], $parts[1], $issue );
+			}
+			 elseif (stripos( $this->prefixes_stack[$needle], 'github' ) ) {
 				$output = sprintf( self::URL_FMT, $this->prefixes_stack[$needle], $parts[1], $issue );
 			}
 			return ( $output );

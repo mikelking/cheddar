@@ -1,9 +1,9 @@
 <?php
 /*
 	Plugin Name: LinkPress
-	Plugin URI: http://nowhere-anymore.com
+	Plugin URI: https://www.jafdip.com
 	Description: Easily link to JIRA issues and GitHub pull requests from WordPress. *** New & improved ***
-	Version: 1.3
+	Version: 1.4
 	Author: Mikel King
 */
 
