@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8bd04fb45398e57bfe4c3d0f3c38b12a",
+    "content-hash": "5c0d3694906d5a30d3b6592f88584a2d",
     "packages": [
         {
             "name": "composer/installers",
@@ -1027,6 +1027,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/page-links-to/"
+        },
+        {
+            "name": "wpackagist-plugin/redirection",
+            "version": "3.7.3",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/redirection/",
+                "reference": "tags/3.7.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/redirection.3.7.3.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/redirection/"
         },
         {
             "name": "wpackagist-plugin/scheduled-tweets",
