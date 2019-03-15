@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5c0d3694906d5a30d3b6592f88584a2d",
+    "content-hash": "680ffb5342157aed00de49b48ad6cec8",
     "packages": [
         {
             "name": "composer/installers",
@@ -605,14 +605,14 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/akismet.zip?timestamp=1551375918"
+                "url": "https://downloads.wordpress.org/plugin/akismet.zip?timestamp=1534229528"
             },
             "require": {
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/akismet/",
-            "time": "2019-02-28T17:45:18+00:00"
+            "time": "2018-08-14T06:52:08+00:00"
         },
         {
             "name": "wpackagist-plugin/bj-lazy-load",
@@ -1045,6 +1045,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/redirection/"
+        },
+        {
+            "name": "wpackagist-plugin/required-fields",
+            "version": "1.9.5",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/required-fields/",
+                "reference": "tags/1.9.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/required-fields.1.9.5.zip"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/required-fields/"
         },
         {
             "name": "wpackagist-plugin/scheduled-tweets",
