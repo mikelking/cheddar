@@ -37,14 +37,14 @@ License URI: http://opensource.org/licenses/BSD-3-Clause
     OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
-require( 'inc/special-rss-feed.php' );
+//require( 'inc/special-rss-feed.php' );
 require( 'inc/special-json-feed.php' );
-#require( 'inc/msn-articles-json-feed.php' );
-#require( 'inc/msn-kids-articles-json-feed.php' );
-#require( 'inc/msn-slideshows-json-feed.php' );
-#require( 'inc/msn-listicle-json-feed.php' );
-#require( 'inc/msn-videos-json-feed.php' );
-#require( 'inc/msn-kids-listicle-json-feed.php' );
+//require( 'inc/msn-articles-json-feed.php' );
+//require( 'inc/msn-kids-articles-json-feed.php' );
+//require( 'inc/msn-slideshows-json-feed.php' );
+//require( 'inc/msn-listicle-json-feed.php' );
+//require( 'inc/msn-videos-json-feed.php' );
+//require( 'inc/msn-kids-listicle-json-feed.php' );
 
 /**
  * Class JSON_Feed_Controller
