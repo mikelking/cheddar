@@ -47,14 +47,14 @@ require( 'inc/special-json-feed.php' );
 #require( 'inc/msn-kids-listicle-json-feed.php' );
 
 /**
- * Class RDU_MSN_Controller
+ * Class JSON_Feed_Controller
  * see http://stackoverflow.com/questions/9907858/how-to-add-a-field-in-edit-post-page-inside-publish-box-in-wordpress
  */
 class JSON_Feed_Controller extends WP_Base {
 	const VERSION              = '1.0';
 
 	public function __construct() {
-		$srf  = Special_RSS_Feed::get_instance();
+		//$srf  = Special_RSS_Feed::get_instance();
 		$sjf  = Special_Json_Feed::get_instance();
 		/*
 		$majf = MSN_Articles_Json_Feed::get_instance();
