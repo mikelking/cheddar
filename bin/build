@@ -160,6 +160,10 @@ function preDeployBuild() {
     getVendors
     installWordPressCore
 
+	####
+	# Allows akismet to be a composerable dependency
+	removeCoreAkismet
+
     ####
     # This will look st the manifest and vendor tree see symlinking above
     preBuild
@@ -186,6 +190,13 @@ function preDeployBuild() {
     if [ -e ${SRC}/themes ]
     then
         ${CMD} ${SRC}/themes/ ${DEST}${DESTBASE}/themes/
+    fi
+}
+
+function removeCoreAkismet() {
+    if [ -e ${DESTBASE}/plugins/akismet ]
+    then
+        rm -rf ${DESTBASE}/plugins/akismet
     fi
 }
 
