@@ -1,8 +1,8 @@
 <?php
 /*
-Plugin Name: JSON Base
-Version: 1.2
-Description: Provides a simple object framework built upon the feed base to create a json feed
+Plugin Name: RSS Base
+Version: 1.4
+Description: Provides a simple object framework built upon the feed base to create a RSS feed
 Author: Mikel King
 Author URI: http://mikelking.com
 */
@@ -10,119 +10,125 @@ Author URI: http://mikelking.com
 //Debug::enable_error_reporting();
 
 /**
- * Class Json_Base
+ * Class RSS_Base
  */
-class Json_Base extends Feed_Base_Controller {
-	const VERSION           = '1.2';
-	const HTTP_CONTENT_TYPE = 'Content-Type: application/json; charset=UTF8';
-	const DURATION          = 'hourly';
-	const FREQUENCY         = 1;
-	const META_BOX_CNTRL    = false;
-	const MULTIPAGE_URLS    = true;
-	const ITEM_LIMIT        = 15;
-	const CACHE_MAX_AGE     = 14400; // seconds === 4 hours
-	const FEED_ORDER_BY     = 'modified';
-	const JSON_HEADER       = '{"items":[';
-	const JSON_FOOTER       = ']}';
+class RSS_Base extends Feed_Base_Controller {
+	const VERSION        = '1.4';
+	const DURATION       = 'hourly';
+	const FREQUENCY      = 1;
+	const META_BOX_CNTRL = false;
+	const CACHE_GROUP    = 'rss-feed';
+	const MULTIPAGE_URLS = true;
+	const ITEM_LIMIT     = 10;
+	const FEED_ORDER_BY  = 'modified';
+	const CACHE_MAX_AGE  = 14400; // seconds === 4 hours
 
-	private $json_content;
-	public $body_content;
-
-	public function add_feed() {
-		// $this->pmc should hydrate the entire feed name this is messy
-		add_feed( $this->feed_slug, array( $this, 'render_json_feed' ) );
-	}
-
-	public function render_json_feed() {
-		$this->ob_begin();
-		$this->print_json_header();
-		$this->get_json_items();
-		$this->print_json_footer();
-		$this->ob_flush();
-	}
-
+	/**
+	 * @see https://codex.wordpress.org/Function_Reference/WP_Query#Order_.26_Orderby_Parameters
+	 * @see https://codex.wordpress.org/Class_Reference/WP_Query
+	 * @see https://codex.wordpress.org/Post_Types
+	 * @see https://codex.wordpress.org/Glossary#Feed
+	 * @return WP_Query
+	 */
 	public function get_the_query() {
-		$query = wp_cache_get( 'json_feed_query', 'jsf' );
-		if ( $query == false ) {
+		// checks the cache for an existing query
+		$query = wp_cache_get( 'rss_feed_query', static::CACHE_GROUP );
+		if ( $query === false ) {
 			$query_args = array(
-				'post_type'         => 'post',
-				'posts_per_page'    => static::ITEM_LIMIT,
-				'orderby'           => static::FEED_ORDER_BY,
-				'order'             => 'desc',
+				'post_type' => $this->get_cpt_list(),
+				'posts_per_page' => static::ITEM_LIMIT,
+				'order' => 'desc',
 			);
+
+			if ( static::FEED_ORDER_BY != self::FEED_ORDER_BY ) {
+				$query_args['orderby'] = static::FEED_ORDER_BY;
+			}
 			$query = new WP_Query( $query_args );
-			wp_cache_set( 'json_feed_query', $query, 'jsf', static::CACHE_MAX_AGE );
+
+			// add the query to the cache
+			wp_cache_set( 'rss_feed_query', $query, static::CACHE_GROUP, static::CACHE_MAX_AGE );
 		}
+
 		return( $query );
 	}
 
-	public function print_json_header() {
-		print( self::JSON_HEADER );
+	public function add_feed() {
+		// $this->pmc should hydrate the entire feed name this is messy
+		add_feed( $this->feed_slug, array( $this, 'render_rss_feed' ) );
 	}
 
-	public function print_json_footer() {
-		print( self::JSON_FOOTER );
+	public function render_rss_feed() {
+		//$this->set_post_type_list();
+		$this->ob_begin();
+		$this->get_page_header();
+		$this->get_channel_head();
+		$this->get_feed_content();
+		$this->get_channel_end();
+		$this->ob_flush();
 	}
 
-	/**
-	 *
-	 */
-	public function get_json_items() {
-		$iteration_count = static::ITEM_LIMIT;
-		//To exclude the inline ads in the article
-		if (  has_filter( 'the_content', 'rdnap_the_content_single_post_ad' ) ) {
-			remove_filter( 'the_content', 'rdnap_the_content_single_post_ad', 19 );
+	public function get_page_header() {
+		/**
+		 * Start RSS feed.
+		 */
+		$output  = '<?xml version="1.0" encoding="' . get_option( 'blog_charset' ) . '"?' . '>' . PHP_EOL;
+		$output .= '<rss version="2.0" xmlns:dc= "http://purl.org/dc/elements/1.1/"   ';
+		$output .= 'xmlns:media= "http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom"';
+		$output .= do_action( 'rss2_ns' ) .' >' . PHP_EOL;
+		if ( static::OUTPUT_BUFFERING === true ) {
+			$output .= '<header>' . $header . '</header>' . PHP_EOL;
 		}
 
-		add_action( 'pre_get_posts', array( $this, 'rd_modify_query_exclude_slideshows' ) );
+		print( $output );
+	}
 
+	public function get_channel_head() {
+		$last_build_date = $this->get_last_build_date();
+
+		$output  = '<channel>' . PHP_EOL;
+		$output .= '<title>' . get_bloginfo_rss( 'name' ) . '</title>' . PHP_EOL;
+		$output .= '<link>' . get_bloginfo_rss( 'url' ) . '</link>' . PHP_EOL;
+		if ( trim( get_bloginfo_rss( 'description' ) ) != '' ) {
+			$output .= '<description>' . esc_html( get_bloginfo_rss( 'description' ) ) . '</description>' . PHP_EOL;
+		}
+		$output .= '<lastBuildDate>' . $last_build_date .'</lastBuildDate>' . PHP_EOL;
+		$output .= '<language>' . get_bloginfo_rss( 'language' ) . '</language>' . PHP_EOL;
+		$output .= '<atom:link href="' . get_bloginfo_rss( 'url' ) . '/feed/short/';
+		$output .= '" rel="self" type="application/rss+xml" />' . PHP_EOL;
+
+		print( $output );
+	}
+
+	public function get_feed_content() {
+		//Start loop
 		$query = $this->get_the_query();
 
-		/**
-		 * Start loop
-		 * The original operation is extremely costly in terms of memory and execution time;
-		 * therefore, I have refactored it to output the json feed items as they are assembled.
-		 *
-		 */
 		try {
 			while ( $query->have_posts() ) {
 				$query->the_post();
 
 				$date_published = $this->get_post_published_date();
 				$date_modified = $this->get_post_modified_date();
-
-				$author = $this->get_rd_json_item_author();
-
-				$this->body_content = $this->get_body_content();
-				$this->add_inline_image_credits();
-
-				$arr_item['title'] = $this->get_the_post_title();
-				$arr_item['body'] = $this->optimize_html_output( $this->body_content );
-				$arr_item['author'] = $this->optimize_html_output( $author );
-				$arr_item['id'] = get_the_ID();
-
-				$arr_item['images'] = $this->get_rd_json_item_image();
-				if ( $arr_item['images'] === false ) {
-					unset( $arr_item['images'] );
-				}
-				$arr_item['link']['rel'] = 'self';
-				$arr_item['link']['type'] = 'text/html';
-
-				// Need to transform the URL for CDN optimization
-				$arr_item['link']['href'] = RD_URL_Magick::get_cdn_permalink( get_the_permalink() );
-				$arr_item['date']['published'] = $date_published;
-				$arr_item['date']['updated'] = $date_modified;
-
-				//$arr_data['items'][] = $arr_item;
-				$iteration_count--;
-				$this->print_json_element( $arr_item );
-				if ( $iteration_count != 0 ) {
-					print( ',' . PHP_EOL );
+				$author = get_the_author_link();
+				// add a check if post content is non empty
+				if ( ! empty( get_the_content_feed() ) ) {
+					$output = '<item>' . PHP_EOL;
+					$output .= '<pid>' . get_the_ID() . '</pid>' . PHP_EOL;
+					$output .= '<postType>' . $this->get_post_type() . '</postType>' . PHP_EOL;
+					$output .= '<title>' . $this->get_the_post_title() . '</title>' . PHP_EOL;
+					$output .= '<link>' . $this->get_the_url() . '</link>' . PHP_EOL;
+					$output .= '<guid>' . $this->get_the_url() . '</guid>' . PHP_EOL; // was get_the_guid()
+					$output .= '<author><![CDATA[ ' . esc_html( $author ) . ' ]]></author>' . PHP_EOL;
+					$output .= '<description><![CDATA[ ' . esc_html( get_the_content_feed() ) . ' ]]></description>' . PHP_EOL;
+					$output .= $this->get_item_image();
+					$output .= '<pubDate>' . $date_published . '</pubDate>' . PHP_EOL;
+					$output .= '<dc:modified>' . $date_modified . '</dc:modified>' . PHP_EOL;
+					// debugging only
+					//$output .= '<cptList>' . static::CPT_LIST . '</cptList>' . PHP_EOL;
+					$output .= '</item>' . PHP_EOL;
+					print($output);
 				}
 			}
-
-			//$this->json_content = str_replace( self::BACKSPACE, '', json_encode( $arr_data ) );
-			//print( $this->json_content );
 		} catch ( Exception $e ) {
 			$msg = $e->getMessage() . PHP_EOL;
 
@@ -130,112 +136,23 @@ class Json_Base extends Feed_Base_Controller {
 		}
 	}
 
-	/**
-	 * @param $data
-	 */
-	public function print_json_element( $data ) {
-		$json_encoded_data = str_replace( self::BACKSPACE, '', json_encode( $data, JSON_FORCE_OBJECT ) );
-		print( $json_encoded_data );
-
-	}
-
-	/**
-	 * @return string
-	 */
-	private function get_body_content() {
-		return( trim( get_the_content_feed() ) );
-	}
-
-	//Adding image credits for inline images
-	/**
-	 * @return string
-	 */
-	private function add_inline_image_credits() {
-		preg_match_all( '/(<a .*?>)?(<img[^>]+>)(<\/a>)?/i', $this->body_content, $matches_img );
-		$arr_matches = $matches_img[0];
-
-		$doc = new DOMDocument();
-		foreach ( $arr_matches as $image ) {
-			$doc->loadHTML( $image );
-			$imageTags = $doc->getElementsByTagName( 'img' );
-			foreach ( $imageTags as $tag ) {
-				$image_src = $tag->getAttribute( 'src' );
-				$reg_img_dim = '/[_-]\d+x\d+(\.[a-z]{3,4})$/i';
-				preg_match( $reg_img_dim, $image_src, $match_img_dim );
-				if ( ! empty( $match_img_dim ) ) {
-					$image_src = preg_replace( $reg_img_dim,'$1',$image_src );
-				}
-				$image_class = $tag->getAttribute( 'class' );
-				preg_match_all( '/wp-image-(\d+)/i', $image_class, $matches_img_id );
-				$str_image_tag = ''. PHP_EOL;
-				if ( ! empty( $matches_img_id[1][0] ) ) {
-					$image_id = $matches_img_id[1][0];
-					$str_image_tag .= '<img src="'.$image_src.'" />'. PHP_EOL;
-
-					$image_credit = $this->rd_get_image_credit( $image_id );
-					if ( ! empty( $image_credit ) ) {
-						$str_image_tag .= '<span class="credits-overlay">';
-						$str_image_tag .= '<span class="image-credit">'.$image_credit.'</span>'. PHP_EOL;
-						$str_image_tag .= '</span>'. PHP_EOL;
-					}
-				}
-				$this->body_content  = str_replace( $image, $str_image_tag, $this->body_content );
-			}
-		}
-		return( trim( $this->body_content ) );
-	}
-
-	public function get_the_header_content_type() {
-		return ( self::HTTP_CONTENT_TYPE );
-	}
-
-	public function print_json_content() {
-		print( $this->json_content );
-	}
-
-	function rd_modify_query_exclude_slideshows( $query ) {
-		if ( ! $query->is_main_query()  ) {
-			$query->set( 'post_type', 'post' );
-		}
-	}
-	public function get_rd_json_item_author() {
-		if ( class_exists( 'CoAuthorsIterator' ) ) {
-			$post_id = get_the_ID();
-			$author = new CoAuthorsIterator( $post_id );
-			$author->iterate();
-			$author_names = '';
-			do {
-				if ( $author->current_author ) {
-					$author_names .= $author->current_author->display_name . ',';
-				} else {
-					return get_the_author();
-				}
-			} while ( $author->iterate() );
-			return rtrim( $author_names, ',' );
-
-		}else {
-			return get_the_author();
-		}
-	}
-
-	public function get_rd_json_item_image() {
+	public function get_item_image() {
+		$output = '';
 		$thumb_id = get_post_thumbnail_id( get_the_ID() );
 		$postimages = wp_get_attachment_image_src( $thumb_id, 'large' );
-		$arr_img = false;
-		$arr_images = false;
 		// Check for images
 		if ( $postimages ) {
 
 			// Get featured image
 			$postimage = $postimages[0];
 
+			$output  = '<media:content url="' . esc_url( $postimage ) . '" type="image/jpeg">' . PHP_EOL;
 
-			$arr_img['url'] = esc_url( $postimage );
 			$postthumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'thumbnail' );
 			$postthumbnail = $postthumbnail[0];
 
 			if ( $postthumbnail ) {
-				$arr_img['thumbnail'] = esc_url( $postthumbnail );
+				$output .= '<media:thumbnail url="' . esc_url( $postthumbnail ) . '" type="image/jpeg"/>' . PHP_EOL;
 			}
 
 			$image_credit = '';
@@ -249,81 +166,19 @@ class Json_Base extends Feed_Base_Controller {
 
 			$image_title = 'Image';
 
-			$arr_img['author'] = trim( $image_credit );
-			$arr_img['title'] = trim( $image_title );
-
-			// }
-			$arr_images[] = $arr_img;
+			$output .= '<media:credit>' . trim( $image_credit ) . '</media:credit>' . PHP_EOL;
+			$output .= '<media:title>' . $image_title . '</media:title>' . PHP_EOL;
+			$output .= '</media:content>' . PHP_EOL;
 		}
-
-		return( $arr_images );
+		return( $output );
 	}
 
-	// We may need to change the out put to '' if $URL is empty but for now
-	public function get_image_url( $title, $url = null ) {
-		if ( stripos( $title, 'Sources' ) || $url === '' ) {
-			return( RD_URL_Magick::get_default_image_url() );
-		} else {
-			return( RD_URL_Magick::get_cdn_url( $url ) );
-		}
+	public function get_channel_end() {
+		print('</channel>' . PHP_EOL . '</rss>' . PHP_EOL);
 	}
 
-	public function optimize_html_output( $raw_html_content = null ) {
-
-		if ( ! isset( $raw_html_content ) ) {
-			$raw_html_content = $this->body_content;
-		}
-
-		if ( $raw_html_content !== '' ) {
-			$raw_html_content = str_replace( '<br/>', '. ', $raw_html_content );
-			$raw_html_content = str_replace( '“', "'", $raw_html_content );
-			$raw_html_content = str_replace( '”', "'", $raw_html_content );
-
-			$raw_html_content = esc_html( str_replace( '"', "'", $raw_html_content ) );
-			$raw_html_content = str_replace( self::LEFT_DBL_QUOTE, "'", $raw_html_content );
-
-			$raw_html_content = mb_convert_encoding( $raw_html_content, 'HTML-ENTITIES', 'UTF-8' );
-		}
-		return( $raw_html_content );
+	public function get_the_header_content_type() {
+		return( 'Content-Type: ' . feed_content_type( 'rss' ) );
 	}
 
-	private function rd_image_post_ids( $arr_images ) {
-		$arr_uri = wp_list_pluck( $arr_images, 'author' );
-
-		$str_img = implode( "','",$arr_uri );
-		$str_img = "'".$str_img."'";
-		global $wpdb;
-		$sql = "SELECT post_id,meta_value  FROM $wpdb->postmeta WHERE meta_key = '_wp_attached_file' AND meta_value IN( $str_img )";
-
-		$arr_post_id = $wpdb->get_results( $sql, ARRAY_A );
-		foreach ( $arr_post_id as $image ) {
-			$arr_uri_credit[$image['meta_value']] = $this->rd_get_image_credit( $image['post_id'] );
-		}
-
-		return( $arr_uri_credit );
-	}
-
-	private function rd_image_post_id( $url ) {
-		$deliminator = '/wp-content/uploads/';
-		$deliminator2 = 'sites/2/';
-
-		$clean_url = filter_var( strtolower( $url ), FILTER_SANITIZE_URL );
-		$url_parts = explode( $deliminator . $deliminator2, $clean_url );
-		if ( $url_parts === false || ( strlen( $url_parts[0] ) === strlen( $clean_url ) ) ) {
-			$url_parts = explode( $deliminator, $clean_url );
-		}
-		$uri = $url_parts[1];
-
-		return( $uri );
-	}
-
-	private function rd_get_image_credit( $image_id ) {
-		$credit_text = '';
-		foreach ( [ 'photographer_credit_name', '_wp_attachment_source_name' ] as $key ) {
-			$credit_text = get_post_meta( $image_id, $key, true );
-			if ( ! empty( $credit_text ) ) { break; }
-		}
-
-		return( trim( $credit_text ) );
-	}
 }
