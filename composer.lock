@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f114cb73460d213315d8ab4574905c37",
+    "content-hash": "a4176c78cdfdc87d4539c4ffb79510f5",
     "packages": [
         {
             "name": "composer/installers",
-            "version": "v1.2.0",
+            "version": "v1.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "d78064c68299743e0161004f2de3a0204e33b804"
+                "reference": "cfcca6b1b60bc4974324efb5783c13dca6932b5b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/d78064c68299743e0161004f2de3a0204e33b804",
-                "reference": "d78064c68299743e0161004f2de3a0204e33b804",
+                "url": "https://api.github.com/repos/composer/installers/zipball/cfcca6b1b60bc4974324efb5783c13dca6932b5b",
+                "reference": "cfcca6b1b60bc4974324efb5783c13dca6932b5b",
                 "shasum": ""
             },
             "require": {
@@ -29,7 +29,7 @@
             },
             "require-dev": {
                 "composer/composer": "1.0.*@dev",
-                "phpunit/phpunit": "4.1.*"
+                "phpunit/phpunit": "^4.8.36"
             },
             "type": "composer-plugin",
             "extra": {
@@ -59,12 +59,17 @@
             "keywords": [
                 "Craft",
                 "Dolibarr",
+                "Eliasis",
                 "Hurad",
                 "ImageCMS",
+                "Kanboard",
+                "Lan Management System",
                 "MODX Evo",
                 "Mautic",
+                "Maya",
                 "OXID",
                 "Plentymarkets",
+                "Porto",
                 "RadPHP",
                 "SMF",
                 "Thelia",
@@ -82,28 +87,36 @@
                 "croogo",
                 "dokuwiki",
                 "drupal",
+                "eZ Platform",
                 "elgg",
                 "expressionengine",
                 "fuelphp",
                 "grav",
                 "installer",
+                "itop",
                 "joomla",
                 "kohana",
                 "laravel",
+                "lavalite",
                 "lithium",
                 "magento",
+                "majima",
                 "mako",
                 "mediawiki",
                 "modulework",
+                "modx",
                 "moodle",
+                "osclass",
                 "phpbb",
                 "piwik",
                 "ppi",
                 "puppet",
+                "pxcms",
                 "reindex",
                 "roundcube",
                 "shopware",
                 "silverstripe",
+                "sydes",
                 "symfony",
                 "typo3",
                 "wordpress",
@@ -111,7 +124,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2016-08-13T20:53:52+00:00"
+            "time": "2018-08-27T06:10:37+00:00"
         },
         {
             "name": "ivome/graphql-relay-php",
@@ -202,16 +215,16 @@
         },
         {
             "name": "mikelking/bacon",
-            "version": "1.0.14",
+            "version": "1.0.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mikelking/bacon.git",
-                "reference": "a2be1280ee583837410989e88451be1bcac7b05a"
+                "reference": "e2bb3951264b5aa7cc157f20936b46e6ead378cc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mikelking/bacon/zipball/a2be1280ee583837410989e88451be1bcac7b05a",
-                "reference": "a2be1280ee583837410989e88451be1bcac7b05a",
+                "url": "https://api.github.com/repos/mikelking/bacon/zipball/e2bb3951264b5aa7cc157f20936b46e6ead378cc",
+                "reference": "e2bb3951264b5aa7cc157f20936b46e6ead378cc",
                 "shasum": ""
             },
             "archive": {
@@ -228,8 +241,8 @@
                 ]
             },
             "require": {
-                "composer/installers": "v1.2.0",
-                "php": ">=5.6"
+                "composer/installers": "v1.6.0",
+                "php": ">=7.0"
             },
             "type": "wordpress-muplugin",
             "license": [
@@ -254,10 +267,10 @@
                 "mu-plugin"
             ],
             "support": {
-                "source": "https://github.com/mikelking/bacon/tree/1.0.14",
+                "source": "https://github.com/mikelking/bacon/tree/1.0.16",
                 "issues": "https://github.com/mikelking/bacon/issues"
             },
-            "time": "2019-05-22T18:12:54+00:00"
+            "time": "2019-07-15T18:17:27+00:00"
         },
         {
             "name": "mikelking/pyramid",
@@ -292,20 +305,20 @@
         },
         {
             "name": "mikelking/quotes",
-            "version": "0.1.3",
+            "version": "0.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mikelking/quotes.git",
-                "reference": "9ce3b20017c5b0fbc9fa85616192fb3263f6b1b9"
+                "reference": "6e68250c5e68c12573574a52958a38eb97518148"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mikelking/quotes/zipball/9ce3b20017c5b0fbc9fa85616192fb3263f6b1b9",
-                "reference": "9ce3b20017c5b0fbc9fa85616192fb3263f6b1b9",
+                "url": "https://api.github.com/repos/mikelking/quotes/zipball/6e68250c5e68c12573574a52958a38eb97518148",
+                "reference": "6e68250c5e68c12573574a52958a38eb97518148",
                 "shasum": ""
             },
             "require": {
-                "composer/installers": "v1.2.0",
+                "composer/installers": "v1.6.0",
                 "php": ">=5.6"
             },
             "type": "wordpress-plugin",
@@ -319,27 +332,27 @@
                 "plugin"
             ],
             "support": {
-                "source": "https://github.com/mikelking/quotes/tree/0.1.3",
+                "source": "https://github.com/mikelking/quotes/tree/0.1.4",
                 "issues": "https://github.com/mikelking/quotes/issues"
             },
-            "time": "2018-08-29T19:38:04+00:00"
+            "time": "2019-07-15T18:28:13+00:00"
         },
         {
             "name": "mikelking/virtual-ads-txt",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mikelking/virtual-ads-txt.git",
-                "reference": "b9ff183c81d02dcc3aeb7400f308220949b89a56"
+                "reference": "5f0c440befc467d8b90447b76c3007e530bbf7fd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mikelking/virtual-ads-txt/zipball/b9ff183c81d02dcc3aeb7400f308220949b89a56",
-                "reference": "b9ff183c81d02dcc3aeb7400f308220949b89a56",
+                "url": "https://api.github.com/repos/mikelking/virtual-ads-txt/zipball/5f0c440befc467d8b90447b76c3007e530bbf7fd",
+                "reference": "5f0c440befc467d8b90447b76c3007e530bbf7fd",
                 "shasum": ""
             },
             "require": {
-                "composer/installers": "v1.2.0",
+                "composer/installers": "v1.6.0",
                 "php": ">=5.6"
             },
             "type": "wordpress-plugin",
@@ -353,10 +366,10 @@
                 "plugin"
             ],
             "support": {
-                "source": "https://github.com/mikelking/virtual-ads-txt/tree/1.0.1",
+                "source": "https://github.com/mikelking/virtual-ads-txt/tree/1.0.2",
                 "issues": "https://github.com/mikelking/virtual-ads-txt/issues"
             },
-            "time": "2018-08-28T20:45:04+00:00"
+            "time": "2019-07-15T18:23:41+00:00"
         },
         {
             "name": "mikelking/wordpress-config-installer",
@@ -1788,16 +1801,16 @@
         },
         {
             "name": "gettext/gettext",
-            "version": "v4.6.2",
+            "version": "v4.6.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/oscarotero/Gettext.git",
-                "reference": "93176b272d61fb58a9767be71c50d19149cb1e48"
+                "reference": "70c6ff2fecd275e6ef9cdd542f55939a3d1904d6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/oscarotero/Gettext/zipball/93176b272d61fb58a9767be71c50d19149cb1e48",
-                "reference": "93176b272d61fb58a9767be71c50d19149cb1e48",
+                "url": "https://api.github.com/repos/oscarotero/Gettext/zipball/70c6ff2fecd275e6ef9cdd542f55939a3d1904d6",
+                "reference": "70c6ff2fecd275e6ef9cdd542f55939a3d1904d6",
                 "shasum": ""
             },
             "require": {
@@ -1846,7 +1859,7 @@
                 "po",
                 "translation"
             ],
-            "time": "2019-01-12T18:40:56+00:00"
+            "time": "2019-07-15T12:56:31+00:00"
         },
         {
             "name": "gettext/languages",
@@ -2198,16 +2211,16 @@
         },
         {
             "name": "netresearch/jsonmapper",
-            "version": "v1.4.0",
+            "version": "v1.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cweiske/jsonmapper.git",
-                "reference": "3868fe1128ce1169228acdb623359dca74db5ef3"
+                "reference": "047dafe26facbba1e997e9fb3b3c298562d75a0b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cweiske/jsonmapper/zipball/3868fe1128ce1169228acdb623359dca74db5ef3",
-                "reference": "3868fe1128ce1169228acdb623359dca74db5ef3",
+                "url": "https://api.github.com/repos/cweiske/jsonmapper/zipball/047dafe26facbba1e997e9fb3b3c298562d75a0b",
+                "reference": "047dafe26facbba1e997e9fb3b3c298562d75a0b",
                 "shasum": ""
             },
             "require": {
@@ -2236,7 +2249,7 @@
                 }
             ],
             "description": "Map nested JSON structures onto PHP classes",
-            "time": "2017-11-28T21:30:01+00:00"
+            "time": "2019-07-08T18:46:43+00:00"
         },
         {
             "name": "pdepend/pdepend",
@@ -2982,16 +2995,16 @@
         },
         {
             "name": "phpunit/php-token-stream",
-            "version": "3.0.1",
+            "version": "3.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-token-stream.git",
-                "reference": "c99e3be9d3e85f60646f152f9002d46ed7770d18"
+                "reference": "c4a66b97f040e3e20b3aa2a243230a1c3a9f7c8c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/c99e3be9d3e85f60646f152f9002d46ed7770d18",
-                "reference": "c99e3be9d3e85f60646f152f9002d46ed7770d18",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/c4a66b97f040e3e20b3aa2a243230a1c3a9f7c8c",
+                "reference": "c4a66b97f040e3e20b3aa2a243230a1c3a9f7c8c",
                 "shasum": ""
             },
             "require": {
@@ -3027,7 +3040,7 @@
             "keywords": [
                 "tokenizer"
             ],
-            "time": "2018-10-30T05:52:18+00:00"
+            "time": "2019-07-08T05:24:54+00:00"
         },
         {
             "name": "phpunit/phpunit",
@@ -4120,16 +4133,16 @@
         },
         {
             "name": "symfony/config",
-            "version": "v4.3.1",
+            "version": "v4.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/config.git",
-                "reference": "6379ee07398643e09e6ed1e87d9c62dfcad7f4eb"
+                "reference": "9198eea354be75794a7b1064de00d9ae9ae5090f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/config/zipball/6379ee07398643e09e6ed1e87d9c62dfcad7f4eb",
-                "reference": "6379ee07398643e09e6ed1e87d9c62dfcad7f4eb",
+                "url": "https://api.github.com/repos/symfony/config/zipball/9198eea354be75794a7b1064de00d9ae9ae5090f",
+                "reference": "9198eea354be75794a7b1064de00d9ae9ae5090f",
                 "shasum": ""
             },
             "require": {
@@ -4180,20 +4193,20 @@
             ],
             "description": "Symfony Config Component",
             "homepage": "https://symfony.com",
-            "time": "2019-05-30T16:10:05+00:00"
+            "time": "2019-06-08T06:33:08+00:00"
         },
         {
             "name": "symfony/console",
-            "version": "v4.3.1",
+            "version": "v4.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "d50bbeeb0e17e6dd4124ea391eff235e932cbf64"
+                "reference": "b592b26a24265a35172d8a2094d8b10f22b7cc39"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/d50bbeeb0e17e6dd4124ea391eff235e932cbf64",
-                "reference": "d50bbeeb0e17e6dd4124ea391eff235e932cbf64",
+                "url": "https://api.github.com/repos/symfony/console/zipball/b592b26a24265a35172d8a2094d8b10f22b7cc39",
+                "reference": "b592b26a24265a35172d8a2094d8b10f22b7cc39",
                 "shasum": ""
             },
             "require": {
@@ -4255,20 +4268,20 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2019-06-05T13:25:51+00:00"
+            "time": "2019-06-13T11:03:18+00:00"
         },
         {
             "name": "symfony/dependency-injection",
-            "version": "v4.3.1",
+            "version": "v4.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/dependency-injection.git",
-                "reference": "fea7f73e278ee0337349a5a68b867fc656bb33f3"
+                "reference": "b851928be349c065197fdc0832f78d85139e3903"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/fea7f73e278ee0337349a5a68b867fc656bb33f3",
-                "reference": "fea7f73e278ee0337349a5a68b867fc656bb33f3",
+                "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/b851928be349c065197fdc0832f78d85139e3903",
+                "reference": "b851928be349c065197fdc0832f78d85139e3903",
                 "shasum": ""
             },
             "require": {
@@ -4328,20 +4341,20 @@
             ],
             "description": "Symfony DependencyInjection Component",
             "homepage": "https://symfony.com",
-            "time": "2019-05-30T16:10:05+00:00"
+            "time": "2019-06-15T04:08:07+00:00"
         },
         {
             "name": "symfony/filesystem",
-            "version": "v4.3.1",
+            "version": "v4.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
-                "reference": "bf2af40d738dec5e433faea7b00daa4431d0a4cf"
+                "reference": "b9896d034463ad6fd2bf17e2bf9418caecd6313d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/filesystem/zipball/bf2af40d738dec5e433faea7b00daa4431d0a4cf",
-                "reference": "bf2af40d738dec5e433faea7b00daa4431d0a4cf",
+                "url": "https://api.github.com/repos/symfony/filesystem/zipball/b9896d034463ad6fd2bf17e2bf9418caecd6313d",
+                "reference": "b9896d034463ad6fd2bf17e2bf9418caecd6313d",
                 "shasum": ""
             },
             "require": {
@@ -4378,20 +4391,20 @@
             ],
             "description": "Symfony Filesystem Component",
             "homepage": "https://symfony.com",
-            "time": "2019-06-03T20:27:40+00:00"
+            "time": "2019-06-23T08:51:25+00:00"
         },
         {
             "name": "symfony/finder",
-            "version": "v4.3.1",
+            "version": "v4.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "b3d4f4c0e4eadfdd8b296af9ca637cfbf51d8176"
+                "reference": "33c21f7d5d3dc8a140c282854a7e13aeb5d0f91a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/b3d4f4c0e4eadfdd8b296af9ca637cfbf51d8176",
-                "reference": "b3d4f4c0e4eadfdd8b296af9ca637cfbf51d8176",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/33c21f7d5d3dc8a140c282854a7e13aeb5d0f91a",
+                "reference": "33c21f7d5d3dc8a140c282854a7e13aeb5d0f91a",
                 "shasum": ""
             },
             "require": {
@@ -4427,7 +4440,7 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
-            "time": "2019-05-26T20:47:49+00:00"
+            "time": "2019-06-13T11:03:18+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -4606,7 +4619,7 @@
         },
         {
             "name": "symfony/process",
-            "version": "v4.3.1",
+            "version": "v4.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
