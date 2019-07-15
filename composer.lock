@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a4176c78cdfdc87d4539c4ffb79510f5",
+    "content-hash": "116170180c09f556e21ded19c6c40167",
     "packages": [
         {
             "name": "composer/installers",
@@ -270,7 +270,7 @@
                 "source": "https://github.com/mikelking/bacon/tree/1.0.16",
                 "issues": "https://github.com/mikelking/bacon/issues"
             },
-            "time": "2019-07-15T18:17:27+00:00"
+            "time": "2019-07-15T18:48:59+00:00"
         },
         {
             "name": "mikelking/pyramid",
@@ -986,15 +986,15 @@
         },
         {
             "name": "wpackagist-plugin/newsletter",
-            "version": "6.0.9",
+            "version": "6.1.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/newsletter/",
-                "reference": "tags/6.0.9"
+                "reference": "tags/6.1.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/newsletter.6.0.9.zip"
+                "url": "https://downloads.wordpress.org/plugin/newsletter.6.1.2.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -4487,7 +4487,7 @@
                 },
                 {
                     "name": "Gert de Pagter",
-                    "email": "backendtea@gmail.com"
+                    "email": "BackEndTea@gmail.com"
                 }
             ],
             "description": "Symfony polyfill for ctype functions",
