@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "919aa79a199445c193e5a997bae2bd56",
+    "content-hash": "ae854a9427c6f52402876b9007807b0f",
     "packages": [
         {
             "name": "composer/installers",
@@ -370,60 +370,6 @@
                 "issues": "https://github.com/mikelking/virtual-ads-txt/issues"
             },
             "time": "2019-07-15T18:23:41+00:00"
-        },
-        {
-            "name": "mikelking/virtual-robots-txt",
-            "version": "1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://gitlab.com/mikelking/virtual-robots-txt.git",
-                "reference": "d791815c08b3800d25e5548e93bc84591a09a15b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/mikelking%2Fvirtual-robots-txt/repository/archive.zip?sha=d791815c08b3800d25e5548e93bc84591a09a15b",
-                "reference": "d791815c08b3800d25e5548e93bc84591a09a15b",
-                "shasum": ""
-            },
-            "require": {
-                "composer/installers": "v1.6.0",
-                "mikelking/bacon": "~1.0.0",
-                "php": ">=5.5"
-            },
-            "type": "wordpress-plugin",
-            "extra": {
-                "installer-paths": {
-                    "inc/lib/bacon/": [
-                        "type:wordpress-muplugin",
-                        "mikelking/bacon"
-                    ]
-                }
-            },
-            "license": [
-                "BSD3"
-            ],
-            "authors": [
-                {
-                    "name": "Olivent, llc.",
-                    "email": "info@olivent.com",
-                    "homepage": "https://github.com/mikelking/dummy"
-                },
-                {
-                    "name": "Mikel King",
-                    "email": "mikel.king@olivent.com",
-                    "homepage": "https://github.com/mikelking"
-                }
-            ],
-            "description": "A WordPress plugin to manage robots.txt",
-            "homepage": "http://www.olivent.net",
-            "keywords": [
-                "composer",
-                "stack",
-                "vagrant",
-                "wordpress",
-                "wp"
-            ],
-            "time": "2019-10-02T13:27:40+00:00"
         },
         {
             "name": "mikelking/wordpress-config-installer",
