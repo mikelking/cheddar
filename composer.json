@@ -52,6 +52,10 @@
     },
     {
       "type": "vcs",
+      "url": "https://gitlab.com/mikelking/virtual-robots-txt"
+    },
+    {
+      "type": "vcs",
       "url": "https://github.com/mikelking/quotes"
     },
     {
@@ -83,6 +87,7 @@
     "mikelking/bacon" : "1.0.17",
     "mikelking/quotes" : "0.1.4",
     "mikelking/virtual-ads-txt" : "1.0.2",
+    "mikelking/virtual-robots-txt" : "1.0.0",
     "wpackagist-theme/atomic-blocks" : "1.2.5",
     "wpackagist-theme/twentyten" : "2.9.0",
     "wpackagist-theme/twentyeleven" : "3.3.0",
@@ -103,6 +108,7 @@
     "wpackagist-plugin/co-authors-plus" : "3.4.0",
     "wpackagist-plugin/crayon-syntax-highlighter" : "2.8.4",
     "wpackagist-plugin/duo-wordpress" : "2.5.4",
+    "wpackagist-plugin/elasticpress" : "3.1.4",
     "wpackagist-plugin/fftf-alerts" : "1.3.1",
     "wpackagist-plugin/genesis-simple-edits": "2.2.1",
     "wpackagist-plugin/genesis-simple-faq": "0.9.1",
