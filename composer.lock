@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d9736a1eb6b3055686d87afa3aa20971",
+    "content-hash": "4beca1c7d93c11b819ca11aa6b416d7d",
     "packages": [
         {
             "name": "composer/installers",
@@ -373,16 +373,16 @@
         },
         {
             "name": "mikelking/virtual-robots-txt",
-            "version": "1.1.0",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://gitlab.com/mikelking/virtual-robots-txt.git",
-                "reference": "1fbfbd586a3c7d5b253b32e2c17d6b56ac7ba53b"
+                "reference": "f44ea9016a53d92a0d0ee459d84086ba24683734"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/mikelking%2Fvirtual-robots-txt/repository/archive.zip?sha=1fbfbd586a3c7d5b253b32e2c17d6b56ac7ba53b",
-                "reference": "1fbfbd586a3c7d5b253b32e2c17d6b56ac7ba53b",
+                "url": "https://gitlab.com/api/v4/projects/mikelking%2Fvirtual-robots-txt/repository/archive.zip?sha=f44ea9016a53d92a0d0ee459d84086ba24683734",
+                "reference": "f44ea9016a53d92a0d0ee459d84086ba24683734",
                 "shasum": ""
             },
             "require": {
@@ -423,7 +423,7 @@
                 "wordpress",
                 "wp"
             ],
-            "time": "2019-10-02T17:53:39+00:00"
+            "time": "2019-10-02T18:17:04+00:00"
         },
         {
             "name": "mikelking/wordpress-config-installer",
