@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4581a69727c4d45eb58b7f9ad3d3733b",
+    "content-hash": "85b1e620730c1b57c8c68fabc752a655",
     "packages": [
         {
             "name": "composer/installers",
@@ -169,23 +169,24 @@
         },
         {
             "name": "johnpbloch/wordpress-core",
-            "version": "5.4.0",
+            "version": "5.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress-core.git",
-                "reference": "9a9941fcad81015507e6d03801aebc51296baf37"
+                "reference": "3e67d8b6ee6c11e8ce404da4627117fb7fbf9266"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/9a9941fcad81015507e6d03801aebc51296baf37",
-                "reference": "9a9941fcad81015507e6d03801aebc51296baf37",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/3e67d8b6ee6c11e8ce404da4627117fb7fbf9266",
+                "reference": "3e67d8b6ee6c11e8ce404da4627117fb7fbf9266",
                 "shasum": ""
             },
             "require": {
+                "ext-json": "*",
                 "php": ">=5.6.20"
             },
             "provide": {
-                "wordpress/core-implementation": "5.4.0"
+                "wordpress/core-implementation": "5.4.2"
             },
             "type": "wordpress-core",
             "license": [
@@ -211,7 +212,7 @@
                 "irc": "irc://irc.freenode.net/wordpress",
                 "source": "https://core.trac.wordpress.org/browser"
             },
-            "time": "2020-03-31T20:17:13+00:00"
+            "time": "2020-06-10T22:05:38+00:00"
         },
         {
             "name": "mikelking/bacon",

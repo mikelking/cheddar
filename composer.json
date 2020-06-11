@@ -83,7 +83,7 @@
     "php": ">=7.0",
     "composer/installers" : "v1.6.0",
     "mikelking/wpcfg" : "0.1.8",
-    "johnpbloch/wordpress-core" : "5.4.0",
+    "johnpbloch/wordpress-core" : "5.4.2",
     "mikelking/bacon" : "1.0.17",
     "mikelking/quotes" : "0.1.4",
     "mikelking/virtual-ads-txt" : "1.0.2",
