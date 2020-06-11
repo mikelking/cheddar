@@ -118,6 +118,7 @@
     "wpackagist-plugin/genesis-simple-sidebars": "2.2.2",
     "wpackagist-plugin/google-analytics-dashboard-for-wp" : "6.0.2",
     "wpackagist-plugin/google-analytics-for-wordpress" : "7.7.1",
+    "wpackagist-plugin/google-site-kit":"1.9.0",
     "wpackagist-plugin/health-check" : "1.4.4",
     "wpackagist-plugin/jackmail-newsletters" : "1.2.6",
     "wpackagist-plugin/jetpack" : "8.4.2",
